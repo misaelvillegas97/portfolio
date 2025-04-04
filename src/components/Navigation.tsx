@@ -73,7 +73,7 @@ export default function Navigation() {
               </motion.a>
             ))}
             <LanguageToggle />
-            <ThemeToggle />
+            {/*<ThemeToggle />*/}
           </div>
 
           {/* Mobile Navigation */}
