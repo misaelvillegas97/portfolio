@@ -1,0 +1,146 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm David Villegas",
+    "role": "Senior Software Engineer",
+    "description": "Passionate about crafting exceptional digital experiences through innovative solutions and clean, efficient code",
+    "downloadCV": "Download CV"
+  },
+  "about": {
+    "title": "About Me",
+    "description1": "Passionate Senior Software Engineer with over 7 years of experience in full-stack development, specializing in building scalable web applications and microservices. Throughout my career, I've led multiple high-impact projects across South America, working with major companies in the retail, financial, and technology sectors.",
+    "description2": "My journey has been marked by significant achievements, including developing a comprehensive transport management system handling over 1000 daily transactions, implementing AI-powered chatbots that improved customer satisfaction by 40%, and creating efficient microservices architectures that reduced system response times by 60%.",
+    "description3": "I thrive in collaborative environments and have a proven track record of mentoring junior developers, leading technical discussions, and fostering knowledge sharing within teams. Proficient in English (EF SET C1 Advanced), I excel in cross-cultural communication and international team collaboration.",
+    "description4": "My goal is to continue pushing the boundaries of technology by creating innovative solutions that make a real impact. I'm particularly interested in cloud-native architectures, AI integration, and building scalable systems that can handle millions of users.",
+    "technicalSkills": "Technical Skills"
+  },
+  "experience": {
+    "title": "Experience",
+    "present": "Present",
+    "remote": "Remote",
+    "roles": {
+      "senior": "Senior Software Engineer",
+      "seniorConsultant": "Senior Software Engineering Consultant",
+      "semiSenior": "Semi Senior Software Engineer",
+      "junior": "Junior Software Engineer",
+      "entry": "Entry Software Engineer"
+    },
+    "blaze": {
+      "description": [
+        "Developed a secure authentication system with two-factor authentication and user identity management",
+        "Optimized application performance by refactoring code, improving database queries and leveraging caching",
+        "Developed unit tests and implemented automated e2e testing to increase code coverage to 90%"
+      ]
+    },
+    "polodev": {
+      "description": [
+        "Backend Development: Led the creation of an inventory and supplier management system using NestJS, implemented as microservices and deployed on AWS Lambda",
+        "Frontend Development: Developed a responsive and intuitive frontend using Angular, hosted on AWS Amplify",
+        "Cloud Services Integration: Integrated AWS Cognito for user authentication, S3 Buckets for storage, and SNS for notifications",
+        "Consultancy: Provided consultancy for various projects, including chatbot development, court rental management, facility reservations",
+        "Collaboration: Worked closely with cross-functional teams to deliver high quality solutions, focusing on clean code and maintainable architecture"
+      ]
+    },
+    "falabella": {
+      "description": [
+        "Task Management: Efficiently organized and prioritized tasks for Transport Management System (TMS) and Payment application",
+        "Solution Design: Crafted solutions for transport order entries and carrier payment requests, integrating with SAP systems",
+        "Clean Architecture: Implemented high-quality architecture in new microservices and frontend sites",
+        "Taxation Systems: Created solutions for taxation systems across Chile, Peru, and Colombia, maintaining SAP compatibility",
+        "Technical Expertise: Leveraged Angular, Java Spring Boot, and NestJS for robust solutions",
+        "API Development: Developed a RESTful API integrating with existing systems, reducing manual data entry by 80%"
+      ]
+    },
+    "nttdata": {
+      "description": [
+        "Agile Implementation: Successfully implemented Agile methodologies and CI/CD practices",
+        "AWS Integration: Utilized AWS services (SES, Cognito) with Java Spring Boot and NodeJS/Express backends",
+        "Frontend Development: Developed secure Angular 8 applications with high security standards",
+        "E-commerce Contributions: Performed testing and contributed to e-commerce projects using PHP and Magento 2",
+        "Collaboration: Worked with industry leaders like Transbank and Telefonica",
+        "Clean Code Advocacy: Followed clean code principles and best practices"
+      ]
+    },
+    "carpetres": {
+      "description": [
+        "Intranet Applications: Built comprehensive intranet applications with news portals, video portals, chat functionality",
+        "End-User Support: Provided exceptional support using Google Analytics to enhance user experience",
+        "Frontend Development: Proficient in Angular 4+ for front-end development",
+        "Backend Development: Utilized NodeJS for scalable web applications",
+        "Prototyping: Used Adobe XD for creating detailed prototypes"
+      ]
+    },
+    "innoapsion": {
+      "description": [
+        "Project Management: Led checklist project web application including report generation and employee administration",
+        "Mobile Development: Developed Android app for uploading reports and completing checklists",
+        "Methodologies: Created project plans using Kanban methodology",
+        "Team Collaboration: Demonstrated strong problem-solving skills both independently and in team settings"
+      ]
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "keyAchievements": "Key Achievements",
+    "casino": {
+      "title": "Casino Platform & Crypto Integration",
+      "description": "Led the development of a Brazilian casino platform featuring popular games like Crash, Fortune Double, Tower, and Plinko. Implemented secure cryptocurrency transactions through Fireblock integration.",
+      "highlights": [
+        "Developed multiple casino games with real-time functionality",
+        "Integrated secure crypto payment processing",
+        "Implemented comprehensive testing strategy",
+        "Built robust state management system"
+      ]
+    },
+    "enterprise": {
+      "title": "Enterprise Systems & AI Chatbots",
+      "description": "Developed comprehensive inventory management systems and implemented three sophisticated chatbots using AWS Bedrock. Created scalable solutions using microservices architecture.",
+      "highlights": [
+        "Built 3 AI-powered chatbots with AWS Bedrock",
+        "Designed scalable inventory management systems",
+        "Implemented serverless architecture with AWS Lambda",
+        "Created efficient microservices infrastructure"
+      ]
+    },
+    "transport": {
+      "title": "Transport Management System",
+      "description": "Developed a comprehensive transport management system handling payment processing for carriers across South America. Integrated with SAP for invoice management and implemented order management across multiple countries.",
+      "highlights": [
+        "Built international transport order system",
+        "Integrated SAP payment processing",
+        "Managed multi-country deployment",
+        "Implemented microservices architecture"
+      ]
+    },
+    "telecom": {
+      "title": "Telecom & Payment Solutions",
+      "description": "Led multiple projects for Telefónica and Transbank, including roaming management system, automated service activation flows, and international payment integrations.",
+      "highlights": [
+        "Developed roaming queue management system",
+        "Created automated service activation platform",
+        "Implemented fraud detection system",
+        "Built international payment integration system"
+      ]
+    },
+    "intranet": {
+      "title": "Corporate Intranets",
+      "description": "Developed comprehensive intranet solutions for gas and mining companies, featuring news portals, benefits management, document management, video portals, and learning platforms.",
+      "highlights": [
+        "Built comprehensive intranet platforms",
+        "Implemented document management system",
+        "Created video and learning portals",
+        "Developed employee recognition system"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions."
+  }
+}

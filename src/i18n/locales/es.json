@@ -1,0 +1,146 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy David Villegas",
+    "role": "Ingeniero de Software Senior",
+    "description": "Apasionado por crear experiencias digitales excepcionales a través de soluciones innovadoras y código limpio y eficiente",
+    "downloadCV": "Descargar CV"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "description1": "Ingeniero de Software Senior apasionado con más de 7 años de experiencia en desarrollo full-stack, especializado en la construcción de aplicaciones web escalables y microservicios. A lo largo de mi carrera, he liderado múltiples proyectos de alto impacto en Sudamérica, trabajando con importantes empresas en los sectores de retail, financiero y tecnológico.",
+    "description2": "Mi trayectoria ha estado marcada por logros significativos, incluyendo el desarrollo de un sistema integral de gestión de transporte que maneja más de 1000 transacciones diarias, la implementación de chatbots potenciados por IA que mejoraron la satisfacción del cliente en un 40%, y la creación de arquitecturas de microservicios eficientes que redujeron los tiempos de respuesta del sistema en un 60%.",
+    "description3": "Prospero en entornos colaborativos y tengo un historial probado en la mentoría de desarrolladores junior, liderando discusiones técnicas y fomentando el intercambio de conocimientos dentro de los equipos. Con dominio del inglés (EF SET C1 Avanzado), sobresalgo en la comunicación intercultural y la colaboración en equipos internacionales.",
+    "description4": "Mi objetivo es continuar expandiendo los límites de la tecnología creando soluciones innovadoras que generen un impacto real. Estoy particularmente interesado en arquitecturas cloud-native, integración de IA y construcción de sistemas escalables que puedan manejar millones de usuarios.",
+    "technicalSkills": "Habilidades Técnicas"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "present": "Presente",
+    "remote": "Remoto",
+    "roles": {
+      "senior": "Ingeniero de Software Senior",
+      "seniorConsultant": "Consultor Senior de Ingeniería de Software",
+      "semiSenior": "Ingeniero de Software Semi Senior",
+      "junior": "Ingeniero de Software Junior",
+      "entry": "Ingeniero de Software Junior"
+    },
+    "blaze": {
+      "description": [
+        "Desarrollé un sistema de autenticación seguro con autenticación de dos factores y gestión de identidad de usuarios",
+        "Optimicé el rendimiento de la aplicación mediante refactorización de código, mejora de consultas a base de datos y aprovechamiento de caché",
+        "Desarrollé pruebas unitarias e implementé pruebas e2e automatizadas para aumentar la cobertura de código al 90%"
+      ]
+    },
+    "polodev": {
+      "description": [
+        "Desarrollo Backend: Lideré la creación de un sistema de gestión de inventario y proveedores usando NestJS, implementado como microservicios y desplegado en AWS Lambda",
+        "Desarrollo Frontend: Desarrollé un frontend responsivo e intuitivo usando Angular, alojado en AWS Amplify",
+        "Integración de Servicios Cloud: Integré AWS Cognito para autenticación de usuarios, S3 Buckets para almacenamiento y SNS para notificaciones",
+        "Consultoría: Proporcioné consultoría para varios proyectos, incluyendo desarrollo de chatbots, gestión de alquiler de canchas, reservas de instalaciones",
+        "Colaboración: Trabajé estrechamente con equipos multifuncionales para entregar soluciones de alta calidad, enfocándome en código limpio y arquitectura mantenible"
+      ]
+    },
+    "falabella": {
+      "description": [
+        "Gestión de Tareas: Organicé y prioricé eficientemente tareas para el Sistema de Gestión de Transporte (TMS) y aplicación de Pagos",
+        "Diseño de Soluciones: Diseñé soluciones para entradas de órdenes de transporte y solicitudes de pago a transportistas, integrando con sistemas SAP",
+        "Arquitectura Limpia: Implementé arquitectura de alta calidad en nuevos microservicios y sitios frontend",
+        "Sistemas de Impuestos: Creé soluciones para sistemas de impuestos en Chile, Perú y Colombia, manteniendo compatibilidad con SAP",
+        "Experiencia Técnica: Utilicé Angular, Java Spring Boot y NestJS para soluciones robustas",
+        "Desarrollo de API: Desarrollé una API RESTful integrando con sistemas existentes, reduciendo la entrada manual de datos en un 80%"
+      ]
+    },
+    "nttdata": {
+      "description": [
+        "Implementación Ágil: Implementé exitosamente metodologías Ágiles y prácticas de CI/CD",
+        "Integración AWS: Utilicé servicios AWS (SES, Cognito) con backends Java Spring Boot y NodeJS/Express",
+        "Desarrollo Frontend: Desarrollé aplicaciones Angular 8 seguras con altos estándares de seguridad",
+        "Contribuciones E-commerce: Realicé pruebas y contribuí a proyectos de comercio electrónico usando PHP y Magento 2",
+        "Colaboración: Trabajé con líderes de la industria como Transbank y Telefónica",
+        "Defensa del Código Limpio: Seguí principios de código limpio y mejores prácticas"
+      ]
+    },
+    "carpetres": {
+      "description": [
+        "Aplicaciones Intranet: Construí aplicaciones integrales de intranet con portales de noticias, portales de video, funcionalidad de chat",
+        "Soporte al Usuario Final: Proporcioné soporte excepcional usando Google Analytics para mejorar la experiencia del usuario",
+        "Desarrollo Frontend: Competente en Angular 4+ para desarrollo frontend",
+        "Desarrollo Backend: Utilicé NodeJS para aplicaciones web escalables",
+        "Prototipado: Usé Adobe XD para crear prototipos detallados"
+      ]
+    },
+    "innoapsion": {
+      "description": [
+        "Gestión de Proyectos: Lideré aplicación web de proyecto de checklist incluyendo generación de reportes y administración de empleados",
+        "Desarrollo Móvil: Desarrollé aplicación Android para cargar reportes y completar checklists",
+        "Metodologías: Creé planes de proyecto usando metodología Kanban",
+        "Colaboración en Equipo: Demostré fuertes habilidades de resolución de problemas tanto independientemente como en entornos de equipo"
+      ]
+    }
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "keyAchievements": "Logros Principales",
+    "casino": {
+      "title": "Plataforma de Casino e Integración Cripto",
+      "description": "Lideré el desarrollo de una plataforma de casino brasileña con juegos populares como Crash, Fortune Double, Tower y Plinko. Implementé transacciones seguras de criptomonedas a través de la integración con Fireblock.",
+      "highlights": [
+        "Desarrollé múltiples juegos de casino con funcionalidad en tiempo real",
+        "Integré procesamiento seguro de pagos cripto",
+        "Implementé estrategia integral de pruebas",
+        "Construí sistema robusto de gestión de estado"
+      ]
+    },
+    "enterprise": {
+      "title": "Sistemas Empresariales y Chatbots IA",
+      "description": "Desarrollé sistemas integrales de gestión de inventario e implementé tres chatbots sofisticados utilizando AWS Bedrock. Creé soluciones escalables usando arquitectura de microservicios.",
+      "highlights": [
+        "Construí 3 chatbots potenciados por IA con AWS Bedrock",
+        "Diseñé sistemas escalables de gestión de inventario",
+        "Implementé arquitectura serverless con AWS Lambda",
+        "Creé infraestructura eficiente de microservicios"
+      ]
+    },
+    "transport": {
+      "title": "Sistema de Gestión de Transporte",
+      "description": "Desarrollé un sistema integral de gestión de transporte manejando procesamiento de pagos para transportistas en Sudamérica. Integré con SAP para gestión de facturas e implementé gestión de órdenes en múltiples países.",
+      "highlights": [
+        "Construí sistema internacional de órdenes de transporte",
+        "Integré procesamiento de pagos SAP",
+        "Gestioné despliegue multi-país",
+        "Implementé arquitectura de microservicios"
+      ]
+    },
+    "telecom": {
+      "title": "Soluciones de Telecomunicaciones y Pagos",
+      "description": "Lideré múltiples proyectos para Telefónica y Transbank, incluyendo sistema de gestión de roaming, flujos automatizados de activación de servicios e integraciones internacionales de pagos.",
+      "highlights": [
+        "Desarrollé sistema de gestión de cola de roaming",
+        "Creé plataforma automatizada de activación de servicios",
+        "Implementé sistema de detección de fraude",
+        "Construí sistema de integración de pagos internacional"
+      ]
+    },
+    "intranet": {
+      "title": "Intranets Corporativas",
+      "description": "Desarrollé soluciones integrales de intranet para empresas de gas y minería, incluyendo portales de noticias, gestión de beneficios, gestión documental, portales de video y plataformas de aprendizaje.",
+      "highlights": [
+        "Construí plataformas integrales de intranet",
+        "Implementé sistema de gestión documental",
+        "Creé portales de video y aprendizaje",
+        "Desarrollé sistema de reconocimiento de empleados"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "Siempre estoy abierto a discutir nuevos proyectos, ideas creativas u oportunidades para ser parte de tus visiones."
+  }
+}
