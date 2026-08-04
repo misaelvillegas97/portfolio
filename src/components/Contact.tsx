@@ -1,4 +1,4 @@
-import { ArrowUpRight, Download, Github, Instagram, Linkedin, Mail } from 'lucide-react';
+import { ArrowUpRight, Download, Github, Instagram, Linkedin } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export default function Contact() {
@@ -16,11 +16,16 @@ export default function Contact() {
         </header>
 
         <address className="contact__actions">
-          <a className="contact__primary" href="mailto:personal@davidmisael.me">
-            <Mail aria-hidden="true" size={21} />
+          <a
+            className="contact__primary"
+            href="https://www.linkedin.com/in/misaelv/"
+            target="_blank"
+            rel="me noopener noreferrer"
+          >
+            <Linkedin aria-hidden="true" size={21} />
             <span>
-              <small>{t('contact.emailLabel')}</small>
-              personal@davidmisael.me
+              <small>{t('contact.primaryLabel')}</small>
+              linkedin.com/in/misaelv
             </span>
             <ArrowUpRight aria-hidden="true" size={21} />
           </a>
@@ -35,11 +40,6 @@ export default function Contact() {
             {t('contact.cvLabel')}
           </a>
           <div className="social-links" aria-label={isEnglish ? 'Social profiles' : 'Perfiles sociales'}>
-            <a href="https://www.linkedin.com/in/misaelv/" target="_blank" rel="me noopener noreferrer" aria-label="LinkedIn">
-              <Linkedin aria-hidden="true" size={19} />
-              <span>LinkedIn</span>
-              <ArrowUpRight aria-hidden="true" size={15} />
-            </a>
             <a href="https://github.com/misaelvillegas97" target="_blank" rel="me noopener noreferrer" aria-label="GitHub">
               <Github aria-hidden="true" size={19} />
               <span>GitHub</span>

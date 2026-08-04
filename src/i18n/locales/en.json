@@ -295,7 +295,7 @@
     "eyebrow": "Contact",
     "title": "Let's talk about a product or operation that needs clarity.",
     "description": "Available to discuss senior engineering, product architecture, and full-stack development.",
-    "emailLabel": "Send an email",
+    "primaryLabel": "Contact on LinkedIn",
     "cvLabel": "Download résumé",
     "availability": "Remote work and collaboration with distributed teams."
   }
