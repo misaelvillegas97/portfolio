@@ -12,6 +12,8 @@ test('ignores the dev marker comment and only hydrates prerendered elements', as
   assert.equal(devRoot?.[1], '<!--app-html-->');
   assert.match(source, /import \{ createRoot, hydrateRoot \} from 'react-dom\/client'/u);
   assert.match(source, /root\.childElementCount > 0/u);
+  assert.match(source, /window\.location\.pathname/u);
+  assert.match(source, /\^\\\/en\(\?:\\\/\|\$\)/u);
   assert.doesNotMatch(source, /root\.hasChildNodes\(\)/u);
   assert.match(source, /hydrateRoot\(root,/u);
   assert.match(source, /createRoot\(root\)\.render\(/u);

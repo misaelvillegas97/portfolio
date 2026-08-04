@@ -10,7 +10,10 @@ async function hydrate() {
   const root = document.getElementById('root');
   if (!root) throw new Error('Missing #root element');
 
-  const locale: Locale = document.documentElement.lang.toLowerCase().startsWith('en') ? 'en' : 'es';
+  const locale: Locale = /^\/en(?:\/|$)/u.test(window.location.pathname)
+    || document.documentElement.lang.toLowerCase().startsWith('en')
+    ? 'en'
+    : 'es';
   const i18n = await createI18n(locale);
 
   const application = (
