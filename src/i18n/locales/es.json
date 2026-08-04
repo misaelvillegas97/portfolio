@@ -14,27 +14,23 @@
     "languageLabel": "Ver portfolio en inglés"
   },
   "hero": {
-    "eyebrow": "Ingeniería de producto · Arquitectura · Operación",
-    "title": "Convierto operaciones complejas en software claro, seguro y mantenible.",
-    "name": "David Misael Villegas Sandoval",
+    "eyebrow": "Perfil / 001",
+    "title": "David Misael Villegas",
     "role": "Ingeniero de Software Senior",
-    "description": "Diseño y construyo productos full-stack que conectan reglas de negocio, datos e interfaces confiables. Trabajo desde la arquitectura hasta la entrega, con foco en autorización, trazabilidad y operación real.",
+    "subtitle": "Distintas industrias. Una misma forma de trabajar: entender la operación antes de diseñar el software.",
+    "description": "Construyo productos digitales claros, seguros y mantenibles; desde la arquitectura hasta su operación en producción.",
+    "sectorsLabel": "Experiencia sectorial",
+    "sectors": [
+      "Finanzas",
+      "Logística",
+      "Comunicación interna",
+      "Forestal",
+      "Telecomunicaciones"
+    ],
+    "careerLabel": "Desde 2017",
+    "careerDescription": "Experiencia transferible entre contextos de negocio distintos.",
     "primaryCta": "Ver productos",
-    "secondaryCta": "Descargar CV",
-    "signals": {
-      "career": {
-        "value": "Desde 2017",
-        "label": "Construyendo software en producción"
-      },
-      "products": {
-        "value": "6 productos",
-        "label": "Operaciones, salud y colaboración"
-      },
-      "focus": {
-        "value": "Full-stack",
-        "label": "Producto, plataforma y entrega"
-      }
-    }
+    "secondaryCta": "Descargar CV"
   },
   "principles": {
     "eyebrow": "Cómo trabajo",

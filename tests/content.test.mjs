@@ -118,8 +118,6 @@ test('keeps search descriptions concise and keyword-rich', () => {
 });
 
 test('keeps identity, career dates, and supported stack factual', () => {
-  assert.equal(es.hero.name, 'David Misael Villegas Sandoval');
-  assert.equal(en.hero.name, 'David Misael Villegas Sandoval');
   assert.equal(es.hero.role, 'Ingeniero de Software Senior');
   assert.equal(en.hero.role, 'Senior Software Engineer');
 
@@ -134,6 +132,23 @@ test('keeps identity, career dates, and supported stack factual', () => {
 
   assert.deepEqual(es.capabilities.technologies, technologies);
   assert.deepEqual(en.capabilities.technologies, technologies);
+});
+
+test('keeps the hero person-first and preserves cross-industry evidence', () => {
+  assert.equal(es.hero.title, 'David Misael Villegas');
+  assert.equal(en.hero.title, 'David Misael Villegas');
+  assert.equal(es.hero.sectorsLabel, 'Experiencia sectorial');
+  assert.equal(en.hero.sectorsLabel, 'Industry experience');
+  assert.deepEqual(
+    es.hero.sectors,
+    ['Finanzas', 'Logística', 'Comunicación interna', 'Forestal', 'Telecomunicaciones'],
+  );
+  assert.deepEqual(
+    en.hero.sectors,
+    ['Finance', 'Logistics', 'Internal communications', 'Forestry', 'Telecommunications'],
+  );
+  assert.equal('signals' in es.hero, false);
+  assert.equal('signals' in en.hero, false);
 });
 
 test('detects unsupported metrics without rejecting factual context', () => {
