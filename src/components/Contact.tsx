@@ -45,7 +45,7 @@ export default function Contact() {
               <span>GitHub</span>
               <ArrowUpRight aria-hidden="true" size={15} />
             </a>
-            <a href="https://www.instagram.com/*mslv.*/" target="_blank" rel="me noopener noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/_mslv._/" target="_blank" rel="me noopener noreferrer" aria-label="Instagram">
               <Instagram aria-hidden="true" size={19} />
               <span>Instagram</span>
               <ArrowUpRight aria-hidden="true" size={15} />
