@@ -589,11 +589,6 @@ svg {
   scroll-margin-block-start: 4.75rem;
 }
 
-.deferred-section {
-  content-visibility: auto;
-  contain-intrinsic-block-size: auto 52rem;
-}
-
 .section-layout {
   align-items: start;
 }
