@@ -60,6 +60,8 @@ Los seis productos permanecen en su sección propia. Ningún elemento del hero c
 ## SEO, accesibilidad y rendimiento
 
 - El único H1 conserva la identidad personal visible; los metadatos y JSON-LD mantienen `jobTitle` y contenido profesional verificable.
+- El build de producción usa `https://dvillegas.cl` como origen canónico y genera referencias absolutas para canonical, hreflang, `robots.txt` y `sitemap.xml` en las rutas en español e inglés.
+- El `llms.txt` generado resume el perfil profesional, productos seleccionados, páginas canónicas y recursos de rastreo sin inventar una superficie de aplicación para IA.
 - La columna es una lista semántica con encabezado; el monograma queda `aria-hidden`.
 - Las acciones siguen siendo enlaces accesibles a proyectos y CV.
 - No se añaden dependencias, fuentes remotas, canvas, WebGL ni animación continua.

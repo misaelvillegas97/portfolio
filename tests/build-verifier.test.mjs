@@ -4,10 +4,12 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import test from 'node:test';
 
+import { DEFAULT_SITE_URL } from '../scripts/site-meta.mjs';
 import { verifyBuild } from '../scripts/verify-build.mjs';
 
 const projectTitles = ['Poultry', 'WWT', 'Trackly', 'Nuptia', 'Nutry', 'Medisenda'];
 const productionUrl = 'https://portfolio.example/david';
+const defaultProductionUrl = DEFAULT_SITE_URL;
 
 function buildHtml(locale, siteUrl) {
   const english = locale === 'en';
@@ -58,7 +60,7 @@ function buildHtml(locale, siteUrl) {
 </html>`;
 }
 
-async function createBuild(t, { siteUrl } = {}) {
+async function createBuild(t, { siteUrl = defaultProductionUrl } = {}) {
   const distDir = await mkdtemp(join(tmpdir(), 'portfolio-build-'));
   const enDir = join(distDir, 'en');
   const assetsDir = join(distDir, 'assets');
@@ -72,8 +74,9 @@ async function createBuild(t, { siteUrl } = {}) {
     writeFile(join(distDir, 'site.webmanifest'), '{}'),
     writeFile(join(distDir, 'og-image.png'), 'png'),
     writeFile(join(distDir, 'og-image-en.png'), 'png-en'),
-    writeFile(join(distDir, 'robots.txt'), 'User-agent: *\nAllow: /\n'),
-    ...(siteUrl ? [writeFile(join(distDir, 'sitemap.xml'), `${siteUrl}/\n${siteUrl}/en/`)] : []),
+    writeFile(join(distDir, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${siteUrl}/sitemap.xml\n`),
+    writeFile(join(distDir, 'sitemap.xml'), `${siteUrl}/\n${siteUrl}/en/`),
+    writeFile(join(distDir, 'llms.txt'), `# Portfolio\n${siteUrl}/\n${siteUrl}/en/\n`),
   ]);
   t.after(() => rm(distDir, { recursive: true, force: true }));
   return distDir;
@@ -84,7 +87,7 @@ async function replaceIn(path, from, to) {
   await writeFile(path, source.replace(from, to));
 }
 
-test('accepts complete bilingual output without requiring a sitemap when SITE_URL is absent', async (t) => {
+test('accepts complete bilingual production output with the canonical default', async (t) => {
   const distDir = await createBuild(t);
   await assert.doesNotReject(verifyBuild({ distDir }));
 });
@@ -114,12 +117,12 @@ test('rejects incomplete or malformed production output', async (t) => {
     {
       name: 'canonical',
       expected: /canonical/iu,
-      mutate: ({ esHtml }) => replaceIn(esHtml, '<link rel="canonical" href="./">', ''),
+      mutate: ({ esHtml }) => replaceIn(esHtml, `<link rel="canonical" href="${defaultProductionUrl}/">`, ''),
     },
     {
       name: 'hreflang',
       expected: /hreflang="en"/iu,
-      mutate: ({ esHtml }) => replaceIn(esHtml, '<link rel="alternate" hreflang="en" href="./en/">', ''),
+      mutate: ({ esHtml }) => replaceIn(esHtml, `<link rel="alternate" hreflang="en" href="${defaultProductionUrl}/en/">`, ''),
     },
     {
       name: 'ProfilePage and Person JSON-LD',
@@ -161,8 +164,8 @@ test('rejects incomplete or malformed production output', async (t) => {
       expected: /twitter:image/iu,
       mutate: ({ esHtml }) => replaceIn(
         esHtml,
-        '<meta name="twitter:image" content="./og-image.png">',
-        '<meta name="twitter:image" content="./og-image-en.png">',
+        `<meta name="twitter:image" content="${defaultProductionUrl}/og-image.png">`,
+        `<meta name="twitter:image" content="${defaultProductionUrl}/og-image-en.png">`,
       ),
     },
     {
@@ -179,6 +182,11 @@ test('rejects incomplete or malformed production output', async (t) => {
       expected: /robots\.txt/u,
       mutate: ({ distDir }) => unlink(join(distDir, 'robots.txt')),
     },
+    {
+      name: 'LLM context',
+      expected: /llms\.txt/u,
+      mutate: ({ distDir }) => unlink(join(distDir, 'llms.txt')),
+    },
   ];
 
   for (const scenario of cases) {
@@ -194,11 +202,11 @@ test('rejects incomplete or malformed production output', async (t) => {
   }
 });
 
-test('requires sitemap only when SITE_URL is configured', async (t) => {
-  const distDir = await createBuild(t, { siteUrl: productionUrl });
+test('requires sitemap for every production build', async (t) => {
+  const distDir = await createBuild(t);
   await unlink(join(distDir, 'sitemap.xml'));
   await assert.rejects(
-    verifyBuild({ distDir, siteUrl: productionUrl }),
+    verifyBuild({ distDir }),
     /sitemap\.xml/u,
   );
 });

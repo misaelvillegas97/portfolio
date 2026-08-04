@@ -2,6 +2,8 @@ import { readFile, stat } from 'node:fs/promises';
 import { dirname, isAbsolute, join, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+import { DEFAULT_SITE_URL } from './site-meta.mjs';
+
 const defaultDistDir = fileURLToPath(new URL('../dist/', import.meta.url));
 const locales = [
   { key: 'es', lang: 'es-CL', file: 'index.html' },
@@ -167,9 +169,9 @@ async function verifyDocument({ distDir, htmlPath, locale, lang, projectTitles, 
   ]);
 }
 
-export async function verifyBuild({ distDir = defaultDistDir, siteUrl = process.env.SITE_URL } = {}) {
+export async function verifyBuild({ distDir = defaultDistDir, siteUrl = process.env.SITE_URL ?? DEFAULT_SITE_URL } = {}) {
   const resolvedDistDir = resolve(distDir);
-  const configuredSiteUrl = siteUrl?.trim() || undefined;
+  const configuredSiteUrl = siteUrl?.trim() || DEFAULT_SITE_URL;
   const content = await Promise.all(locales.map(async ({ key }) => JSON.parse(
     await readFile(new URL(`../src/i18n/locales/${key}.json`, import.meta.url), 'utf8'),
   )));
@@ -183,6 +185,7 @@ export async function verifyBuild({ distDir = defaultDistDir, siteUrl = process.
     requireFile(join(resolvedDistDir, 'robots.txt'), 'robots.txt'),
     requireFile(join(resolvedDistDir, 'favicon.svg'), 'favicon.svg'),
     requireFile(join(resolvedDistDir, 'site.webmanifest'), 'site.webmanifest'),
+    requireFile(join(resolvedDistDir, 'llms.txt'), 'llms.txt'),
     requireFile(join(resolvedDistDir, 'og-image.png'), 'og-image.png'),
     requireFile(join(resolvedDistDir, 'og-image-en.png'), 'og-image-en.png'),
     ...locales.map((locale, index) => verifyDocument({
@@ -195,13 +198,20 @@ export async function verifyBuild({ distDir = defaultDistDir, siteUrl = process.
     })),
   ]);
 
-  if (configuredSiteUrl) {
-    const sitemapPath = join(resolvedDistDir, 'sitemap.xml');
-    await requireFile(sitemapPath, 'sitemap.xml');
-    const sitemap = decodeMarkup(await readFile(sitemapPath, 'utf8'));
-    for (const route of Object.values(normalizeRoutes(configuredSiteUrl))) {
-      if (!sitemap.includes(route)) throw new Error(`sitemap.xml is missing ${route}`);
-    }
+  const sitemapPath = join(resolvedDistDir, 'sitemap.xml');
+  await requireFile(sitemapPath, 'sitemap.xml');
+  const [sitemap, robots, llms] = await Promise.all([
+    readFile(sitemapPath, 'utf8').then(decodeMarkup),
+    readFile(join(resolvedDistDir, 'robots.txt'), 'utf8'),
+    readFile(join(resolvedDistDir, 'llms.txt'), 'utf8'),
+  ]);
+  const routes = normalizeRoutes(configuredSiteUrl);
+  for (const route of Object.values(routes)) {
+    if (!sitemap.includes(route)) throw new Error(`sitemap.xml is missing ${route}`);
+    if (!llms.includes(route)) throw new Error(`llms.txt is missing ${route}`);
+  }
+  if (!robots.includes(`Sitemap: ${new URL('sitemap.xml', routes.es).href}`)) {
+    throw new Error('robots.txt is missing the canonical sitemap reference');
   }
 }
 

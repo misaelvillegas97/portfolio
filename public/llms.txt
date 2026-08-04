@@ -1,0 +1,28 @@
+# David Villegas Sandoval
+
+> Bilingual portfolio for David Villegas Sandoval, Senior Software Engineer. Focused on full-stack products, architecture, and production operations.
+
+## Canonical pages
+- [Spanish portfolio](https://dvillegas.cl/)
+- [English portfolio](https://dvillegas.cl/en/)
+
+## Professional focus
+- Full-stack engineering with Angular, NestJS, Node.js, Java / Spring Boot, PostgreSQL, AWS, Docker, CI/CD, and SSR.
+- Experience across finance, logistics, internal communications, forestry, telecommunications, retail, payments, and gaming.
+- Builds clear, secure, maintainable digital products from architecture through production operation.
+
+## Selected products
+- [Poultry](https://poultry.cl): Trazabilidad operativa desde la nave hasta la gerencia.
+- [WWT](https://wwt.devly.cl): Trabajo interno organizado, visible y trazable.
+- [Trackly](https://trackly.cl): Ubicación y actividad de flota convertidas en contexto operativo.
+- [Nuptia](https://nuptia.cl): Invitaciones y coordinación de invitados en un mismo flujo.
+- [Nutry](https://nutry.cl): Consulta nutricional, recetas y planificación conectadas.
+- [Medisenda](https://medisenda.cl): Próximamente en medisenda.cl: una nueva experiencia digital para coordinación en salud.
+
+## Professional profiles
+- [LinkedIn](https://www.linkedin.com/in/misaelv/)
+- [GitHub](https://github.com/misaelvillegas97)
+
+## Crawl resources
+- [Sitemap](https://dvillegas.cl/sitemap.xml)
+- [Robots](https://dvillegas.cl/robots.txt)

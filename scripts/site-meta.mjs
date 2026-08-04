@@ -1,5 +1,7 @@
 import { readFileSync } from 'node:fs';
 
+export const DEFAULT_SITE_URL = 'https://dvillegas.cl';
+
 const localeContent = Object.fromEntries(
   ['es', 'en'].map((locale) => [
     locale,
@@ -160,6 +162,41 @@ export function buildSitemap(siteUrl) {
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">',
     ...urls,
     '</urlset>',
+    '',
+  ].join('\n');
+}
+
+export function buildLlms(siteUrl = DEFAULT_SITE_URL) {
+  const routes = absoluteRoutes(siteUrl);
+  if (!routes) throw new TypeError('SITE_URL is required to build llms.txt');
+
+  const products = Object.values(localeContent.es.projects.items)
+    .map((project) => `- [${project.title}](${project.url ?? 'https://medisenda.cl'}): ${project.tagline}`);
+
+  return [
+    '# David Villegas Sandoval',
+    '',
+    '> Bilingual portfolio for David Villegas Sandoval, Senior Software Engineer. Focused on full-stack products, architecture, and production operations.',
+    '',
+    '## Canonical pages',
+    `- [Spanish portfolio](${routes.es})`,
+    `- [English portfolio](${routes.en})`,
+    '',
+    '## Professional focus',
+    '- Full-stack engineering with Angular, NestJS, Node.js, Java / Spring Boot, PostgreSQL, AWS, Docker, CI/CD, and SSR.',
+    '- Experience across finance, logistics, internal communications, forestry, telecommunications, retail, payments, and gaming.',
+    '- Builds clear, secure, maintainable digital products from architecture through production operation.',
+    '',
+    '## Selected products',
+    ...products,
+    '',
+    '## Professional profiles',
+    '- [LinkedIn](https://www.linkedin.com/in/misaelv/)',
+    '- [GitHub](https://github.com/misaelvillegas97)',
+    '',
+    '## Crawl resources',
+    `- [Sitemap](${new URL('sitemap.xml', routes.base).href})`,
+    `- [Robots](${new URL('robots.txt', routes.base).href})`,
     '',
   ].join('\n');
 }

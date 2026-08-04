@@ -1,13 +1,17 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
-import { buildHead, buildRobots, buildSitemap } from '../scripts/site-meta.mjs';
+import { DEFAULT_SITE_URL, buildHead, buildRobots, buildSitemap } from '../scripts/site-meta.mjs';
 
 const readJsonLd = (head) => {
   const match = head.match(/<script type="application\/ld\+json">([^]*?)<\/script>/u);
   assert.ok(match, 'head must contain JSON-LD');
   return { json: JSON.parse(match[1]), source: match[1] };
 };
+
+test('defines dvillegas.cl as the canonical production origin', () => {
+  assert.equal(DEFAULT_SITE_URL, 'https://dvillegas.cl');
+});
 
 test('buildHead emits localized absolute metadata without losing SITE_URL base path', () => {
   const head = buildHead({

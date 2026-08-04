@@ -1,11 +1,11 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 
-import { buildHead, buildRobots, buildSitemap } from './site-meta.mjs';
+import { DEFAULT_SITE_URL, buildHead, buildLlms, buildRobots, buildSitemap } from './site-meta.mjs';
 
 const distUrl = new URL('../dist/', import.meta.url);
 const template = await readFile(new URL('index.html', distUrl), 'utf8');
 const { render } = await import(new URL('../dist-ssr/entry-server.js', import.meta.url));
-const siteUrl = process.env.SITE_URL?.trim() || undefined;
+const siteUrl = process.env.SITE_URL?.trim() || DEFAULT_SITE_URL;
 
 if (!template.includes('<!--seo-head-->') || !template.includes('<!--app-html-->')) {
   throw new Error('Built index.html is missing prerender markers');
@@ -26,6 +26,7 @@ for (const locale of ['es', 'en']) {
 }
 
 await writeFile(new URL('robots.txt', distUrl), buildRobots(siteUrl), 'utf8');
+await writeFile(new URL('llms.txt', distUrl), buildLlms(siteUrl), 'utf8');
 
 const sitemap = buildSitemap(siteUrl);
-if (sitemap) await writeFile(new URL('sitemap.xml', distUrl), sitemap, 'utf8');
+await writeFile(new URL('sitemap.xml', distUrl), sitemap, 'utf8');
