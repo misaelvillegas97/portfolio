@@ -2,9 +2,10 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import test from 'node:test';
 
-const [dockerfile, caddyfile] = await Promise.all([
+const [dockerfile, caddyfile, railwayConfig] = await Promise.all([
   readFile(new URL('../Dockerfile', import.meta.url), 'utf8'),
   readFile(new URL('../Caddyfile', import.meta.url), 'utf8'),
+  readFile(new URL('../railway.json', import.meta.url), 'utf8').then(JSON.parse),
 ]);
 
 test('builds the prerendered site and lets Railway select the runtime port', () => {
@@ -32,4 +33,17 @@ test('keeps static locale routes and client fallbacks available', () => {
   assert.match(caddyfile, /^\s*root \* \/srv$/mu);
   assert.match(caddyfile, /^\s*try_files \{path\} \{path\}\/ \/index\.html$/mu);
   assert.match(caddyfile, /^\s*file_server$/mu);
+});
+
+test('forces Railway to use Caddy instead of a stale dashboard start command', () => {
+  assert.deepEqual(railwayConfig.build, {
+    builder: 'DOCKERFILE',
+    dockerfilePath: 'Dockerfile',
+  });
+  assert.equal(
+    railwayConfig.deploy.startCommand,
+    'caddy run --config /etc/caddy/Caddyfile --adapter caddyfile',
+  );
+  assert.equal(railwayConfig.deploy.healthcheckPath, '/');
+  assert.equal(railwayConfig.deploy.healthcheckTimeout, 100);
 });
