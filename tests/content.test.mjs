@@ -44,6 +44,23 @@ const technologies = [
   'CI/CD',
   'SSR',
 ];
+const unsupportedMetricPatterns = [
+  /\b\d+(?:[.,]\d+)?\s*%/iu,
+  /\b(?:million(?:s)?|millón|millones)\b/iu,
+  /(?:\b\d+(?:[.,]\d+)?\s*(?:x\b|×)|(?:\bx|×)\s*\d+(?:[.,]\d+)?\b)/iu,
+  /\b\d+(?:[.,\s]\d+)*(?:\s*k)?\+?(?:\s+(?:active|concurrent|monthly|activos?|concurrentes?|mensuales?))*\s+(?:users?|customers?|usuarios?|clientes?)\b/iu,
+  /\$\s*\d+(?:[.,]\d+)?\s*m\b/iu,
+];
+
+const containsUnsupportedMetric = (value) =>
+  unsupportedMetricPatterns.some((pattern) => pattern.test(value));
+
+function collectStrings(value) {
+  if (typeof value === 'string') return [value];
+  if (Array.isArray(value)) return value.flatMap(collectStrings);
+  if (value && typeof value === 'object') return Object.values(value).flatMap(collectStrings);
+  return [];
+}
 
 function assertSameShape(left, right, path = 'locale') {
   assert.equal(Array.isArray(left), Array.isArray(right), `${path} must use the same value type`);
@@ -93,6 +110,8 @@ test('keeps identity, career dates, and supported stack factual', () => {
   assert.equal(en.hero.role, 'Senior Software Engineer');
 
   for (const [key, [start, end]] of Object.entries(experience)) {
+    assert.deepEqual(Object.keys(es.experience.items[key].period), ['start', 'end']);
+    assert.deepEqual(Object.keys(en.experience.items[key].period), ['start', 'end']);
     assert.equal(es.experience.items[key].period.start, start);
     assert.equal(es.experience.items[key].period.end, end);
     assert.equal(en.experience.items[key].period.start, start);
@@ -103,12 +122,33 @@ test('keeps identity, career dates, and supported stack factual', () => {
   assert.deepEqual(en.capabilities.technologies, technologies);
 });
 
+test('detects unsupported metrics without rejecting factual context', () => {
+  const unsupported = [
+    'Improved conversion by 40%',
+    'Used by one million customers',
+    'Adoptado por un millón de usuarios',
+    'Delivered 3x growth',
+    'Reached 10× growth',
+    'Crecimiento x4',
+    'Serving 1,000 concurrent users',
+    'Serving 1 000 users',
+    'Used by 25k customers',
+    'Más de 100+ clientes',
+    'Atiende a 250 clientes',
+    '$12M in revenue',
+  ];
+  const allowed = ['Since 2017', '6 products', 'Angular 18', 'Node.js 22'];
+
+  unsupported.forEach((claim) => assert.equal(containsUnsupportedMetric(claim), true, claim));
+  allowed.forEach((fact) => assert.equal(containsUnsupportedMetric(fact), false, fact));
+});
+
 test('contains complete copy without unsupported numeric claims', () => {
-  const unsupportedMetric = /\b\d+(?:[.,]\d+)?\s*%|\bmillions?\b|\bmillones?\b/i;
 
   for (const [locale, content] of Object.entries({ es, en })) {
+    const unsupported = collectStrings(content).find(containsUnsupportedMetric);
     const serialized = JSON.stringify(content);
-    assert.doesNotMatch(serialized, unsupportedMetric, `${locale} contains an unsupported metric`);
+    assert.equal(unsupported, undefined, `${locale} contains an unsupported metric: ${unsupported}`);
     assert.doesNotMatch(serialized, /""/, `${locale} contains empty copy`);
   }
 });

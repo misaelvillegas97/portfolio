@@ -164,8 +164,7 @@
         "role": "Senior Software Engineer",
         "period": {
           "start": "2024-11",
-          "end": "present",
-          "label": "Nov 2024 — Present"
+          "end": "present"
         },
         "summary": "Software development for gaming products, focused on authentication, performance, and automated quality.",
         "capabilities": [
@@ -179,8 +178,7 @@
         "role": "Senior Software Engineering Consultant",
         "period": {
           "start": "2024-02",
-          "end": "present",
-          "label": "Feb 2024 — Present"
+          "end": "present"
         },
         "summary": "Consulting and full-stack product development with Angular, NestJS, microservices, and AWS integrations.",
         "capabilities": [
@@ -194,8 +192,7 @@
         "role": "Senior Software Engineer",
         "period": {
           "start": "2021-09",
-          "end": "2023-12",
-          "label": "Sep 2021 — Dec 2023"
+          "end": "2023-12"
         },
         "summary": "Transport and payment systems for regional operations, with SAP integrations and frontend and backend services.",
         "capabilities": [
@@ -209,8 +206,7 @@
         "role": "Semi Senior Software Engineer",
         "period": {
           "start": "2019-09",
-          "end": "2021-09",
-          "label": "Sep 2019 — Sep 2021"
+          "end": "2021-09"
         },
         "summary": "Applications for financial services and telecommunications using Angular, Java, Node.js, AWS, and CI/CD practices.",
         "capabilities": [
@@ -224,8 +220,7 @@
         "role": "Software Engineer",
         "period": {
           "start": "2018-07",
-          "end": "2019-09",
-          "label": "Jul 2018 — Sep 2019"
+          "end": "2019-09"
         },
         "summary": "Corporate intranet development spanning news, documents, video, learning, and collaboration tools.",
         "capabilities": [
@@ -239,8 +234,7 @@
         "role": "Junior Software Engineer",
         "period": {
           "start": "2017-07",
-          "end": "2018-01",
-          "label": "Jul 2017 — Jan 2018"
+          "end": "2018-01"
         },
         "summary": "Web and Android applications for checklists, employee administration, and operational report generation.",
         "capabilities": [
