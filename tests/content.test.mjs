@@ -99,8 +99,22 @@ test('defines six products in contractual order and only active URLs', () => {
 
   assert.equal(es.projects.items.medisenda.status, 'En construcción');
   assert.equal(en.projects.items.medisenda.status, 'Building');
+  assert.match(es.projects.items.medisenda.tagline, /próximamente en medisenda\.cl/iu);
+  assert.match(en.projects.items.medisenda.tagline, /coming soon at medisenda\.cl/iu);
   assert.equal('url' in es.projects.items.medisenda, false);
   assert.equal('url' in en.projects.items.medisenda, false);
+});
+
+test('keeps search descriptions concise and keyword-rich', () => {
+  for (const [locale, content] of Object.entries({ es, en })) {
+    assert.ok(
+      content.meta.description.length >= 150 && content.meta.description.length <= 160,
+      `${locale} meta description must be between 150 and 160 characters`,
+    );
+    assert.match(content.meta.description, /full-stack/iu);
+    assert.match(content.meta.description, /Angular/iu);
+    assert.match(content.meta.description, /NestJS/iu);
+  }
 });
 
 test('keeps identity, career dates, and supported stack factual', () => {

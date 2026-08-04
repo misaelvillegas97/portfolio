@@ -19,10 +19,17 @@ function buildHtml(locale, siteUrl) {
       : { es: './', en: './en/' };
   const assetPrefix = english ? '../assets/' : './assets/';
   const publicPrefix = base ?? (english ? '../' : './');
+  const socialImage = `${publicPrefix}${english ? 'og-image-en.png' : 'og-image.png'}`;
+  const personId = `${routes.es}#person`;
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ProfilePage',
-    mainEntity: { '@type': 'Person', name: 'David Misael Villegas Sandoval' },
+    mainEntity: { '@id': personId, '@type': 'Person', name: 'David Misael Villegas Sandoval' },
+    hasPart: projectTitles.map((name) => ({
+      '@type': 'CreativeWork',
+      name,
+      creator: { '@id': personId },
+    })),
   };
 
   return `<!doctype html>
@@ -35,6 +42,13 @@ function buildHtml(locale, siteUrl) {
     <link rel="icon" href="${publicPrefix}favicon.svg" type="image/svg+xml">
     <link rel="manifest" href="${publicPrefix}site.webmanifest">
     <link rel="stylesheet" href="${assetPrefix}app.css">
+    <meta property="og:image" content="${socialImage}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="${english ? 'Preview of David Misael Villegas Sandoval\'s portfolio' : 'Vista previa del portafolio de David Misael Villegas Sandoval'}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="${socialImage}">
+    <meta name="twitter:image:alt" content="${english ? 'Preview of David Misael Villegas Sandoval\'s portfolio' : 'Vista previa del portafolio de David Misael Villegas Sandoval'}">
     <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
     <script type="module" src="${assetPrefix}app.js"></script>
   </head>
@@ -56,6 +70,8 @@ async function createBuild(t, { siteUrl } = {}) {
     writeFile(join(assetsDir, 'app.css'), 'body{}'),
     writeFile(join(distDir, 'favicon.svg'), '<svg xmlns="http://www.w3.org/2000/svg"/>'),
     writeFile(join(distDir, 'site.webmanifest'), '{}'),
+    writeFile(join(distDir, 'og-image.png'), 'png'),
+    writeFile(join(distDir, 'og-image-en.png'), 'png-en'),
     writeFile(join(distDir, 'robots.txt'), 'User-agent: *\nAllow: /\n'),
     ...(siteUrl ? [writeFile(join(distDir, 'sitemap.xml'), `${siteUrl}/\n${siteUrl}/en/`)] : []),
   ]);
@@ -129,6 +145,34 @@ test('rejects incomplete or malformed production output', async (t) => {
       name: 'manifest',
       expected: /manifest/u,
       mutate: ({ distDir }) => unlink(join(distDir, 'site.webmanifest')),
+    },
+    {
+      name: 'non-empty Spanish social image',
+      expected: /og-image\.png/u,
+      mutate: ({ distDir }) => writeFile(join(distDir, 'og-image.png'), ''),
+    },
+    {
+      name: 'English social image',
+      expected: /og-image-en\.png/u,
+      mutate: ({ distDir }) => unlink(join(distDir, 'og-image-en.png')),
+    },
+    {
+      name: 'coherent social image tags',
+      expected: /twitter:image/iu,
+      mutate: ({ esHtml }) => replaceIn(
+        esHtml,
+        '<meta name="twitter:image" content="./og-image.png">',
+        '<meta name="twitter:image" content="./og-image-en.png">',
+      ),
+    },
+    {
+      name: 'localized Twitter image alt',
+      expected: /twitter:image:alt/iu,
+      mutate: ({ enHtml }) => replaceIn(
+        enHtml,
+        '<meta name="twitter:image:alt" content="Preview of David Misael Villegas Sandoval\'s portfolio">',
+        '',
+      ),
     },
     {
       name: 'robots',

@@ -55,6 +55,14 @@ function assertLink(html, file, { rel: expectedRel, hreflang, href }) {
   }
 }
 
+function assertMeta(html, file, { attribute, value, content }) {
+  const metas = html.match(/<meta\b[^>]*>/giu) ?? [];
+  const matches = metas.filter((meta) => getAttribute(meta, attribute) === value);
+  if (matches.length !== 1 || getAttribute(matches[0], 'content') !== content) {
+    throw new Error(`${file}: expected one ${attribute}="${value}" meta with content="${content}"`);
+  }
+}
+
 async function requireFile(path, label) {
   try {
     const details = await stat(path);
@@ -107,6 +115,19 @@ async function verifyDocument({ distDir, htmlPath, locale, lang, projectTitles, 
   assertLink(html, file, { rel: 'alternate', hreflang: 'x-default', href: routes.es });
   assertLink(html, file, { rel: 'icon', href: siteUrl ? `${normalizeRoutes(siteUrl).es}favicon.svg` : `${locale === 'en' ? '../' : './'}favicon.svg` });
   assertLink(html, file, { rel: 'manifest', href: siteUrl ? `${normalizeRoutes(siteUrl).es}site.webmanifest` : `${locale === 'en' ? '../' : './'}site.webmanifest` });
+  const socialImage = siteUrl
+    ? `${routes.es}${locale === 'en' ? 'og-image-en.png' : 'og-image.png'}`
+    : `${locale === 'en' ? '../og-image-en.png' : './og-image.png'}`;
+  const socialImageAlt = locale === 'en'
+    ? "Preview of David Misael Villegas Sandoval's portfolio"
+    : 'Vista previa del portafolio de David Misael Villegas Sandoval';
+  assertMeta(html, file, { attribute: 'property', value: 'og:image', content: socialImage });
+  assertMeta(html, file, { attribute: 'property', value: 'og:image:width', content: '1200' });
+  assertMeta(html, file, { attribute: 'property', value: 'og:image:height', content: '630' });
+  assertMeta(html, file, { attribute: 'property', value: 'og:image:alt', content: socialImageAlt });
+  assertMeta(html, file, { attribute: 'name', value: 'twitter:card', content: 'summary_large_image' });
+  assertMeta(html, file, { attribute: 'name', value: 'twitter:image', content: socialImage });
+  assertMeta(html, file, { attribute: 'name', value: 'twitter:image:alt', content: socialImageAlt });
 
   const scripts = [...html.matchAll(/<script\b([^>]*)>([^]*?)<\/script>/giu)];
   const jsonLd = scripts
@@ -122,6 +143,16 @@ async function verifyDocument({ distDir, htmlPath, locale, lang, projectTitles, 
   if (!profile) throw new Error(`${file}: JSON-LD ProfilePage is missing`);
   if (profile.mainEntity?.['@type'] !== 'Person') {
     throw new Error(`${file}: JSON-LD ProfilePage mainEntity must be Person`);
+  }
+  const personId = `${routes.es}#person`;
+  if (profile.mainEntity['@id'] !== personId) {
+    throw new Error(`${file}: JSON-LD Person must use @id="${personId}"`);
+  }
+  if (!Array.isArray(profile.hasPart) || profile.hasPart.length !== projectTitles.length
+    || profile.hasPart.some((project) => (
+    project?.['@type'] !== 'CreativeWork' || project.creator?.['@id'] !== personId
+  ))) {
+    throw new Error(`${file}: JSON-LD CreativeWork entries must reference the Person creator`);
   }
 
   const moduleScripts = scripts.filter((match) => getAttribute(match[0], 'type') === 'module');
@@ -152,6 +183,8 @@ export async function verifyBuild({ distDir = defaultDistDir, siteUrl = process.
     requireFile(join(resolvedDistDir, 'robots.txt'), 'robots.txt'),
     requireFile(join(resolvedDistDir, 'favicon.svg'), 'favicon.svg'),
     requireFile(join(resolvedDistDir, 'site.webmanifest'), 'site.webmanifest'),
+    requireFile(join(resolvedDistDir, 'og-image.png'), 'og-image.png'),
+    requireFile(join(resolvedDistDir, 'og-image-en.png'), 'og-image-en.png'),
     ...locales.map((locale, index) => verifyDocument({
       distDir: resolvedDistDir,
       htmlPath: join(resolvedDistDir, locale.file),

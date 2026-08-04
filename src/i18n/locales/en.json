@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "David Misael Villegas Sandoval | Senior Software Engineer",
-    "description": "Portfolio of David Misael Villegas Sandoval: full-stack engineering, software architecture, and operational products built with Angular, NestJS, Node.js, and Java/Spring Boot."
+    "description": "David Misael Villegas Sandoval, Senior Software Engineer: full-stack development and architecture with Angular, NestJS, Node.js, Java, AWS, and PostgreSQL."
   },
   "navigation": {
     "home": "Home",
@@ -141,7 +141,7 @@
       "medisenda": {
         "title": "Medisenda",
         "domain": "Health product",
-        "tagline": "A new digital experience for healthcare coordination.",
+        "tagline": "Coming soon at medisenda.cl: a new digital experience for healthcare coordination.",
         "problem": "The product scope is being validated before a definitive proposition is published.",
         "contribution": "Initial product definition and a technical foundation ready to evolve once the scope is validated.",
         "capabilities": [

@@ -21,7 +21,13 @@ test('buildHead emits localized absolute metadata without losing SITE_URL base p
   assert.match(head, /hreflang="en" href="https:\/\/portfolio\.example\/david&amp;portfolio\/en\/"/u);
   assert.match(head, /hreflang="x-default" href="https:\/\/portfolio\.example\/david&amp;portfolio\/"/u);
   assert.match(head, /property="og:title"/u);
-  assert.match(head, /name="twitter:card" content="summary"/u);
+  assert.match(head, /property="og:image" content="https:\/\/portfolio\.example\/david&amp;portfolio\/og-image\.png"/u);
+  assert.match(head, /property="og:image:width" content="1200"/u);
+  assert.match(head, /property="og:image:height" content="630"/u);
+  assert.match(head, /property="og:image:alt" content="Vista previa del portafolio de David Misael Villegas Sandoval"/u);
+  assert.match(head, /name="twitter:card" content="summary_large_image"/u);
+  assert.match(head, /name="twitter:image" content="https:\/\/portfolio\.example\/david&amp;portfolio\/og-image\.png"/u);
+  assert.match(head, /name="twitter:image:alt" content="Vista previa del portafolio de David Misael Villegas Sandoval"/u);
   assert.match(head, /href="https:\/\/portfolio\.example\/david&amp;portfolio\/favicon\.svg"/u);
   assert.match(head, /href="https:\/\/portfolio\.example\/david&amp;portfolio\/site\.webmanifest"/u);
 
@@ -29,6 +35,7 @@ test('buildHead emits localized absolute metadata without losing SITE_URL base p
   assert.equal(json['@type'], 'ProfilePage');
   assert.equal(json.url, 'https://portfolio.example/david&portfolio/');
   assert.equal(json.mainEntity['@type'], 'Person');
+  assert.equal(json.mainEntity['@id'], 'https://portfolio.example/david&portfolio/#person');
   assert.equal(json.mainEntity.name, 'David Misael Villegas Sandoval');
   assert.ok(json.mainEntity.alternateName);
   assert.equal(json.mainEntity.jobTitle, 'Ingeniero de Software Senior');
@@ -39,10 +46,23 @@ test('buildHead emits localized absolute metadata without losing SITE_URL base p
   ]);
   assert.equal(json.hasPart.length, 6);
   assert.ok(json.hasPart.every((project) => project['@type'] === 'CreativeWork'));
+  assert.ok(json.hasPart.every((project) => (
+    project.creator?.['@id'] === 'https://portfolio.example/david&portfolio/#person'
+  )));
   assert.equal(json.hasPart.find((project) => project.name === 'Medisenda').url, undefined);
   assert.equal(json.hasPart.filter((project) => 'url' in project).length, 5);
   assert.match(source, /\\u0026/u, 'JSON-LD must encode markup-sensitive ampersands');
   assert.doesNotMatch(source, /<\/script/iu, 'JSON-LD data must not be able to close its script');
+
+  const english = readJsonLd(buildHead({
+    locale: 'en',
+    siteUrl: 'https://portfolio.example/david&portfolio',
+  })).json;
+  assert.equal(english.url, 'https://portfolio.example/david&portfolio/en/');
+  assert.equal(english.mainEntity['@id'], 'https://portfolio.example/david&portfolio/#person');
+  assert.ok(english.hasPart.every((project) => (
+    project.creator?.['@id'] === 'https://portfolio.example/david&portfolio/#person'
+  )));
 });
 
 test('buildHead emits localized document-relative metadata when SITE_URL is absent', () => {
@@ -55,6 +75,14 @@ test('buildHead emits localized document-relative metadata when SITE_URL is abse
   assert.match(head, /hreflang="x-default" href="\.\.\/"/u);
   assert.match(head, /href="\.\.\/favicon\.svg"/u);
   assert.match(head, /href="\.\.\/site\.webmanifest"/u);
+  assert.match(head, /property="og:image" content="\.\.\/og-image-en\.png"/u);
+  assert.match(head, /property="og:image:alt" content="Preview of David Misael Villegas Sandoval&#39;s portfolio"/u);
+  assert.match(head, /name="twitter:image" content="\.\.\/og-image-en\.png"/u);
+  assert.match(head, /name="twitter:image:alt" content="Preview of David Misael Villegas Sandoval&#39;s portfolio"/u);
+
+  const { json } = readJsonLd(head);
+  assert.equal(json.mainEntity['@id'], '../#person');
+  assert.ok(json.hasPart.every((project) => project.creator?.['@id'] === '../#person'));
 });
 
 test('buildHead rejects unsafe SITE_URL protocols', () => {

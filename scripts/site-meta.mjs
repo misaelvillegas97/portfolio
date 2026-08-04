@@ -80,10 +80,16 @@ export function buildHead({ locale, siteUrl } = {}) {
   const asset = (name) => absolute
     ? new URL(name, absolute.base).href
     : `${locale === 'en' ? '../' : './'}${name}`;
+  const personId = `${routes.es}#person`;
+  const socialImage = asset(locale === 'en' ? 'og-image-en.png' : 'og-image.png');
+  const socialImageAlt = locale === 'en'
+    ? "Preview of David Misael Villegas Sandoval's portfolio"
+    : 'Vista previa del portafolio de David Misael Villegas Sandoval';
   const projects = Object.values(content.projects.items).map((project) => ({
     '@type': 'CreativeWork',
     name: project.title,
     description: project.tagline,
+    creator: { '@id': personId },
     ...(project.url ? { url: project.url } : {}),
   }));
   const jsonLd = {
@@ -94,6 +100,7 @@ export function buildHead({ locale, siteUrl } = {}) {
     description: content.meta.description,
     url: canonical,
     mainEntity: {
+      '@id': personId,
       '@type': 'Person',
       name: 'David Misael Villegas Sandoval',
       alternateName: 'Misael Villegas',
@@ -114,9 +121,15 @@ export function buildHead({ locale, siteUrl } = {}) {
     `<meta property="og:title" content="${escapeMarkup(content.meta.title)}">`,
     `<meta property="og:description" content="${escapeMarkup(content.meta.description)}">`,
     `<meta property="og:url" content="${escapeMarkup(canonical)}">`,
-    `<meta name="twitter:card" content="summary">`,
+    `<meta property="og:image" content="${escapeMarkup(socialImage)}">`,
+    `<meta property="og:image:width" content="1200">`,
+    `<meta property="og:image:height" content="630">`,
+    `<meta property="og:image:alt" content="${escapeMarkup(socialImageAlt)}">`,
+    `<meta name="twitter:card" content="summary_large_image">`,
     `<meta name="twitter:title" content="${escapeMarkup(content.meta.title)}">`,
     `<meta name="twitter:description" content="${escapeMarkup(content.meta.description)}">`,
+    `<meta name="twitter:image" content="${escapeMarkup(socialImage)}">`,
+    `<meta name="twitter:image:alt" content="${escapeMarkup(socialImageAlt)}">`,
     `<link rel="icon" href="${escapeMarkup(asset('favicon.svg'))}" type="image/svg+xml">`,
     `<link rel="manifest" href="${escapeMarkup(asset('site.webmanifest'))}">`,
     `<script type="application/ld+json">${safeJson(jsonLd)}</script>`,
