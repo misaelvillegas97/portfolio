@@ -20,9 +20,16 @@ export default function Navigation() {
         className="atlas-grid navigation"
         aria-label={isEnglish ? 'Primary navigation' : 'Navegación principal'}
       >
-        <a className="navigation__brand" href="#home" aria-label={t('navigation.home')}>
-          <span className="navigation__mark" aria-hidden="true">D/VM</span>
-          <span className="navigation__name">David Misael</span>
+        <a
+          className="navigation__brand"
+          href="#home"
+          aria-label={isEnglish ? 'David Villegas Sandoval — Home' : 'David Villegas Sandoval — Inicio'}
+        >
+          <span className="navigation__signature" aria-hidden="true" />
+          <span className="navigation__wordmark">
+            <span className="navigation__given">David</span>
+            <span className="navigation__family">Villegas Sandoval</span>
+          </span>
         </a>
 
         <div className="navigation__desktop">

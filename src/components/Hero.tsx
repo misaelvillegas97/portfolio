@@ -31,7 +31,7 @@ export default function Hero() {
               {t('hero.secondaryCta')}
             </a>
           </div>
-          <span aria-hidden="true" className="hero__monogram">DM</span>
+          <span aria-hidden="true" className="hero__monogram">DVS</span>
         </div>
 
         <aside className="hero__sectors" aria-labelledby="hero-sectors-title">

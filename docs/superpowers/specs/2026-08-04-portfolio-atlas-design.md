@@ -8,13 +8,13 @@ Presentar a David Misael Villegas Sandoval antes que a sus productos: un Senior 
 
 La dirección combina la tipografía editorial de **Firma tipográfica** con la composición de **Dossier ejecutivo**:
 
-- El H1 es el nombre: `David Misael Villegas`.
+- El H1 es el nombre: `David Villegas Sandoval`.
 - El rol aparece inmediatamente después: `Ingeniero de Software Senior` / `Senior Software Engineer`.
 - El subtítulo comunica valor transferible, no una lista: `Distintas industrias. Una misma forma de trabajar: entender la operación antes de diseñar el software.`
 - El texto de apoyo explica ejecución: `Construyo productos digitales claros, seguros y mantenibles; desde la arquitectura hasta su operación en producción.`
 - Una columna lateral titulada `Experiencia sectorial` aporta evidencia específica: Finanzas, Logística, Comunicación interna, Forestal y Telecomunicaciones.
 - La columna lateral no repite el subtítulo. El primero explica el valor; la segunda prueba su origen.
-- El monograma `DM` es una marca personal decorativa de bajo peso visual, no un diagrama ni una afirmación funcional.
+- El monograma `DVS` es una marca personal decorativa de bajo peso visual, no un diagrama ni una afirmación funcional.
 
 ## Dirección visual
 
@@ -33,7 +33,7 @@ Los seis productos permanecen en su sección propia. Ningún elemento del hero c
 
 ### Español
 
-- Nombre: `David Misael Villegas`.
+- Nombre: `David Villegas Sandoval`.
 - Rol: `Ingeniero de Software Senior`.
 - Subtítulo: `Distintas industrias. Una misma forma de trabajar: entender la operación antes de diseñar el software.`
 - Apoyo: `Construyo productos digitales claros, seguros y mantenibles; desde la arquitectura hasta su operación en producción.`
@@ -41,7 +41,7 @@ Los seis productos permanecen en su sección propia. Ningún elemento del hero c
 
 ### Inglés
 
-- Name: `David Misael Villegas`.
+- Name: `David Villegas Sandoval`.
 - Role: `Senior Software Engineer`.
 - Subtitle: `Different industries. One way of working: understand the operation before designing the software.`
 - Supporting copy: `I build clear, secure, maintainable digital products—from architecture through live operations.`

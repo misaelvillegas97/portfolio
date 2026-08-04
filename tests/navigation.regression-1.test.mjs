@@ -15,3 +15,12 @@ test('closes the mobile details menu after selecting a section', async () => {
     /onClick=\{\(event\) => event\.currentTarget\.closest\('details'\)\?\.removeAttribute\('open'\)\}/u,
   );
 });
+
+test('uses an explicit personal wordmark instead of an unexplained initialism', async () => {
+  const source = await readFile(new URL('../src/components/Navigation.tsx', import.meta.url), 'utf8');
+
+  assert.match(source, /navigation__wordmark/u);
+  assert.match(source, /navigation__given[^>]*>David/u);
+  assert.match(source, /navigation__family[^>]*>Villegas Sandoval/u);
+  assert.doesNotMatch(source, /D\/VM/u);
+});

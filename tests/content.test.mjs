@@ -135,8 +135,8 @@ test('keeps identity, career dates, and supported stack factual', () => {
 });
 
 test('keeps the hero person-first and preserves cross-industry evidence', () => {
-  assert.equal(es.hero.title, 'David Misael Villegas');
-  assert.equal(en.hero.title, 'David Misael Villegas');
+  assert.equal(es.hero.title, 'David Villegas Sandoval');
+  assert.equal(en.hero.title, 'David Villegas Sandoval');
   assert.equal(es.hero.sectorsLabel, 'Experiencia sectorial');
   assert.equal(en.hero.sectorsLabel, 'Industry experience');
   assert.deepEqual(
