@@ -1,19 +1,10 @@
 import { ArrowDownRight, Download } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
-import SystemsMap from './SystemsMap';
-
-interface Signal {
-  value: string;
-  label: string;
-}
-
 export default function Hero() {
   const { i18n, t } = useTranslation();
   const isEnglish = i18n.resolvedLanguage?.startsWith('en') ?? false;
-  const signals = Object.values(
-    t('hero.signals', { returnObjects: true }) as Record<string, Signal>,
-  );
+  const sectors = t('hero.sectors', { returnObjects: true }) as string[];
 
   return (
     <section id="home" className="hero" aria-labelledby="hero-title">
@@ -21,10 +12,8 @@ export default function Hero() {
         <div className="hero__copy">
           <p className="eyebrow"><span>00</span>{t('hero.eyebrow')}</p>
           <h1 id="hero-title">{t('hero.title')}</h1>
-          <div className="hero__identity">
-            <strong>{t('hero.name')}</strong>
-            <span>{t('hero.role')}</span>
-          </div>
+          <p className="hero__role">{t('hero.role')}</p>
+          <p className="hero__subtitle">{t('hero.subtitle')}</p>
           <p className="hero__description">{t('hero.description')}</p>
           <div className="hero__actions">
             <a className="action-link action-link--primary" href="#projects">
@@ -42,18 +31,24 @@ export default function Hero() {
               {t('hero.secondaryCta')}
             </a>
           </div>
+          <span aria-hidden="true" className="hero__monogram">DM</span>
         </div>
 
-        <SystemsMap />
-
-        <dl className="hero__signals" aria-label={isEnglish ? 'Professional signals' : 'Señales profesionales'}>
-          {signals.map((signal) => (
-            <div key={signal.value}>
-              <dt>{signal.label}</dt>
-              <dd>{signal.value}</dd>
-            </div>
-          ))}
-        </dl>
+        <aside className="hero__sectors" aria-labelledby="hero-sectors-title">
+          <p id="hero-sectors-title" className="hero__sectors-title">{t('hero.sectorsLabel')}</p>
+          <ol className="hero__sectors-list" role="list">
+            {sectors.map((sector, index) => (
+              <li key={sector}>
+                <span>{String(index + 1).padStart(2, '0')}</span>
+                {sector}
+              </li>
+            ))}
+          </ol>
+          <p className="hero__sectors-note">
+            <strong>{t('hero.careerLabel')}</strong>
+            {t('hero.careerDescription')}
+          </p>
+        </aside>
       </div>
     </section>
   );
