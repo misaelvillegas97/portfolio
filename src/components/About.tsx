@@ -24,7 +24,7 @@ export default function About() {
         </header>
         <div className="section-content">
           <p className="section-intro">{t('principles.description')}</p>
-          <ol className="principles-list">
+          <ol className="principles-list" role="list">
             {principles.map((principle, index) => (
               <li key={principle.title}>
                 <span className="principles-list__number">0{index + 1}</span>
@@ -61,13 +61,13 @@ export function Capabilities() {
                 <span className="capability-groups__number">0{index + 1}</span>
                 <h3>{group.title}</h3>
                 <p>{group.description}</p>
-                <ul>
+                <ul role="list">
                   {group.items.map((item) => <li key={item}>{item}</li>)}
                 </ul>
               </article>
             ))}
           </div>
-          <ul className="technology-index" aria-label={t('capabilities.eyebrow')}>
+          <ul className="technology-index" aria-label={t('capabilities.eyebrow')} role="list">
             {technologies.map((technology) => <li key={technology}>{technology}</li>)}
           </ul>
         </div>

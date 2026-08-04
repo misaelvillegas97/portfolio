@@ -63,7 +63,7 @@ export default function Projects() {
             <footer className="case-study__footer">
               <div>
                 <span className="case-study__footer-label">{labels.capabilities}</span>
-                <ul className="chip-list">
+                <ul className="chip-list" role="list">
                   {project.capabilities.map((capability) => <li key={capability}>{capability}</li>)}
                 </ul>
               </div>

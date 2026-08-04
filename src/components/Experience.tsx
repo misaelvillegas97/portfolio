@@ -25,7 +25,7 @@ export default function Experience() {
           <h2 id="experience-title">{t('experience.title')}</h2>
           <p>{t('experience.description')}</p>
         </header>
-        <ol className="experience-list">
+        <ol className="experience-list" role="list">
           {items.map((item, index) => (
             <li key={`${item.company}-${item.period.start}`}>
               <div className="experience-list__marker" aria-hidden="true">{String(index + 1).padStart(2, '0')}</div>
@@ -42,7 +42,7 @@ export default function Experience() {
                 <p>{item.company}</p>
                 <h3>{item.role}</h3>
                 <p>{item.summary}</p>
-                <ul className="chip-list">
+                <ul className="chip-list" role="list">
                   {item.capabilities.map((capability) => <li key={capability}>{capability}</li>)}
                 </ul>
               </div>

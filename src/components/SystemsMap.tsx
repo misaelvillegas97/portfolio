@@ -70,7 +70,7 @@ export default function SystemsMap() {
           </g>
         ))}
       </svg>
-      <ol className="systems-map__legend">
+      <ol className="systems-map__legend" role="list">
         {products.map((product, index) => (
           <li key={product.title}>
             <span>{String(index + 1).padStart(2, '0')}</span>
