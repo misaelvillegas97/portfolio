@@ -45,7 +45,12 @@ export default function Navigation() {
             <ul>
               {navItems.map((item) => (
                 <li key={item.href}>
-                  <a href={item.href}>{item.label}</a>
+                  <a
+                    href={item.href}
+                    onClick={(event) => event.currentTarget.closest('details')?.removeAttribute('open')}
+                  >
+                    {item.label}
+                  </a>
                 </li>
               ))}
             </ul>
