@@ -13,6 +13,8 @@ test('publishes factual machine-readable portfolio context', () => {
   assert.match(llms, /https:\/\/dvillegas\.cl\/en\//u);
   assert.match(llms, /https:\/\/www\.linkedin\.com\/in\/misaelv\//u);
   assert.match(llms, /https:\/\/github\.com\/misaelvillegas97/u);
+  assert.match(llms, /React\.js/u);
+  assert.match(llms, /digital entertainment/u);
   assert.match(llms, /Poultry/u);
   assert.match(llms, /Medisenda/u);
 });

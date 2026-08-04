@@ -7,8 +7,8 @@
 - [English portfolio](https://dvillegas.cl/en/)
 
 ## Professional focus
-- Full-stack engineering with Angular, NestJS, Node.js, Java / Spring Boot, PostgreSQL, AWS, Docker, CI/CD, and SSR.
-- Experience across finance, logistics, internal communications, forestry, telecommunications, retail, payments, and gaming.
+- Full-stack engineering with Angular, React.js, NestJS, Node.js, Java / Spring Boot, PostgreSQL, AWS, Docker, CI/CD, and SSR.
+- Experience across finance, logistics, internal communications, forestry, telecommunications, retail, payments, gaming, and digital entertainment.
 - Builds clear, secure, maintainable digital products from architecture through production operation.
 
 ## Selected products

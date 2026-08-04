@@ -12,7 +12,7 @@ La dirección combina la tipografía editorial de **Firma tipográfica** con la 
 - El rol aparece inmediatamente después: `Ingeniero de Software Senior` / `Senior Software Engineer`.
 - El subtítulo comunica valor transferible, no una lista: `Distintas industrias. Una misma forma de trabajar: entender la operación antes de diseñar el software.`
 - El texto de apoyo explica ejecución: `Construyo productos digitales claros, seguros y mantenibles; desde la arquitectura hasta su operación en producción.`
-- Una columna lateral titulada `Experiencia sectorial` aporta evidencia específica: Finanzas, Logística, Comunicación interna, Forestal y Telecomunicaciones.
+- Una columna lateral titulada `Experiencia sectorial` aporta evidencia específica: Finanzas, Logística, Comunicación interna, Forestal, Telecomunicaciones y Gaming y entretenimiento digital.
 - La columna lateral no repite el subtítulo. El primero explica el valor; la segunda prueba su origen.
 - El monograma `DVS` es una marca personal decorativa de bajo peso visual, no un diagrama ni una afirmación funcional.
 
@@ -39,7 +39,7 @@ Los seis productos permanecen en su sección propia. Ningún elemento del hero c
 - Rol: `Ingeniero de Software Senior`.
 - Subtítulo: `Distintas industrias. Una misma forma de trabajar: entender la operación antes de diseñar el software.`
 - Apoyo: `Construyo productos digitales claros, seguros y mantenibles; desde la arquitectura hasta su operación en producción.`
-- Columna: `Experiencia sectorial` con Finanzas, Logística, Comunicación interna, Forestal y Telecomunicaciones.
+- Columna: `Experiencia sectorial` con Finanzas, Logística, Comunicación interna, Forestal, Telecomunicaciones y Gaming y entretenimiento digital.
 
 ### Inglés
 
@@ -47,7 +47,7 @@ Los seis productos permanecen en su sección propia. Ningún elemento del hero c
 - Role: `Senior Software Engineer`.
 - Subtitle: `Different industries. One way of working: understand the operation before designing the software.`
 - Supporting copy: `I build clear, secure, maintainable digital products—from architecture through live operations.`
-- Column: `Industry experience` with Finance, Logistics, Internal communications, Forestry and Telecommunications.
+- Column: `Industry experience` with Finance, Logistics, Internal communications, Forestry, Telecommunications, and Gaming and digital entertainment.
 
 ## Implementación prevista
 
@@ -72,6 +72,6 @@ Los seis productos permanecen en su sección propia. Ningún elemento del hero c
 1. En `/` y `/en/`, nombre es H1 y rol aparece antes de cualquier evidencia sectorial.
 2. El hero no contiene `SystemsMap`, nodos, líneas ni leyenda de productos.
 3. El subtítulo y la columna lateral no repiten sectores: valor a la izquierda, evidencia a la derecha.
-4. Español e inglés contienen las cinco áreas acordadas con traducciones naturales.
+4. Español e inglés contienen las seis áreas acordadas con traducciones naturales.
 5. Hero sigue siendo legible, navegable por teclado, responsive y sin overflow a 320 px.
 6. `npm test`, typecheck, lint, build/prerender y QA de navegador terminan sin regresiones.

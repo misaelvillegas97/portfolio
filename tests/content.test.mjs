@@ -34,6 +34,7 @@ const experience = {
 };
 const technologies = [
   'Angular',
+  'React.js',
   'TypeScript',
   'NestJS',
   'Node.js',
@@ -141,11 +142,11 @@ test('keeps the hero person-first and preserves cross-industry evidence', () => 
   assert.equal(en.hero.sectorsLabel, 'Industry experience');
   assert.deepEqual(
     es.hero.sectors,
-    ['Finanzas', 'Logística', 'Comunicación interna', 'Forestal', 'Telecomunicaciones'],
+    ['Finanzas', 'Logística', 'Comunicación interna', 'Forestal', 'Telecomunicaciones', 'Gaming y entretenimiento digital'],
   );
   assert.deepEqual(
     en.hero.sectors,
-    ['Finance', 'Logistics', 'Internal communications', 'Forestry', 'Telecommunications'],
+    ['Finance', 'Logistics', 'Internal communications', 'Forestry', 'Telecommunications', 'Gaming and digital entertainment'],
   );
   assert.equal('signals' in es.hero, false);
   assert.equal('signals' in en.hero, false);

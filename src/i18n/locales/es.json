@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "David Misael Villegas Sandoval | Ingeniero de Software Senior",
-    "description": "Portfolio de David Misael Villegas Sandoval, ingeniero de software senior: desarrollo full-stack y arquitectura con Angular, NestJS, Node.js, Java y AWS."
+    "description": "Portfolio de David Misael Villegas Sandoval, ingeniero de software senior: desarrollo full-stack con Angular, React.js, NestJS, Node.js, Java, AWS y PostgreSQL."
   },
   "navigation": {
     "home": "Inicio",
@@ -25,7 +25,8 @@
       "Logística",
       "Comunicación interna",
       "Forestal",
-      "Telecomunicaciones"
+      "Telecomunicaciones",
+      "Gaming y entretenimiento digital"
     ],
     "careerLabel": "Desde 2017",
     "careerDescription": "Experiencia transferible entre contextos de negocio distintos.",
@@ -276,6 +277,7 @@
     },
     "technologies": [
       "Angular",
+      "React.js",
       "TypeScript",
       "NestJS",
       "Node.js",
