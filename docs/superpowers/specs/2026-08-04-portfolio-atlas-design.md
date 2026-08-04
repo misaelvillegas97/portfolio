@@ -1,66 +1,73 @@
-# Portfolio Atlas de sistemas - Diseño
+# Portfolio personal — hero centrado en David
 
 ## Objetivo
 
-Reemplazar la landing nocturna actual por un portfolio profesional, luminoso y bilingüe que presente a David Misael Villegas Sandoval como Senior Software Engineer mediante experiencia verificable y seis productos reales.
+Presentar a David Misael Villegas Sandoval antes que a sus productos: un Senior Software Engineer con experiencia transversal, criterio de producto y ejecución full-stack. La landing permanece luminosa, bilingüe y profesional; el hero deja de insinuar relaciones inexistentes entre productos.
+
+## Decisión aprobada
+
+La dirección combina la tipografía editorial de **Firma tipográfica** con la composición de **Dossier ejecutivo**:
+
+- El H1 es el nombre: `David Misael Villegas`.
+- El rol aparece inmediatamente después: `Ingeniero de Software Senior` / `Senior Software Engineer`.
+- El subtítulo comunica valor transferible, no una lista: `Distintas industrias. Una misma forma de trabajar: entender la operación antes de diseñar el software.`
+- El texto de apoyo explica ejecución: `Construyo productos digitales claros, seguros y mantenibles; desde la arquitectura hasta su operación en producción.`
+- Una columna lateral titulada `Experiencia sectorial` aporta evidencia específica: Finanzas, Logística, Comunicación interna, Forestal y Telecomunicaciones.
+- La columna lateral no repite el subtítulo. El primero explica el valor; la segunda prueba su origen.
+- El monograma `DM` es una marca personal decorativa de bajo peso visual, no un diagrama ni una afirmación funcional.
 
 ## Dirección visual
 
-**Atlas de sistemas**: una superficie marfil con tipografía geométrica, tinta grafito, azul cobalto y bermellón. Una línea topológica conecta hitos, capacidades y productos. No se usan terminales, editores, estrellas, fondos oscuros ni 3D ornamental.
+Superficie marfil, tinta grafito, azul cobalto y bermellón. Tipografía serif editorial para el nombre y sans serif precisa para el resto. El hero funciona como una ficha personal contemporánea: espaciosa, asimétrica y sobria.
 
-La composición será asimétrica, espaciosa y táctil:
+Se eliminan del hero:
 
-- Hero con propuesta de valor y mapa SVG de sistemas.
-- Bloque de principios que explica cómo convierte operaciones complejas en software mantenible.
-- Casos de producto grandes, no tarjetas genéricas, con problema, aporte, capacidades, estado y enlace.
-- Trayectoria profesional condensada desde 2017.
-- Capacidades agrupadas por resultado, no por logotipos.
-- Contacto directo y CV descargable.
+- El mapa SVG y sus nodos/conexiones.
+- La leyenda de productos.
+- El eyebrow `Ingeniería de producto · Arquitectura · Operación` y su equivalente en inglés.
+- Badges o chips de capacidades.
 
-## Contenido verificable
+Los seis productos permanecen en su sección propia. Ningún elemento del hero comunica que Poultry, WWT, Trackly, Nuptia, Nutry y Medisenda se conectan entre sí.
 
-- Identidad principal: David Misael Villegas Sandoval.
-- Rol: Senior Software Engineer / Ingeniero de Software Senior.
-- Experiencia: Blaze, Polodev SPA, Falabella, NTT Data, Carpetres e Innoapsion.
-- Tecnologías: Angular, TypeScript, NestJS, Node.js, Java/Spring Boot, AWS, PostgreSQL, Docker, CI/CD y SSR.
-- Productos: Poultry, WWT, Trackly, Nuptia, Nutry y Medisenda.
-- Medisenda se muestra como “en construcción”; no se enlaza como producto disponible mientras el dominio no resuelva.
-- No se publican métricas ni estados laborales que no estén respaldados por el CV o repositorios inspeccionados.
+## Contenido bilingüe
 
-## Arquitectura
+### Español
 
-- React 18, TypeScript, Vite, i18next, Lucide y Framer Motion ya instalados.
-- CSS propio sobre Tailwind base; SVG y CSS para identidad visual.
-- `react-dom/server` genera HTML estático para español e inglés.
-- Español vive en `/`; inglés en `/en/`; el selector usa enlaces reales y funciona sin JavaScript.
-- `SITE_URL` configura URLs absolutas de canonical, hreflang, sitemap y Open Graph durante deploy; el build local usa rutas relativas válidas.
-- El cliente hidrata el HTML según `document.documentElement.lang`; no detecta ni redirige por IP o navegador.
+- Nombre: `David Misael Villegas`.
+- Rol: `Ingeniero de Software Senior`.
+- Subtítulo: `Distintas industrias. Una misma forma de trabajar: entender la operación antes de diseñar el software.`
+- Apoyo: `Construyo productos digitales claros, seguros y mantenibles; desde la arquitectura hasta su operación en producción.`
+- Columna: `Experiencia sectorial` con Finanzas, Logística, Comunicación interna, Forestal y Telecomunicaciones.
 
-## SEO, GEO y accesibilidad
+### Inglés
 
-- Un H1 descriptivo, jerarquía H2/H3, contenido completo visible y enlaces descriptivos.
-- Metadatos localizados: title, description, canonical, hreflang, Open Graph y Twitter.
-- JSON-LD `ProfilePage` con `Person`, `alternateName`, `jobTitle`, `sameAs` y proyectos como `CreativeWork`.
-- `robots.txt`, `sitemap.xml`, favicon y tarjeta social local.
-- Sin `llms.txt`: no existe consumidor objetivo confirmado y Google declara que no lo necesita.
-- HTML semántico, skip link, foco visible, nombres accesibles, orden DOM correcto y contraste WCAG AA.
-- Motion solo con transform/opacity, desactivado con `prefers-reduced-motion`.
+- Name: `David Misael Villegas`.
+- Role: `Senior Software Engineer`.
+- Subtitle: `Different industries. One way of working: understand the operation before designing the software.`
+- Supporting copy: `I build clear, secure, maintainable digital products—from architecture through live operations.`
+- Column: `Industry experience` with Finance, Logistics, Internal communications, Forestry and Telecommunications.
 
-## Performance
+## Implementación prevista
 
-- Sin Three.js ni canvas continuo.
-- Una fuente variable WOFF2 autoalojada o fallback local; cero fuentes OTF remotas.
-- Sin grid de logos remotos ni Calendly cargado durante el inicio.
-- SVG decorativo inline, contenido bajo fold con `content-visibility: auto` y tamaños intrínsecos reservados.
-- Objetivos de campo p75: LCP <= 2,5 s, INP <= 200 ms y CLS <= 0,1.
+- `Hero.tsx` pasa a renderizar una composición de identidad y experiencia sectorial, sin importar `SystemsMap`.
+- `SystemsMap.tsx` y estilos asociados se eliminan si no tienen consumidores restantes.
+- Las claves `hero` de ambos locales se sustituyen por copy personal y sectores localizados; no se modifica información de productos.
+- `index.css` conserva tokens de color, responsive y reduced motion existentes; añade solo reglas del dossier/firma y elimina reglas del mapa.
+- Las pruebas de contenido se actualizan para exigir nombre, rol, copy sectorial y ausencia de mapa/conexiones.
+
+## SEO, accesibilidad y rendimiento
+
+- El único H1 conserva la identidad personal visible; los metadatos y JSON-LD mantienen `jobTitle` y contenido profesional verificable.
+- La columna es una lista semántica con encabezado; el monograma queda `aria-hidden`.
+- Las acciones siguen siendo enlaces accesibles a proyectos y CV.
+- No se añaden dependencias, fuentes remotas, canvas, WebGL ni animación continua.
+- El hero no aumenta las solicitudes iniciales ni introduce CLS; las animaciones existentes respetan `prefers-reduced-motion`.
 
 ## Criterios de aceptación
 
-1. `/` muestra español y `/en/` inglés completo aun con JavaScript desactivado.
-2. Los seis productos aparecen; cinco enlazan a sus dominios y Medisenda indica construcción.
-3. LinkedIn, GitHub, Instagram, correo y CV son accesibles por teclado y tienen nombres claros.
-4. No queda ninguna estética nocturna/editor, canvas, tema oscuro o dependencia visual remota.
-5. Canonical, hreflang, JSON-LD, sitemap y robots se generan correctamente con `SITE_URL`.
-6. TypeScript, lint, pruebas de contenido/SEO, build y verificador del HTML terminan sin errores.
-7. QA real valida desktop y móvil, navegación ES/EN, anchors, enlaces, consola, reduced motion y ausencia de overflow.
-
+1. En `/` y `/en/`, nombre es H1 y rol aparece antes de cualquier evidencia sectorial.
+2. El hero no contiene `SystemsMap`, nodos, líneas ni leyenda de productos.
+3. El subtítulo y la columna lateral no repiten sectores: valor a la izquierda, evidencia a la derecha.
+4. Español e inglés contienen las cinco áreas acordadas con traducciones naturales.
+5. Hero sigue siendo legible, navegable por teclado, responsive y sin overflow a 320 px.
+6. `npm test`, typecheck, lint, build/prerender y QA de navegador terminan sin regresiones.
