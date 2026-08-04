@@ -14,6 +14,7 @@ test('ignores the dev marker comment and only hydrates prerendered elements', as
   assert.match(source, /root\.childElementCount > 0/u);
   assert.match(source, /window\.location\.pathname/u);
   assert.match(source, /\^\\\/en\(\?:\\\/\|\$\)/u);
+  assert.match(source, /document\.documentElement\.lang = locale === 'en' \? 'en' : 'es-CL'/u);
   assert.doesNotMatch(source, /root\.hasChildNodes\(\)/u);
   assert.match(source, /hydrateRoot\(root,/u);
   assert.match(source, /createRoot\(root\)\.render\(/u);

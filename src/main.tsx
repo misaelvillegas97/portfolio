@@ -14,6 +14,7 @@ async function hydrate() {
     || document.documentElement.lang.toLowerCase().startsWith('en')
     ? 'en'
     : 'es';
+  document.documentElement.lang = locale === 'en' ? 'en' : 'es-CL';
   const i18n = await createI18n(locale);
 
   const application = (
