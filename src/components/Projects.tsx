@@ -68,7 +68,12 @@ export default function Projects() {
                 </ul>
               </div>
               {project.url ? (
-                <a href={project.url} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`${labels.visit}: ${project.title}`}
+                >
                   {labels.visit}
                   <ArrowUpRight aria-hidden="true" size={18} />
                 </a>

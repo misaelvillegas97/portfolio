@@ -88,16 +88,24 @@ p {
   text-wrap: pretty;
 }
 
-ul,
-ol,
 dl,
 figure {
   margin: 0;
   padding: 0;
 }
 
-ul,
-ol {
+:where(
+  .navigation__links,
+  .navigation__mobile-panel ul,
+  .systems-map__legend,
+  .principles-list,
+  .capability-groups ul,
+  .technology-index,
+  .chip-list,
+  .experience-list
+) {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -1091,22 +1099,11 @@ svg {
   to { transform: translateY(0); }
 }
 
-@keyframes atlas-trace {
-  from { stroke-dashoffset: 7rem; }
-  to { stroke-dashoffset: 0; }
-}
-
 @supports ((animation-timeline: view()) and (animation-range: entry)) {
   :is(.principles-list li, .case-study, .experience-list > li, .capability-groups article) {
     animation: atlas-enter linear both;
     animation-timeline: view();
     animation-range: entry 0% cover 25%;
-  }
-
-  .systems-map__contour {
-    animation: atlas-trace linear both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 35%;
   }
 }
 
@@ -1386,7 +1383,7 @@ svg {
     scroll-behavior: auto;
   }
 
-  :is(.principles-list li, .case-study, .experience-list > li, .capability-groups article, .systems-map__contour) {
+  :is(.principles-list li, .case-study, .experience-list > li, .capability-groups article) {
     animation: none;
   }
 
