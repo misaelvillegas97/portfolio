@@ -1,5 +1,5 @@
 import { StrictMode } from 'react';
-import { hydrateRoot } from 'react-dom/client';
+import { createRoot, hydrateRoot } from 'react-dom/client';
 import { I18nextProvider } from 'react-i18next';
 
 import App from './App.tsx';
@@ -13,14 +13,16 @@ async function hydrate() {
   const locale: Locale = document.documentElement.lang.toLowerCase().startsWith('en') ? 'en' : 'es';
   const i18n = await createI18n(locale);
 
-  hydrateRoot(
-    root,
+  const application = (
     <StrictMode>
       <I18nextProvider i18n={i18n}>
         <App />
       </I18nextProvider>
-    </StrictMode>,
+    </StrictMode>
   );
+
+  if (root.childElementCount > 0) hydrateRoot(root, application);
+  else createRoot(root).render(application);
 }
 
 void hydrate();

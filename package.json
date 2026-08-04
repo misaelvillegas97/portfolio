@@ -6,22 +6,21 @@
   "scripts": {
     "dev": "vite",
     "test": "node --test tests/*.test.mjs",
-    "build": "npm run build:client && npm run build:ssr && npm run prerender",
-    "build:client": "tsc && vite build",
+    "build": "npm run build:client && npm run build:ssr && npm run prerender && npm run verify",
+    "build:client": "npm run typecheck && vite build",
     "build:ssr": "vite build --ssr src/entry-server.tsx --outDir dist-ssr",
     "prerender": "node scripts/prerender.mjs",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "verify": "node scripts/verify-build.mjs",
+    "typecheck": "tsc -p tsconfig.app.json --noEmit && tsc -p tsconfig.node.json --noEmit",
+    "lint": "eslint \"src/**/*.{ts,tsx}\" vite.config.ts --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
-    "framer-motion": "^11.0.8",
-    "lucide-react": "^0.344.0",
     "i18next": "^23.10.1",
-    "i18next-browser-languagedetector": "^7.2.0",
-    "react-i18next": "^14.1.0",
+    "lucide-react": "^0.344.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-intersection-observer": "^9.8.1"
+    "react-i18next": "^14.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",
