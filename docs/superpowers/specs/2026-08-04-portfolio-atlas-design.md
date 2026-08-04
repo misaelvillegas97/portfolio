@@ -20,6 +20,8 @@ La dirección combina la tipografía editorial de **Firma tipográfica** con la 
 
 Superficie marfil, tinta grafito, azul cobalto y bermellón. Tipografía serif editorial para el nombre y sans serif precisa para el resto. El hero funciona como una ficha personal contemporánea: espaciosa, asimétrica y sobria.
 
+El navbar usa un wordmark personal, no un acrónimo: una barra cobalto/bermellón junto a `David` y `Villegas Sandoval`. La marca es legible a cualquier ancho y no depende de iniciales ambiguas como `D/VM`.
+
 Se eliminan del hero:
 
 - El mapa SVG y sus nodos/conexiones.
