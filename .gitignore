@@ -24,3 +24,8 @@ dist-ssr
 *.sw?
 .gstack/
 .superpowers/
+
+# Local QA screenshots and superseded product captures
+/docs/qa/**/screenshots/
+/public/assets/projects/nutry-calculator.png
+/public/assets/projects/poultry-quotation.png
