@@ -1,0 +1,93 @@
+{
+  "url": "http://127.0.0.1:4176/",
+  "viewport": {
+    "width": 768,
+    "height": 1024
+  },
+  "pageHeight": 6083,
+  "clientWidth": 768,
+  "scrollWidth": 768,
+  "horizontalOverflow": false,
+  "heroActions": {
+    "top": 456.859375,
+    "bottom": 504.859375,
+    "width": 408.640625,
+    "height": 48
+  },
+  "sections": [
+    {
+      "id": "home",
+      "top": 77,
+      "bottom": 596.859375,
+      "width": 768,
+      "height": 519.859375
+    },
+    {
+      "id": "projects",
+      "top": 596.859375,
+      "bottom": 3722.3125,
+      "width": 768,
+      "height": 3125.453125
+    },
+    {
+      "id": "experience",
+      "top": 3722.3125,
+      "bottom": 5115.234375,
+      "width": 768,
+      "height": 1392.921875
+    },
+    {
+      "id": "principles",
+      "top": 5115.234375,
+      "bottom": 5602.59375,
+      "width": 768,
+      "height": 487.359375
+    },
+    {
+      "id": "contact",
+      "top": 5602.59375,
+      "bottom": 6021.609375,
+      "width": 768,
+      "height": 419.015625
+    }
+  ],
+  "images": [
+    {
+      "src": "./assets/projects/poultry-quotation.png",
+      "complete": true,
+      "naturalWidth": 1168,
+      "naturalHeight": 884,
+      "alt": "Cotización de Poultry con productos, condiciones comerciales e historial de versiones; datos ficticios."
+    },
+    {
+      "src": "./assets/projects/nutry-calculator.png",
+      "complete": true,
+      "naturalWidth": 1280,
+      "naturalHeight": 900,
+      "alt": "Calculadora pública de Nutry con detalle de un alimento, ajuste de gramos y macronutrientes."
+    }
+  ],
+  "brokenAnchors": [],
+  "duplicateIds": [],
+  "headings": [
+    "David Villegas Sandoval"
+  ],
+  "assets": [
+    {
+      "path": "/en/",
+      "status": 200
+    },
+    {
+      "path": "/assets/CV%20David%20Misael%20Villegas%20Sandoval.pdf",
+      "status": 200
+    },
+    {
+      "path": "/assets/projects/poultry-quotation.png",
+      "status": 200
+    },
+    {
+      "path": "/assets/projects/nutry-calculator.png",
+      "status": 200
+    }
+  ]
+}

@@ -25,8 +25,8 @@ const projectUrls = {
   nutry: 'https://nutry.cl',
 };
 const experience = {
-  blaze: ['2024-11', 'present'],
-  polodev: ['2024-02', 'present'],
+  blaze: ['2024-11', '2026-07'],
+  polodev: ['2024-02', '2026-08'],
   falabella: ['2021-09', '2023-12'],
   nttdata: ['2019-09', '2021-09'],
   carpetres: ['2018-07', '2019-09'],
@@ -45,6 +45,14 @@ const technologies = [
   'CI/CD',
   'SSR',
 ];
+const experienceRoles = {
+  blaze: 'Senior Software Engineer',
+  polodev: 'Senior Software Engineering Consultant',
+  falabella: 'Senior Software Engineer',
+  nttdata: 'Semi Senior Software Engineer',
+  carpetres: 'Junior Software Engineer',
+  innoapsion: 'Entry Software Engineer',
+};
 const unsupportedMetricPatterns = [
   /\b\d+(?:[.,]\d+)?\s*%/iu,
   /\b(?:million(?:s)?|millón|millones)\b/iu,
@@ -129,6 +137,8 @@ test('keeps identity, career dates, and supported stack factual', () => {
     assert.equal(es.experience.items[key].period.end, end);
     assert.equal(en.experience.items[key].period.start, start);
     assert.equal(en.experience.items[key].period.end, end);
+    assert.equal(es.experience.items[key].role, experienceRoles[key]);
+    assert.equal(en.experience.items[key].role, experienceRoles[key]);
   }
 
   assert.deepEqual(es.capabilities.technologies, technologies);

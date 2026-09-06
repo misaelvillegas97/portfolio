@@ -1,0 +1,138 @@
+[
+  {
+    "view": "desktop-home",
+    "description": "Mismo viewport: 1280 × 720. La nueva portada presenta perfil, alcance y acciones en la primera pantalla.",
+    "images": [
+      {
+        "src": "screenshots/before-desktop-home.png",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "src": "../2026-09-05-portfolio-corrections/screenshots/after-home.png",
+        "width": 1280,
+        "height": 720
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "view": "desktop-projects",
+    "description": "Corrección sobre la iteración anterior, a 1280 × 720. Descripciones generales recuperadas, capacidades del producto y enlaces a su página inicial.",
+    "images": [
+      {
+        "src": "../2026-09-05-portfolio-corrections/screenshots/before-projects.png",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "src": "../2026-09-05-portfolio-corrections/screenshots/after-projects.png",
+        "width": 1280,
+        "height": 720
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "view": "desktop-experience",
+    "description": "Corrección sobre la iteración anterior, a 1280 × 720. Blaze termina en julio de 2026 y Polodev en agosto de 2026. Los cargos están en inglés en ambas versiones del sitio.",
+    "images": [
+      {
+        "src": "../2026-09-05-portfolio-corrections/screenshots/before-experience.png",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "src": "../2026-09-05-portfolio-corrections/screenshots/after-experience.png",
+        "width": 1280,
+        "height": 720
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "view": "mobile-home",
+    "description": "Mismo viewport: 390 × 844. Tipografía legible, descripción breve y acceso directo a trabajo, CV y contacto.",
+    "images": [
+      {
+        "src": "screenshots/before-mobile-home.png",
+        "width": 390,
+        "height": 844
+      },
+      {
+        "src": "../2026-09-05-portfolio-corrections/screenshots/after-mobile-home.png",
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "view": "mobile-projects",
+    "description": "Mismo viewport: 390 × 844. Alcance completo del producto, imagen de su página inicial y acceso directo a la landing. Los otros cuatro productos permiten desplegar alcance y aporte.",
+    "images": [
+      {
+        "src": "screenshots/before-mobile-projects.png",
+        "width": 390,
+        "height": 844
+      },
+      {
+        "src": "../2026-09-05-portfolio-corrections/screenshots/after-mobile-projects.png",
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "view": "cv-contact",
+    "description": "Primera página del CV anterior frente al nuevo documento adjunto, de una página. En la copia descargable se corrigió únicamente la fecha de Polodev: Aug 2026; el archivo adjunto original no se modificó.",
+    "images": [
+      {
+        "src": "screenshots/before-cv-contact.png",
+        "width": 774,
+        "height": 1095
+      },
+      {
+        "src": "../2026-09-05-portfolio-corrections/screenshots/after-cv.png",
+        "width": 893,
+        "height": 1263
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "view": "desktop-full",
+    "description": "Vista general de escritorio. Medición del mismo navegador a 1280 px: 9.630 → 5.214 px de altura. Las miniaturas no están destinadas a leer el texto.",
+    "images": [
+      {
+        "src": "screenshots/before-desktop-full.png",
+        "width": 266,
+        "height": 2000
+      },
+      {
+        "src": "../2026-09-05-portfolio-corrections/screenshots/after-full.png",
+        "width": 491,
+        "height": 2000
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "view": "mobile-full",
+    "description": "Vista general móvil. Medición del mismo navegador a 390 px: 13.938 → 7.428 px de altura. Las miniaturas no están destinadas a leer el texto.",
+    "images": [
+      {
+        "src": "screenshots/before-mobile-full.png",
+        "width": 56,
+        "height": 2000
+      },
+      {
+        "src": "../2026-09-05-portfolio-corrections/screenshots/after-mobile-full.png",
+        "width": 105,
+        "height": 2000
+      }
+    ],
+    "overflow": false
+  }
+]

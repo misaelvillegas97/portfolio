@@ -46,7 +46,6 @@ test('buildHead emits localized absolute metadata without losing SITE_URL base p
   assert.deepEqual(json.mainEntity.sameAs, [
     'https://www.linkedin.com/in/misaelv/',
     'https://github.com/misaelvillegas97',
-    'https://www.instagram.com/*mslv.*/',
   ]);
   assert.equal(json.hasPart.length, 6);
   assert.ok(json.hasPart.every((project) => project['@type'] === 'CreativeWork'));

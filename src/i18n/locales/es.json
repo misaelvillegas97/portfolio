@@ -5,20 +5,20 @@
   },
   "navigation": {
     "home": "Inicio",
-    "principles": "Principios",
-    "projects": "Productos",
+    "principles": "Cómo trabajo",
+    "projects": "Trabajo",
     "experience": "Trayectoria",
     "capabilities": "Capacidades",
     "contact": "Contacto",
-    "menuLabel": "Abrir navegación",
+    "menuLabel": "Menú de navegación",
     "languageLabel": "Ver portfolio en inglés"
   },
   "hero": {
     "eyebrow": "Perfil / 001",
     "title": "David Villegas Sandoval",
     "role": "Ingeniero de Software Senior",
-    "subtitle": "Distintas industrias. Una misma forma de trabajar: entender la operación antes de diseñar el software.",
-    "description": "Construyo productos digitales claros, seguros y mantenibles; desde la arquitectura hasta su operación en producción.",
+    "subtitle": "Software para quienes operan, coordinan y toman decisiones.",
+    "description": "Desarrollo full-stack con Angular, React y NestJS. Desde pagos y logística hasta productos propios de gestión y nutrición.",
     "sectorsLabel": "Experiencia sectorial",
     "sectors": [
       "Finanzas",
@@ -29,32 +29,34 @@
       "Gaming y entretenimiento digital"
     ],
     "careerLabel": "Desde 2017",
-    "careerDescription": "Experiencia transferible entre contextos de negocio distintos.",
-    "primaryCta": "Ver productos",
-    "secondaryCta": "Descargar CV"
+    "careerDescription": "Experiencia en equipos como Blaze, Falabella y NTT Data, además de consultoría y productos propios.",
+    "primaryCta": "Explorar mi trabajo",
+    "secondaryCta": "Descargar CV",
+    "contactCta": "Disponible para empleo senior y consultoría",
+    "experienceCta": "Ver trayectoria"
   },
   "principles": {
     "eyebrow": "Cómo trabajo",
-    "title": "Ingeniería que entiende la operación antes de abstraerla.",
-    "description": "Cada decisión técnica parte del flujo que debe sostener, de quién puede actuar y de qué evidencia necesita quedar disponible.",
+    "title": "Cómo llevo una idea a producción.",
+    "description": "Un proceso que conecta la operación con la implementación.",
     "items": {
       "operations": {
-        "title": "Modelar la operación",
-        "description": "Traduzco procesos, roles y excepciones en flujos comprensibles para quienes operan y mantienen el producto."
+        "title": "Entender el recorrido",
+        "description": "Identifico quién hace el trabajo, qué información necesita y qué pasa cuando algo falla."
       },
       "architecture": {
-        "title": "Diseñar para el cambio",
-        "description": "Defino límites claros, contratos compatibles y datos trazables para evolucionar sin multiplicar complejidad."
+        "title": "Definir los límites",
+        "description": "Modelo permisos, datos y contratos antes de conectar las interfaces con el backend."
       },
       "delivery": {
-        "title": "Cerrar el ciclo",
-        "description": "Integro frontend, backend, infraestructura y pruebas para entregar funcionalidades verificables, no piezas aisladas."
+        "title": "Probar la continuación",
+        "description": "Reviso el flujo completo: guardar, volver, cancelar y reintentar. La entrega incluye su operación."
       }
     }
   },
   "projects": {
     "eyebrow": "Productos",
-    "title": "Sistemas que convierten trabajo cotidiano en información accionable.",
+    "title": "Productos que conectan la operación.",
     "description": "Seis productos construidos alrededor de problemas operativos concretos, con una base técnica preparada para crecer sin perder control.",
     "labels": {
       "problem": "Problema",
@@ -62,7 +64,8 @@
       "capabilities": "Capacidades",
       "status": "Estado",
       "visit": "Visitar producto",
-      "upcoming": "Próximamente"
+      "upcoming": "Próximamente",
+      "scope": "Ver alcance y aporte"
     },
     "items": {
       "poultry": {
@@ -72,12 +75,20 @@
         "problem": "La producción avícola distribuye información crítica entre instalaciones, lotes, inventario y equipos con responsabilidades distintas.",
         "contribution": "Diseño y desarrollo de una base multi-tenant con autorización por recurso y sucursal, auditoría y flujos operativos conectados.",
         "capabilities": [
+          "Producción, alimento y sanidad",
+          "Inventario, costos y ventas",
           "Operación multi-sucursal",
-          "Trazabilidad y auditoría",
-          "Reportes operativos"
+          "Trazabilidad, auditoría y reportes"
         ],
         "status": "Operativo",
-        "url": "https://poultry.cl"
+        "url": "https://poultry.cl",
+        "image": {
+          "src": "assets/projects/poultry-home.png",
+          "width": 1280,
+          "height": 900,
+          "alt": "Página de inicio de Poultry con una vista general de su gestión avícola.",
+          "caption": "Poultry · Página de inicio del ERP avícola."
+        }
       },
       "wwt": {
         "title": "WWT",
@@ -129,11 +140,19 @@
         "contribution": "Arquitectura y desarrollo de gestión clínica, recetas y generación asistida de planes alimentarios basada en información real del sistema.",
         "capabilities": [
           "Pacientes y evaluaciones",
-          "Recetas y planes",
-          "Generación asistida"
+          "Recetas y planes alimentarios",
+          "Generación asistida",
+          "Seguimiento e informes"
         ],
         "status": "Operativo",
-        "url": "https://nutry.cl"
+        "url": "https://nutry.cl",
+        "image": {
+          "src": "assets/projects/nutry-home.png",
+          "width": 1280,
+          "height": 900,
+          "alt": "Página de inicio de Nutry con la propuesta de su software nutricional y acceso profesional.",
+          "caption": "Nutry · Página de inicio del software nutricional."
+        }
       },
       "medisenda": {
         "title": "Medisenda",
@@ -148,22 +167,24 @@
         ],
         "status": "En construcción"
       }
-    }
+    },
+    "otherTitle": "Otros productos",
+    "evidenceNote": "Las imágenes muestran las páginas de inicio de Poultry y Nutry. Visita cada sitio para conocer su alcance y acceder al producto."
   },
   "experience": {
     "eyebrow": "Trayectoria",
-    "title": "Experiencia construyendo productos y plataformas desde 2017.",
-    "description": "Trabajo profesional en gaming, consultoría, retail, pagos, telecomunicaciones e intranets corporativas.",
+    "title": "Experiencia en equipos y productos.",
+    "description": "Desde 2017, en desarrollo de producto y consultoría.",
     "present": "Presente",
     "items": {
       "blaze": {
         "company": "Blaze",
-        "role": "Ingeniero de Software Senior",
+        "role": "Senior Software Engineer",
         "period": {
           "start": "2024-11",
-          "end": "present"
+          "end": "2026-07"
         },
-        "summary": "Desarrollo de software para productos de gaming, con foco en autenticación, rendimiento y calidad automatizada.",
+        "summary": "Autenticación con doble factor, refactorización y trabajo sobre consultas y caché. Pruebas unitarias y de extremo a extremo para productos de gaming.",
         "capabilities": [
           "TypeScript",
           "Node.js",
@@ -172,12 +193,12 @@
       },
       "polodev": {
         "company": "Polodev SPA",
-        "role": "Consultor Senior de Ingeniería de Software",
+        "role": "Senior Software Engineering Consultant",
         "period": {
           "start": "2024-02",
-          "end": "present"
+          "end": "2026-08"
         },
-        "summary": "Consultoría y desarrollo full-stack de productos con Angular, NestJS, microservicios e integraciones AWS.",
+        "summary": "Sistemas de inventario y proveedores con NestJS y AWS Lambda. Interfaces Angular e integración con Cognito, S3 y SNS.",
         "capabilities": [
           "Angular",
           "NestJS",
@@ -186,12 +207,12 @@
       },
       "falabella": {
         "company": "Falabella",
-        "role": "Ingeniero de Software Senior",
+        "role": "Senior Software Engineer",
         "period": {
           "start": "2021-09",
           "end": "2023-12"
         },
-        "summary": "Sistemas de transporte y pagos para operaciones regionales, con integraciones SAP y servicios frontend y backend.",
+        "summary": "Sistemas de transporte y solicitudes de pago a transportistas integradas con SAP. Desarrollo de soluciones tributarias para Chile, Perú y Colombia.",
         "capabilities": [
           "Angular",
           "Java / Spring Boot",
@@ -200,12 +221,12 @@
       },
       "nttdata": {
         "company": "NTT Data",
-        "role": "Ingeniero de Software Semi Senior",
+        "role": "Semi Senior Software Engineer",
         "period": {
           "start": "2019-09",
           "end": "2021-09"
         },
-        "summary": "Aplicaciones para servicios financieros y telecomunicaciones con Angular, Java, Node.js, AWS y prácticas CI/CD.",
+        "summary": "Aplicaciones con Angular, Java y Node.js para proyectos de servicios financieros y telecomunicaciones. Integraciones AWS y procesos CI/CD.",
         "capabilities": [
           "Angular",
           "Java / Spring Boot",
@@ -214,12 +235,12 @@
       },
       "carpetres": {
         "company": "Carpetres",
-        "role": "Ingeniero de Software",
+        "role": "Junior Software Engineer",
         "period": {
           "start": "2018-07",
           "end": "2019-09"
         },
-        "summary": "Desarrollo de intranets corporativas con noticias, documentos, video, aprendizaje y herramientas de colaboración.",
+        "summary": "Intranets corporativas con portales, documentos, chat y galerías. Desarrollo Angular y Node.js, y prototipos de interfaces.",
         "capabilities": [
           "Angular",
           "Node.js",
@@ -228,24 +249,25 @@
       },
       "innoapsion": {
         "company": "Innoapsion",
-        "role": "Ingeniero de Software Junior",
+        "role": "Entry Software Engineer",
         "period": {
           "start": "2017-07",
           "end": "2018-01"
         },
-        "summary": "Aplicaciones web y Android para checklists, administración de personal y generación de reportes operativos.",
+        "summary": "Aplicaciones web y Android para checklists operativos, gestión de empleados, roles y reportes.",
         "capabilities": [
           "Aplicaciones web",
           "Android",
           "Reportes"
         ]
       }
-    }
+    },
+    "note": "Responsabilidades y ámbitos de trabajo. El CV reúne el detalle de mi trayectoria."
   },
   "capabilities": {
     "eyebrow": "Capacidades",
-    "title": "Tecnología aplicada a resultados de producto y operación.",
-    "description": "Combino desarrollo full-stack, diseño de plataforma y disciplina de entrega para sostener productos que deben evolucionar.",
+    "title": "Herramientas con las que trabajo",
+    "description": "Elijo la tecnología según el producto, sus restricciones y el equipo que lo mantendrá.",
     "groups": {
       "fullStack": {
         "title": "Ingeniería full-stack",
@@ -291,10 +313,17 @@
   },
   "contact": {
     "eyebrow": "Contacto",
-    "title": "Conversemos sobre un producto o una operación que necesita claridad.",
-    "description": "Disponible para conversar sobre ingeniería senior, arquitectura de producto y desarrollo full-stack.",
+    "title": "Empleo senior o consultoría.",
+    "description": "¿Buscas sumar un ingeniero a tu equipo o resolver un proyecto concreto? Cuéntame el contexto y conversemos.",
     "primaryLabel": "Contactar por LinkedIn",
     "cvLabel": "Descargar CV",
-    "availability": "Trabajo remoto y colaboración con equipos distribuidos."
+    "availability": "Trabajo remoto y colaboración con equipos distribuidos.",
+    "emailLabel": "Escríbeme",
+    "email": "david@dvillegas.cl",
+    "emailSubject": "Empleo senior o consultoría",
+    "copied": "Correo copiado",
+    "copyLabel": "Copiar correo",
+    "copyError": "No se pudo copiar. Selecciona el correo o usa el enlace para escribirme.",
+    "nextStep": "Incluye el tipo de oportunidad, el proyecto y los plazos que tienes en mente."
   }
 }

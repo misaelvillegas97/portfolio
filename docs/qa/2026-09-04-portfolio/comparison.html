@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Portafolio · Antes y después</title>
+<style>
+:root{color-scheme:light;font-family:"Segoe UI",sans-serif;color:#1c252a;background:#f3eee2}
+*{box-sizing:border-box}body{margin:0;padding:clamp(20px,4vw,56px)}main{max-width:1440px;margin:auto}
+h1{font-family:Georgia,serif;font-size:clamp(2rem,4vw,3.5rem);line-height:1.1;font-weight:500;margin:12px 0 20px}
+p{max-width:80ch;line-height:1.6}.eyebrow{color:#10338f;text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;font-weight:700}
+.controls{display:flex;flex-wrap:wrap;align-items:center;gap:16px;padding:24px 0;border-block:1px solid #bcb6aa;margin-block:28px}
+label{font-weight:700}select{font:inherit;min-height:44px;padding:8px 12px;background:#fbf7ee;color:inherit;border:1px solid #77756f;max-width:100%}
+a{color:#10338f;text-underline-offset:3px}a:focus-visible,select:focus-visible{outline:3px solid #b93722;outline-offset:4px}
+.metrics{display:flex;flex-wrap:wrap;gap:24px 48px}.metrics p{margin:0}.metrics strong{display:block;font-size:1.3rem}
+.comparison{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+figure{margin:0;min-width:0}figcaption{display:flex;gap:16px;justify-content:space-between;align-items:center;padding-block:12px;font-size:.9rem}
+figcaption strong{font-size:1rem}.frame{background:#e5dece;border:1px solid #bcb6aa;display:flex;justify-content:center;overflow:auto}
+img{display:block;max-width:100%;height:auto;align-self:flex-start}
+.comparison.mobile img{width:390px}.comparison.desktop img,.comparison.cv img{width:100%}
+.comparison.overview img{width:auto;max-height:2000px}.note{font-size:.9rem;color:#4e575b}
+.details{margin-top:36px;border-top:1px solid #bcb6aa;padding-top:16px;display:flex;flex-wrap:wrap;gap:24px}
+@media(max-width:760px){.comparison{grid-template-columns:1fr}.metrics{gap:12px 24px}figcaption a{padding-block:10px}}
+</style>
+</head>
+<body><main>
+<p class="eyebrow">David Villegas Sandoval · Evidencia · Actualizada el 5 septiembre 2026</p>
+<h1>Portafolio: antes y después.</h1>
+<p>Proyectos con su alcance completo y enlaces a sus páginas iniciales. Trayectoria con cargos en inglés, fechas corregidas y el nuevo CV. El hero aprobado se conserva.</p>
+<div class="metrics">
+<p><strong>Productos completos</strong>Descripciones anteriores recuperadas</p>
+<p><strong>Julio / agosto 2026</strong>Fin de Blaze / Polodev</p>
+<p><strong>47 pruebas pasan</strong>Build, lint y navegación comprobados</p>
+</div>
+<div class="controls">
+<label for="view">Comparar</label>
+<select id="view">
+<option value="desktop-home">Escritorio · Inicio</option>
+<option value="desktop-projects" selected>Corrección · Proyectos</option>
+<option value="desktop-experience">Corrección · Experiencia</option>
+<option value="mobile-home">Móvil · Inicio</option>
+<option value="mobile-projects">Móvil · Proyectos</option>
+<option value="cv-contact">CV · Reemplazo por documento adjunto</option>
+<option value="desktop-full">Escritorio · Vista general</option>
+<option value="mobile-full">Móvil · Vista general</option>
+</select>
+</div>
+<p id="description" role="status">Corrección sobre la iteración anterior, a 1280 × 720. Descripciones generales recuperadas, capacidades del producto y enlaces a su página inicial.</p>
+<div id="comparison" class="comparison desktop">
+<figure><figcaption><strong>Antes</strong><a id="before-link" href="../2026-09-05-portfolio-corrections/screenshots/before-projects.png" target="_blank" rel="noopener">Abrir captura original</a></figcaption><div class="frame"><img id="before" src="../2026-09-05-portfolio-corrections/screenshots/before-projects.png" width="1280" height="720" alt="Antes: proyectos centrados en una funcionalidad"></div></figure>
+<figure><figcaption><strong>Después</strong><a id="after-link" href="../2026-09-05-portfolio-corrections/screenshots/after-projects.png" target="_blank" rel="noopener">Abrir captura original</a></figcaption><div class="frame"><img id="after" src="../2026-09-05-portfolio-corrections/screenshots/after-projects.png" width="1280" height="720" alt="Después: proyectos con su alcance completo"></div></figure>
+</div>
+<p class="note">Capturas reales del navegador. Proyectos y experiencia comparan la iteración anterior con las correcciones del 5 de septiembre. Inicio, móvil y vistas generales conservan como referencia el diseño original. Las vistas generales son miniaturas reducidas; ambos CV se muestran con el mismo ancho de página.</p>
+<div class="details">
+<a href="../2026-09-05-portfolio-corrections/README.md">Informe de correcciones y validación</a>
+<a href="../2026-09-05-portfolio-corrections/screenshots/after-nutry.png" target="_blank" rel="noopener">Nutry actualizado</a>
+<a href="../2026-09-05-portfolio-corrections/screenshots/after-mobile-experience.png" target="_blank" rel="noopener">Experiencia en móvil</a>
+<a href="README.md">Informe de la primera iteración</a>
+</div>
+</main>
+<script>
+const views={
+"desktop-home":{kind:"desktop",description:"Mismo viewport: 1280 × 720. La nueva portada presenta perfil, alcance y acciones en la primera pantalla."},
+"desktop-projects":{kind:"desktop",before:"before-projects.png",after:"after-projects.png",description:"Corrección sobre la iteración anterior, a 1280 × 720. Descripciones generales recuperadas, capacidades del producto y enlaces a su página inicial."},
+"desktop-experience":{kind:"desktop",before:"before-experience.png",after:"after-experience.png",description:"Corrección sobre la iteración anterior, a 1280 × 720. Blaze termina en julio de 2026 y Polodev en agosto de 2026. Los cargos están en inglés en ambas versiones del sitio."},
+"mobile-home":{kind:"mobile",description:"Mismo viewport: 390 × 844. Tipografía legible, descripción breve y acceso directo a trabajo, CV y contacto."},
+"mobile-projects":{kind:"mobile",description:"Mismo viewport: 390 × 844. Alcance completo del producto, imagen de su página inicial y acceso directo a la landing. Los otros cuatro productos permiten desplegar alcance y aporte."},
+"cv-contact":{kind:"cv",description:"Primera página del CV anterior frente al nuevo documento adjunto, de una página. En la copia descargable se corrigió únicamente la fecha de Polodev: Aug 2026; el archivo adjunto original no se modificó."},
+"desktop-full":{kind:"overview",description:"Vista general de escritorio. Medición del mismo navegador a 1280 px: 9.630 → 5.214 px de altura. Las miniaturas no están destinadas a leer el texto."},
+"mobile-full":{kind:"overview",description:"Vista general móvil. Medición del mismo navegador a 390 px: 13.938 → 7.428 px de altura. Las miniaturas no están destinadas a leer el texto."}
+};
+const latest="../2026-09-05-portfolio-corrections/screenshots/";
+const afterFiles={"desktop-home":"after-home.png","mobile-home":"after-mobile-home.png","mobile-projects":"after-mobile-projects.png","cv-contact":"after-cv.png","desktop-full":"after-full.png","mobile-full":"after-mobile-full.png"};
+document.getElementById("view").addEventListener("change",event=>{
+const key=event.target.value,view=views[key];
+document.getElementById("comparison").className="comparison "+view.kind;
+document.getElementById("description").textContent=view.description;
+for(const side of ["before","after"]){
+const path=view[side]?latest+view[side]:side==="after"?latest+afterFiles[key]:"screenshots/before-"+key+".png";
+const img=document.getElementById(side);
+img.removeAttribute("width");img.removeAttribute("height");img.src=path;
+img.alt=(side==="before"?"Antes: ":"Después: ")+event.target.selectedOptions[0].textContent;
+document.getElementById(side+"-link").href=path;
+}
+});
+</script>
+</body></html>

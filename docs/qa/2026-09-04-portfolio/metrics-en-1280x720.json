@@ -1,0 +1,93 @@
+{
+  "url": "http://127.0.0.1:4176/en/",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "pageHeight": 5242,
+  "clientWidth": 1280,
+  "scrollWidth": 1280,
+  "horizontalOverflow": false,
+  "heroActions": {
+    "top": 542.953125,
+    "bottom": 590.953125,
+    "width": 681.046875,
+    "height": 48
+  },
+  "sections": [
+    {
+      "id": "home",
+      "top": 77,
+      "bottom": 706.953125,
+      "width": 1280,
+      "height": 629.953125
+    },
+    {
+      "id": "projects",
+      "top": 706.953125,
+      "bottom": 2978.5,
+      "width": 1280,
+      "height": 2271.546875
+    },
+    {
+      "id": "experience",
+      "top": 2978.5,
+      "bottom": 4206.34375,
+      "width": 1280,
+      "height": 1227.84375
+    },
+    {
+      "id": "principles",
+      "top": 4206.34375,
+      "bottom": 4729.546875,
+      "width": 1280,
+      "height": 523.203125
+    },
+    {
+      "id": "contact",
+      "top": 4729.546875,
+      "bottom": 5180.8125,
+      "width": 1280,
+      "height": 451.265625
+    }
+  ],
+  "images": [
+    {
+      "src": "../assets/projects/poultry-quotation.png",
+      "complete": true,
+      "naturalWidth": 1168,
+      "naturalHeight": 884,
+      "alt": "Poultry quotation with products, commercial terms and version history, using fictional data."
+    },
+    {
+      "src": "../assets/projects/nutry-calculator.png",
+      "complete": true,
+      "naturalWidth": 1280,
+      "naturalHeight": 900,
+      "alt": "Nutry public calculator showing a food, gram adjustment and macronutrients."
+    }
+  ],
+  "brokenAnchors": [],
+  "duplicateIds": [],
+  "headings": [
+    "David Villegas Sandoval"
+  ],
+  "assets": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/assets/CV%20David%20Misael%20Villegas%20Sandoval.pdf",
+      "status": 200
+    },
+    {
+      "path": "/assets/projects/poultry-quotation.png",
+      "status": 200
+    },
+    {
+      "path": "/assets/projects/nutry-calculator.png",
+      "status": 200
+    }
+  ]
+}

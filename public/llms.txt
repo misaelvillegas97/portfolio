@@ -10,14 +10,16 @@
 - Full-stack engineering with Angular, React.js, NestJS, Node.js, Java / Spring Boot, PostgreSQL, AWS, Docker, CI/CD, and SSR.
 - Experience across finance, logistics, internal communications, forestry, telecommunications, retail, payments, gaming, and digital entertainment.
 - Builds clear, secure, maintainable digital products from architecture through production operation.
+- Open to senior employment and consulting. Employer experience is described through responsibilities, without independently verified impact metrics.
+- Contact: david@dvillegas.cl
 
 ## Selected products
-- [Poultry](https://poultry.cl): Trazabilidad operativa desde la nave hasta la gerencia.
-- [WWT](https://wwt.devly.cl): Trabajo interno organizado, visible y trazable.
-- [Trackly](https://trackly.cl): Ubicación y actividad de flota convertidas en contexto operativo.
-- [Nuptia](https://nuptia.cl): Invitaciones y coordinación de invitados en un mismo flujo.
-- [Nutry](https://nutry.cl): Consulta nutricional, recetas y planificación conectadas.
-- [Medisenda](https://medisenda.cl): Próximamente en medisenda.cl: una nueva experiencia digital para coordinación en salud.
+- [Poultry](https://poultry.cl): Diseño y desarrollo de una base multi-tenant con autorización por recurso y sucursal, auditoría y flujos operativos conectados.
+- [WWT](https://wwt.devly.cl): Arquitectura y desarrollo de módulos de documentos, solicitudes y flujos con permisos, notificaciones y trazabilidad.
+- [Trackly](https://trackly.cl): Desarrollo full-stack de vistas operativas que organizan ubicación y actividad de flota para consulta diaria.
+- [Nuptia](https://nuptia.cl): Arquitectura multi-tenant y desarrollo de flujos de invitaciones, RSVP, roles, reportes y organización de invitados.
+- [Nutry](https://nutry.cl): Arquitectura y desarrollo de gestión clínica, recetas y generación asistida de planes alimentarios basada en información real del sistema.
+- Medisenda (En construcción): Definición inicial del producto y de una base técnica preparada para evolucionar cuando el alcance quede validado.
 
 ## Professional profiles
 - [LinkedIn](https://www.linkedin.com/in/misaelv/)

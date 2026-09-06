@@ -1,0 +1,77 @@
+{
+  "url": "http://127.0.0.1:4177/",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "pageHeight": 9630,
+  "clientWidth": 1280,
+  "scrollWidth": 1280,
+  "horizontalOverflow": false,
+  "heroActions": {
+    "top": 780.1875,
+    "bottom": 832.1875,
+    "width": 685.59375,
+    "height": 52
+  },
+  "sections": [
+    {
+      "id": "home",
+      "top": 77,
+      "bottom": 910.578125,
+      "width": 1280,
+      "height": 833.578125
+    },
+    {
+      "id": "principles",
+      "top": 910.578125,
+      "bottom": 1606.21875,
+      "width": 1280,
+      "height": 695.640625
+    },
+    {
+      "id": "projects",
+      "top": 1606.21875,
+      "bottom": 6155.296875,
+      "width": 1280,
+      "height": 4549.078125
+    },
+    {
+      "id": "experience",
+      "top": 6155.296875,
+      "bottom": 7769.71875,
+      "width": 1280,
+      "height": 1614.421875
+    },
+    {
+      "id": "capabilities",
+      "top": 7769.71875,
+      "bottom": 8715.015625,
+      "width": 1280,
+      "height": 945.296875
+    },
+    {
+      "id": "contact",
+      "top": 8715.015625,
+      "bottom": 9548.578125,
+      "width": 1280,
+      "height": 833.5625
+    }
+  ],
+  "images": [],
+  "brokenAnchors": [],
+  "duplicateIds": [],
+  "headings": [
+    "David Villegas Sandoval"
+  ],
+  "assets": [
+    {
+      "path": "/en/",
+      "status": 200
+    },
+    {
+      "path": "/assets/CV%20David%20Misael%20Villegas%20Sandoval.pdf",
+      "status": 200
+    }
+  ]
+}

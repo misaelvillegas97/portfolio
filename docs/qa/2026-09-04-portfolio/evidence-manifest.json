@@ -1,0 +1,205 @@
+[
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/after-case-decisions.png",
+    "width": 1280,
+    "height": 720,
+    "bytes": 54186,
+    "sha256": "4e1fef2df080c738d5813280d3dc26fbce063f39d5586adfc605be394e05b71f"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/after-contact-copy-error.png",
+    "width": 1280,
+    "height": 720,
+    "bytes": 56841,
+    "sha256": "60733aae8095405dcba3dbdcb8bd4448d25a38ef106f77795a073afc1b23356f"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/after-contact-copy-success.png",
+    "width": 1280,
+    "height": 720,
+    "bytes": 54818,
+    "sha256": "841a09441ac7581d07577cef3249f39ce024ed0277aee1e12d6041b4ad1effe2"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/after-contact.png",
+    "width": 1280,
+    "height": 720,
+    "bytes": 54183,
+    "sha256": "576a0bba9035a316d76f0b61c706a45c49926aae55da89e4ed087d10cf115081"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/after-cv-contact.png",
+    "width": 774,
+    "height": 1095,
+    "bytes": 133010,
+    "sha256": "b6ac6a61f1b3e77eafd9c706ffba0b6041733d929b226660238780ee6b0caadb"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/after-desktop-full.png",
+    "width": 493,
+    "height": 1999,
+    "bytes": 362612,
+    "sha256": "9293894956b4689a3b06ea21c95b033da4bcecdd7116df2ffc4eebaf8fd48df5"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/after-desktop-home.png",
+    "width": 1280,
+    "height": 720,
+    "bytes": 69115,
+    "sha256": "2d9062f54e3074135b8e35fc6b2948b8615029a35c49cd8fda115e4cfe2ddf1e"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/after-desktop-projects.png",
+    "width": 1280,
+    "height": 720,
+    "bytes": 75983,
+    "sha256": "06c903daf065dbf32452ae2249dc13d8d880fe0a1ab3fbdebffc6c2b6dbd8a3b"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/after-english-home.png",
+    "width": 1280,
+    "height": 720,
+    "bytes": 69292,
+    "sha256": "c261c06b70ab3524d81d03ce9c1c384223f9d8e321724d0e8b47a3693e819d30"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/after-keyboard-focus.png",
+    "width": 1280,
+    "height": 720,
+    "bytes": 68678,
+    "sha256": "72b543cca133d1bbc79814d6acea84049fe278867671437782c3b3865617272f"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/after-landscape-menu.png",
+    "width": 568,
+    "height": 320,
+    "bytes": 24417,
+    "sha256": "e7a6fd7c7e8142d4f4ab3348fe5009b5b398a0ad30156f7a00925711d2804b76"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/after-mobile-contact.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 38129,
+    "sha256": "afd6fa5db9431b7455f634dd6995016bcc57cdaf90fbd8f1eb5b16ab8b672446"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/after-mobile-full.png",
+    "width": 107,
+    "height": 1994,
+    "bytes": 176328,
+    "sha256": "35cfbaa22d89aea7970551fa60f4103ab85f20fe2d7126eebe042882d99b0e96"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/after-mobile-home.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 43734,
+    "sha256": "3d04ed72c82aaf46e278ea383a93af428196a4c6567efae68c5f8ec8fc9bfae4"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/after-mobile-projects.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 40067,
+    "sha256": "482bac714b40f7e0c0a3cb6907ea4d5b6e50716845ad739e34add77404665a4d"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/after-narrow-home.png",
+    "width": 320,
+    "height": 640,
+    "bytes": 30782,
+    "sha256": "37ff912dc90578132de1f0907edcef4fb136e568534480833aeb8d77d8c66b2e"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/after-nutry.png",
+    "width": 1280,
+    "height": 720,
+    "bytes": 96084,
+    "sha256": "6be24cada39a9c75d7629ea5c27397421fdfb88fdd3ac35a05c33b476eb56d09"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/after-tablet-home.png",
+    "width": 768,
+    "height": 1024,
+    "bytes": 85555,
+    "sha256": "179f601d376c7f73f20316dff4fff87cd26f265537b24f6f9c974988ffc491cc"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/before-cv-contact.png",
+    "width": 774,
+    "height": 1095,
+    "bytes": 133221,
+    "sha256": "4b74ba505fba54fff95abf2edb146bea2150dc784a9f6b03dd5d62af29cda4bd"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/before-desktop-full.png",
+    "width": 266,
+    "height": 2000,
+    "bytes": 262525,
+    "sha256": "fdde5a2df37a7335640ae6d4e217126fefc73d4f17466096ba80a6e1e9ffa568"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/before-desktop-home.png",
+    "width": 1280,
+    "height": 720,
+    "bytes": 109432,
+    "sha256": "7c4f8b384bcf2c9c1bf48ae59c102e1eb962620e60121910c677c5da1070cb7b"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/before-desktop-projects.png",
+    "width": 1280,
+    "height": 720,
+    "bytes": 60044,
+    "sha256": "043d5e965f069fe573599e1a45db2679f370829a622036d7511eaa914f5b7572"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/before-mobile-full.png",
+    "width": 56,
+    "height": 2000,
+    "bytes": 106479,
+    "sha256": "9169fcc9fa3b3f43f319bc67733f850af4d9ab634a8d988a0e54b335eed214ae"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/before-mobile-home.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 75252,
+    "sha256": "c07c946929cbf55bcd7c4471bed88f6066ab586a5b2b6f7ded98adcbe43b9506"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/before-mobile-projects.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 37838,
+    "sha256": "1a1bcc9d5d0e5514a5aa813d66eda1f4afad145605069102589a5e32ce3b01f0"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/comparison-preview.png",
+    "width": 1440,
+    "height": 1000,
+    "bytes": 162668,
+    "sha256": "9224cde62ad60652858b92ac2feff675e1a8ab72703b64dd66a262881fcf3b6b"
+  },
+  {
+    "path": "docs/qa/2026-09-04-portfolio/screenshots/issue-landscape-menu.png",
+    "width": 568,
+    "height": 320,
+    "bytes": 24343,
+    "sha256": "3189e0d040ffe7096185ec652c9ab041d0a1cffdff9adc01faf1d0067c292d96"
+  },
+  {
+    "path": "public/assets/projects/nutry-calculator.png",
+    "width": 1280,
+    "height": 900,
+    "bytes": 114743,
+    "sha256": "1fb0c8dcaf3dfafeb7fca6dc8e499f3dc1f678d00c2cb3d07487369f5d1eb5ba"
+  },
+  {
+    "path": "public/assets/projects/poultry-quotation.png",
+    "width": 1168,
+    "height": 884,
+    "bytes": 57200,
+    "sha256": "e003d72a56d77a3a1f1c48eb6d6c7431313e447146d0256a466443cebec92b44"
+  }
+]

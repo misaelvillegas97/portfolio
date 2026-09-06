@@ -1,75 +1,35 @@
+import { ChevronDown } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
-interface Principle {
-  title: string;
-  description: string;
-}
-
-interface CapabilityGroup extends Principle {
-  items: string[];
-}
+interface Principle { title: string; description: string }
 
 export default function About() {
   const { t } = useTranslation();
-  const principles = Object.values(
-    t('principles.items', { returnObjects: true }) as Record<string, Principle>,
-  );
-
-  return (
-    <section id="principles" className="section-shell deferred-section" aria-labelledby="principles-title">
-      <div className="atlas-grid section-layout">
-        <header className="section-heading">
-          <p className="eyebrow"><span>01</span>{t('principles.eyebrow')}</p>
-          <h2 id="principles-title">{t('principles.title')}</h2>
-        </header>
-        <div className="section-content">
-          <p className="section-intro">{t('principles.description')}</p>
-          <ol className="principles-list" role="list">
-            {principles.map((principle, index) => (
-              <li key={principle.title}>
-                <span className="principles-list__number">0{index + 1}</span>
-                <h3>{principle.title}</h3>
-                <p>{principle.description}</p>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-export function Capabilities() {
-  const { t } = useTranslation();
-  const groups = Object.values(
-    t('capabilities.groups', { returnObjects: true }) as Record<string, CapabilityGroup>,
-  );
+  const principles = Object.values(t('principles.items', { returnObjects: true }) as Record<string, Principle>);
   const technologies = t('capabilities.technologies', { returnObjects: true }) as string[];
 
   return (
-    <section id="capabilities" className="section-shell deferred-section capabilities" aria-labelledby="capabilities-title">
-      <div className="atlas-grid section-layout">
+    <section id="principles" className="section-shell deferred-section approach" aria-labelledby="principles-title">
+      <div className="page-width">
         <header className="section-heading">
-          <p className="eyebrow"><span>04</span>{t('capabilities.eyebrow')}</p>
-          <h2 id="capabilities-title">{t('capabilities.title')}</h2>
+          <p className="eyebrow">{t('principles.eyebrow')}</p><h2 id="principles-title">{t('principles.title')}</h2>
         </header>
-        <div className="section-content">
-          <p className="section-intro">{t('capabilities.description')}</p>
-          <div className="capability-groups">
-            {groups.map((group, index) => (
-              <article key={group.title}>
-                <span className="capability-groups__number">0{index + 1}</span>
-                <h3>{group.title}</h3>
-                <p>{group.description}</p>
-                <ul role="list">
-                  {group.items.map((item) => <li key={item}>{item}</li>)}
-                </ul>
-              </article>
-            ))}
-          </div>
-          <ul className="technology-index" aria-label={t('capabilities.eyebrow')} role="list">
-            {technologies.map((technology) => <li key={technology}>{technology}</li>)}
-          </ul>
+        <ol className="principles-list" role="list">
+          {principles.map((principle, index) => (
+            <li key={principle.title}>
+              <span className="principles-list__number" aria-hidden="true">0{index + 1}</span>
+              <h3>{principle.title}</h3><p>{principle.description}</p>
+            </li>
+          ))}
+        </ol>
+        <div id="capabilities" className="capabilities">
+          <details>
+            <summary>{t('capabilities.title')}<ChevronDown aria-hidden="true" size={18} /></summary>
+            <p>{t('capabilities.description')}</p>
+            <ul className="technology-index" aria-label={t('capabilities.eyebrow')} role="list">
+              {technologies.map((technology) => <li key={technology}>{technology}</li>)}
+            </ul>
+          </details>
         </div>
       </div>
     </section>

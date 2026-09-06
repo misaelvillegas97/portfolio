@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
-import About, { Capabilities } from './components/About';
+import About from './components/About';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
 import Hero from './components/Hero';
@@ -19,10 +19,9 @@ function App() {
       <Navigation />
       <main id="main-content" tabIndex={-1}>
         <Hero />
-        <About />
         <Projects />
         <Experience />
-        <Capabilities />
+        <About />
         <Contact />
       </main>
       <footer className="site-footer">

@@ -1,0 +1,85 @@
+{
+  "url": "http://127.0.0.1:4176/",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "pageHeight": 7428,
+  "clientWidth": 390,
+  "scrollWidth": 390,
+  "horizontalOverflow": false,
+  "heroActions": {
+    "top": 405.703125,
+    "bottom": 453.703125,
+    "width": 350,
+    "height": 48
+  },
+  "sections": [
+    {
+      "id": "home",
+      "top": 69,
+      "bottom": 856.40625,
+      "width": 390,
+      "height": 787.40625
+    },
+    {
+      "id": "projects",
+      "top": 856.40625,
+      "bottom": 4243.34375,
+      "width": 390,
+      "height": 3386.9375
+    },
+    {
+      "id": "experience",
+      "top": 4243.34375,
+      "bottom": 5971.515625,
+      "width": 390,
+      "height": 1728.171875
+    },
+    {
+      "id": "principles",
+      "top": 5971.515625,
+      "bottom": 6630.890625,
+      "width": 390,
+      "height": 659.375
+    },
+    {
+      "id": "contact",
+      "top": 6630.890625,
+      "bottom": 7341.578125,
+      "width": 390,
+      "height": 710.6875
+    }
+  ],
+  "images": [
+    {
+      "src": "./assets/projects/poultry-home.png",
+      "complete": true,
+      "naturalWidth": 1280,
+      "naturalHeight": 900,
+      "alt": "Página de inicio de Poultry con una vista general de su gestión avícola."
+    },
+    {
+      "src": "./assets/projects/nutry-home.png",
+      "complete": true,
+      "naturalWidth": 1280,
+      "naturalHeight": 900,
+      "alt": "Página de inicio de Nutry con la propuesta de su software nutricional y acceso profesional."
+    }
+  ],
+  "brokenAnchors": [],
+  "duplicateIds": [],
+  "headings": [
+    "David Villegas Sandoval"
+  ],
+  "assets": [
+    {
+      "path": "/en/",
+      "status": 200
+    },
+    {
+      "path": "/assets/CV%20David%20Misael%20Villegas%20Sandoval.pdf",
+      "status": 200
+    }
+  ]
+}

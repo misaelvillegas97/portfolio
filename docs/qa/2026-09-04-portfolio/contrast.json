@@ -1,0 +1,18 @@
+[
+  {
+    "name": "text",
+    "ratio": "6.39"
+  },
+  {
+    "name": "link",
+    "ratio": "9.59"
+  },
+  {
+    "name": "button",
+    "ratio": "7.70"
+  },
+  {
+    "name": "focus",
+    "ratio": "4.99"
+  }
+]

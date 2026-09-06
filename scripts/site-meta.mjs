@@ -15,7 +15,6 @@ const localeCodes = { es: 'es-CL', en: 'en' };
 const socialProfiles = [
   'https://www.linkedin.com/in/misaelv/',
   'https://github.com/misaelvillegas97',
-  'https://www.instagram.com/*mslv.*/',
 ];
 
 const escapeMarkup = (value) => String(value)
@@ -171,7 +170,9 @@ export function buildLlms(siteUrl = DEFAULT_SITE_URL) {
   if (!routes) throw new TypeError('SITE_URL is required to build llms.txt');
 
   const products = Object.values(localeContent.es.projects.items)
-    .map((project) => `- [${project.title}](${project.url ?? 'https://medisenda.cl'}): ${project.tagline}`);
+    .map((project) => project.url
+      ? `- [${project.title}](${project.url}): ${project.contribution}`
+      : `- ${project.title} (${project.status}): ${project.contribution}`);
 
   return [
     '# David Villegas Sandoval',
@@ -186,6 +187,8 @@ export function buildLlms(siteUrl = DEFAULT_SITE_URL) {
     '- Full-stack engineering with Angular, React.js, NestJS, Node.js, Java / Spring Boot, PostgreSQL, AWS, Docker, CI/CD, and SSR.',
     '- Experience across finance, logistics, internal communications, forestry, telecommunications, retail, payments, gaming, and digital entertainment.',
     '- Builds clear, secure, maintainable digital products from architecture through production operation.',
+    '- Open to senior employment and consulting. Employer experience is described through responsibilities, without independently verified impact metrics.',
+    `- Contact: ${localeContent.en.contact.email}`,
     '',
     '## Selected products',
     ...products,

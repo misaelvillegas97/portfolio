@@ -1,0 +1,9 @@
+{
+  "browser": "Chrome interactive via CUA",
+  "url": "http://127.0.0.1:4176/#contact",
+  "action": "Click Copiar correo",
+  "observedStatus": "Correo copiado",
+  "consoleErrors": [],
+  "apiSubstituted": false,
+  "screenshot": "Native screenshot recorded in task conversation"
+}

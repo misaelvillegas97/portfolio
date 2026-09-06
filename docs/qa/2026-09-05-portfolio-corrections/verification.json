@@ -1,0 +1,63 @@
+{
+  "sourceFile": "C:\\Users\\david\\OneDrive\\Escritorio\\Documentos\\Personal\\David_Villegas_Sandoval_CV.pdf",
+  "sourceSha256": "d96bd39af597c92d3af75f73cbdd49cc1c7ccb8e8fe4fb790f7a43692e717d33",
+  "downloadSha256": "e52fbb9ff9c41847c861e62b1664c6284b092e341673cb2ca9bd6e554cf8f57f",
+  "pages": 1,
+  "onlyChangedRegion": "Polodev employment date: Feb 2024 - Aug 2026",
+  "textAndCoordinatesOutsideDateUnchanged": true,
+  "pdfLinksUnchanged": true,
+  "distAndHttpDownloadMatch": true,
+  "downloadUrls": [
+    "http://127.0.0.1:4176/assets/CV%20David%20Misael%20Villegas%20Sandoval.pdf"
+  ],
+  "responsiveChecks": [
+    {
+      "file": "metrics-en-1280x720.json",
+      "width": 1280,
+      "pageHeight": 5266,
+      "passed": true
+    },
+    {
+      "file": "metrics-en-320x640.json",
+      "width": 320,
+      "pageHeight": 7803,
+      "passed": true
+    },
+    {
+      "file": "metrics-en-390x844.json",
+      "width": 390,
+      "pageHeight": 7383,
+      "passed": true
+    },
+    {
+      "file": "metrics-en-768x1024.json",
+      "width": 768,
+      "pageHeight": 6299,
+      "passed": true
+    },
+    {
+      "file": "metrics-es-1280x720.json",
+      "width": 1280,
+      "pageHeight": 5214,
+      "passed": true
+    },
+    {
+      "file": "metrics-es-320x640.json",
+      "width": 320,
+      "pageHeight": 7878,
+      "passed": true
+    },
+    {
+      "file": "metrics-es-390x844.json",
+      "width": 390,
+      "pageHeight": 7428,
+      "passed": true
+    },
+    {
+      "file": "metrics-es-768x1024.json",
+      "width": 768,
+      "pageHeight": 6276,
+      "passed": true
+    }
+  ]
+}

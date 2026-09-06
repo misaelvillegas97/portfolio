@@ -5,20 +5,20 @@
   },
   "navigation": {
     "home": "Home",
-    "principles": "Principles",
-    "projects": "Products",
+    "principles": "Approach",
+    "projects": "Work",
     "experience": "Experience",
     "capabilities": "Capabilities",
     "contact": "Contact",
-    "menuLabel": "Open navigation",
+    "menuLabel": "Navigation menu",
     "languageLabel": "View portfolio in Spanish"
   },
   "hero": {
     "eyebrow": "Profile / 001",
     "title": "David Villegas Sandoval",
     "role": "Senior Software Engineer",
-    "subtitle": "Different industries. One way of working: understand the operation before designing the software.",
-    "description": "I build clear, secure, maintainable digital products—from architecture through live operations.",
+    "subtitle": "Software for the people who run day-to-day operations.",
+    "description": "Full-stack development with Angular, React and NestJS. From payments and logistics to my own operations and nutrition products.",
     "sectorsLabel": "Industry experience",
     "sectors": [
       "Finance",
@@ -29,32 +29,34 @@
       "Gaming and digital entertainment"
     ],
     "careerLabel": "Since 2017",
-    "careerDescription": "Transferable experience across distinct business contexts.",
-    "primaryCta": "View products",
-    "secondaryCta": "Download résumé"
+    "careerDescription": "Experience in teams at Blaze, Falabella and NTT Data, alongside consulting and my own products.",
+    "primaryCta": "Explore my work",
+    "secondaryCta": "Download résumé",
+    "contactCta": "Open to senior roles and consulting",
+    "experienceCta": "View experience"
   },
   "principles": {
     "eyebrow": "How I work",
-    "title": "Engineering that understands the operation before abstracting it.",
-    "description": "Every technical decision starts with the workflow it must support, who can act, and what evidence must remain available.",
+    "title": "How I take an idea to production.",
+    "description": "A process connecting operations to implementation.",
     "items": {
       "operations": {
-        "title": "Model the operation",
-        "description": "I translate processes, roles, and exceptions into flows that product operators and maintainers can understand."
+        "title": "Understand the workflow",
+        "description": "Identify who does the work, what information they need and what happens when something fails."
       },
       "architecture": {
-        "title": "Design for change",
-        "description": "I define clear boundaries, compatible contracts, and traceable data so products can evolve without multiplying complexity."
+        "title": "Define the boundaries",
+        "description": "Model permissions, data and contracts before connecting interfaces to the backend."
       },
       "delivery": {
-        "title": "Close the loop",
-        "description": "I connect frontend, backend, infrastructure, and tests to deliver verifiable features rather than isolated pieces."
+        "title": "Test what comes next",
+        "description": "Check the complete flow: saving, returning, cancelling and retrying. Delivery includes operation."
       }
     }
   },
   "projects": {
     "eyebrow": "Products",
-    "title": "Systems that turn everyday work into actionable information.",
+    "title": "Products that connect operations.",
     "description": "Six products built around concrete operational problems, with a technical foundation designed to grow without losing control.",
     "labels": {
       "problem": "Problem",
@@ -62,7 +64,8 @@
       "capabilities": "Capabilities",
       "status": "Status",
       "visit": "Visit product",
-      "upcoming": "Coming soon"
+      "upcoming": "Coming soon",
+      "scope": "View scope and contribution"
     },
     "items": {
       "poultry": {
@@ -72,12 +75,20 @@
         "problem": "Poultry production distributes critical information across facilities, flocks, inventory, and teams with different responsibilities.",
         "contribution": "Design and development of a multi-tenant foundation with resource and branch authorization, auditability, and connected operational workflows.",
         "capabilities": [
+          "Production, feed and health",
+          "Inventory, costs and sales",
           "Multi-branch operations",
-          "Traceability and audit",
-          "Operational reporting"
+          "Traceability, audit and reporting"
         ],
         "status": "Live",
-        "url": "https://poultry.cl"
+        "url": "https://poultry.cl",
+        "image": {
+          "src": "assets/projects/poultry-home.png",
+          "width": 1280,
+          "height": 900,
+          "alt": "Poultry homepage presenting its poultry management platform.",
+          "caption": "Poultry · Poultry ERP homepage."
+        }
       },
       "wwt": {
         "title": "WWT",
@@ -129,11 +140,19 @@
         "contribution": "Architecture and development of clinical management, recipes, and assisted meal-plan generation grounded in real system data.",
         "capabilities": [
           "Patients and assessments",
-          "Recipes and plans",
-          "Assisted generation"
+          "Recipes and meal plans",
+          "Assisted generation",
+          "Follow-up and reports"
         ],
         "status": "Live",
-        "url": "https://nutry.cl"
+        "url": "https://nutry.cl",
+        "image": {
+          "src": "assets/projects/nutry-home.png",
+          "width": 1280,
+          "height": 900,
+          "alt": "Nutry homepage presenting its nutrition software and professional access.",
+          "caption": "Nutry · Nutrition software homepage."
+        }
       },
       "medisenda": {
         "title": "Medisenda",
@@ -148,12 +167,14 @@
         ],
         "status": "Building"
       }
-    }
+    },
+    "otherTitle": "Other products",
+    "evidenceNote": "Images show the Poultry and Nutry homepages. Visit each site to explore its scope and access the product."
   },
   "experience": {
     "eyebrow": "Experience",
-    "title": "Experience building products and platforms since 2017.",
-    "description": "Professional work across gaming, consulting, retail, payments, telecommunications, and corporate intranets.",
+    "title": "Experience in teams and products.",
+    "description": "Product engineering and consulting since 2017.",
     "present": "Present",
     "items": {
       "blaze": {
@@ -161,9 +182,9 @@
         "role": "Senior Software Engineer",
         "period": {
           "start": "2024-11",
-          "end": "present"
+          "end": "2026-07"
         },
-        "summary": "Software development for gaming products, focused on authentication, performance, and automated quality.",
+        "summary": "Two-factor authentication, refactoring, and work on queries and caching. Unit and end-to-end tests for gaming products.",
         "capabilities": [
           "TypeScript",
           "Node.js",
@@ -175,9 +196,9 @@
         "role": "Senior Software Engineering Consultant",
         "period": {
           "start": "2024-02",
-          "end": "present"
+          "end": "2026-08"
         },
-        "summary": "Consulting and full-stack product development with Angular, NestJS, microservices, and AWS integrations.",
+        "summary": "Inventory and supplier systems with NestJS and AWS Lambda. Angular interfaces and integration with Cognito, S3 and SNS.",
         "capabilities": [
           "Angular",
           "NestJS",
@@ -191,7 +212,7 @@
           "start": "2021-09",
           "end": "2023-12"
         },
-        "summary": "Transport and payment systems for regional operations, with SAP integrations and frontend and backend services.",
+        "summary": "Transportation systems and carrier payment requests integrated with SAP. Development of tax solutions for Chile, Peru and Colombia.",
         "capabilities": [
           "Angular",
           "Java / Spring Boot",
@@ -205,7 +226,7 @@
           "start": "2019-09",
           "end": "2021-09"
         },
-        "summary": "Applications for financial services and telecommunications using Angular, Java, Node.js, AWS, and CI/CD practices.",
+        "summary": "Angular, Java and Node.js applications for financial services and telecommunications projects. AWS integrations and CI/CD processes.",
         "capabilities": [
           "Angular",
           "Java / Spring Boot",
@@ -214,12 +235,12 @@
       },
       "carpetres": {
         "company": "Carpetres",
-        "role": "Software Engineer",
+        "role": "Junior Software Engineer",
         "period": {
           "start": "2018-07",
           "end": "2019-09"
         },
-        "summary": "Corporate intranet development spanning news, documents, video, learning, and collaboration tools.",
+        "summary": "Corporate intranets with portals, documents, chat and galleries. Angular and Node.js development, plus interface prototypes.",
         "capabilities": [
           "Angular",
           "Node.js",
@@ -228,24 +249,25 @@
       },
       "innoapsion": {
         "company": "Innoapsion",
-        "role": "Junior Software Engineer",
+        "role": "Entry Software Engineer",
         "period": {
           "start": "2017-07",
           "end": "2018-01"
         },
-        "summary": "Web and Android applications for checklists, employee administration, and operational report generation.",
+        "summary": "Web and Android applications for operational checklists, employee management, roles and reports.",
         "capabilities": [
           "Web applications",
           "Android",
           "Reporting"
         ]
       }
-    }
+    },
+    "note": "Responsibilities and areas of work. My résumé provides the full career history."
   },
   "capabilities": {
     "eyebrow": "Capabilities",
-    "title": "Technology applied to product and operational outcomes.",
-    "description": "I combine full-stack development, platform design, and delivery discipline to support products that need to evolve.",
+    "title": "Tools I work with",
+    "description": "I choose technology for the product, its constraints and the team that will maintain it.",
     "groups": {
       "fullStack": {
         "title": "Full-stack engineering",
@@ -291,10 +313,17 @@
   },
   "contact": {
     "eyebrow": "Contact",
-    "title": "Let's talk about a product or operation that needs clarity.",
-    "description": "Available to discuss senior engineering, product architecture, and full-stack development.",
+    "title": "Senior roles or consulting.",
+    "description": "Looking for an engineer to join your team or help with a specific project? Tell me the context and let's talk.",
     "primaryLabel": "Contact on LinkedIn",
     "cvLabel": "Download résumé",
-    "availability": "Remote work and collaboration with distributed teams."
+    "availability": "Remote work and collaboration with distributed teams.",
+    "emailLabel": "Email me",
+    "email": "david@dvillegas.cl",
+    "emailSubject": "Senior role or consulting",
+    "copied": "Email copied",
+    "copyLabel": "Copy email",
+    "copyError": "Couldn't copy. Select the email address or use the link to contact me.",
+    "nextStep": "Include the type of opportunity, the project and the timeline you have in mind."
   }
 }

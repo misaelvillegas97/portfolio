@@ -1,0 +1,86 @@
+{
+  "projectLinks": [
+    {
+      "text": "Visit product",
+      "url": "https://poultry.cl/"
+    },
+    {
+      "text": "Visit product",
+      "url": "https://poultry.cl/"
+    },
+    {
+      "text": "Visit product",
+      "url": "https://nutry.cl/"
+    },
+    {
+      "text": "Visit product",
+      "url": "https://nutry.cl/"
+    },
+    {
+      "text": "Visit product",
+      "url": "https://wwt.devly.cl/"
+    },
+    {
+      "text": "Visit product",
+      "url": "https://trackly.cl/"
+    },
+    {
+      "text": "Visit product",
+      "url": "https://nuptia.cl/"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Senior Software Engineer",
+      "lang": "en",
+      "dates": [
+        "2024-11",
+        "2026-07"
+      ]
+    },
+    {
+      "role": "Senior Software Engineering Consultant",
+      "lang": "en",
+      "dates": [
+        "2024-02",
+        "2026-08"
+      ]
+    },
+    {
+      "role": "Senior Software Engineer",
+      "lang": "en",
+      "dates": [
+        "2021-09",
+        "2023-12"
+      ]
+    },
+    {
+      "role": "Semi Senior Software Engineer",
+      "lang": "en",
+      "dates": [
+        "2019-09",
+        "2021-09"
+      ]
+    },
+    {
+      "role": "Junior Software Engineer",
+      "lang": "en",
+      "dates": [
+        "2018-07",
+        "2019-09"
+      ]
+    },
+    {
+      "role": "Entry Software Engineer",
+      "lang": "en",
+      "dates": [
+        "2017-07",
+        "2018-01"
+      ]
+    }
+  ],
+  "downloads": [
+    "http://127.0.0.1:4176/assets/CV%20David%20Misael%20Villegas%20Sandoval.pdf",
+    "http://127.0.0.1:4176/assets/CV%20David%20Misael%20Villegas%20Sandoval.pdf"
+  ]
+}

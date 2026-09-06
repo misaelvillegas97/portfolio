@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://poultry.cl",
+    "status": 200,
+    "finalUrl": "https://poultry.cl/"
+  },
+  {
+    "url": "https://wwt.devly.cl",
+    "status": 200,
+    "finalUrl": "https://wwt.devly.cl/"
+  },
+  {
+    "url": "https://trackly.cl",
+    "status": 200,
+    "finalUrl": "https://trackly.cl/"
+  },
+  {
+    "url": "https://nuptia.cl",
+    "status": 200,
+    "finalUrl": "https://nuptia.cl/"
+  },
+  {
+    "url": "https://nutry.cl",
+    "status": 200,
+    "finalUrl": "https://nutry.cl/"
+  },
+  {
+    "url": "https://nutry.cl/calculator",
+    "status": 200,
+    "finalUrl": "https://nutry.cl/calculator"
+  }
+]

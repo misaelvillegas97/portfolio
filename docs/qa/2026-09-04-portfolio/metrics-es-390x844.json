@@ -1,0 +1,93 @@
+{
+  "url": "http://127.0.0.1:4176/",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "pageHeight": 7268,
+  "clientWidth": 390,
+  "scrollWidth": 390,
+  "horizontalOverflow": false,
+  "heroActions": {
+    "top": 405.703125,
+    "bottom": 453.703125,
+    "width": 350,
+    "height": 48
+  },
+  "sections": [
+    {
+      "id": "home",
+      "top": 69,
+      "bottom": 856.40625,
+      "width": 390,
+      "height": 787.40625
+    },
+    {
+      "id": "projects",
+      "top": 856.40625,
+      "bottom": 4058.15625,
+      "width": 390,
+      "height": 3201.75
+    },
+    {
+      "id": "experience",
+      "top": 4058.15625,
+      "bottom": 5812.25,
+      "width": 390,
+      "height": 1754.09375
+    },
+    {
+      "id": "principles",
+      "top": 5812.25,
+      "bottom": 6471.625,
+      "width": 390,
+      "height": 659.375
+    },
+    {
+      "id": "contact",
+      "top": 6471.625,
+      "bottom": 7182.3125,
+      "width": 390,
+      "height": 710.6875
+    }
+  ],
+  "images": [
+    {
+      "src": "./assets/projects/poultry-quotation.png",
+      "complete": true,
+      "naturalWidth": 1168,
+      "naturalHeight": 884,
+      "alt": "Cotización de Poultry con productos, condiciones comerciales e historial de versiones; datos ficticios."
+    },
+    {
+      "src": "./assets/projects/nutry-calculator.png",
+      "complete": true,
+      "naturalWidth": 1280,
+      "naturalHeight": 900,
+      "alt": "Calculadora pública de Nutry con detalle de un alimento, ajuste de gramos y macronutrientes."
+    }
+  ],
+  "brokenAnchors": [],
+  "duplicateIds": [],
+  "headings": [
+    "David Villegas Sandoval"
+  ],
+  "assets": [
+    {
+      "path": "/en/",
+      "status": 200
+    },
+    {
+      "path": "/assets/CV%20David%20Misael%20Villegas%20Sandoval.pdf",
+      "status": 200
+    },
+    {
+      "path": "/assets/projects/poultry-quotation.png",
+      "status": 200
+    },
+    {
+      "path": "/assets/projects/nutry-calculator.png",
+      "status": 200
+    }
+  ]
+}
