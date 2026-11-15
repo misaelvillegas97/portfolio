@@ -1,0 +1,442 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-15T06:42:33.116Z",
+  "title": "Design System: David Villegas Sandoval",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(15.00% 0.00504 88.00)",
+          "oklch(26.43% 0.00889 88.00)",
+          "oklch(37.86% 0.01273 88.00)",
+          "oklch(49.29% 0.01658 88.00)",
+          "oklch(60.71% 0.01682 88.00)",
+          "oklch(72.14% 0.01682 88.00)",
+          "oklch(83.57% 0.01381 88.00)",
+          "oklch(95.00% 0.00420 88.00)"
+        ]
+      },
+      "paper-raised": {
+        "role": "neutral",
+        "displayName": "Paper raised",
+        "tonalRamp": [
+          "oklch(15.00% 0.00331 89.72)",
+          "oklch(26.43% 0.00584 89.72)",
+          "oklch(37.86% 0.00836 89.72)",
+          "oklch(49.29% 0.01088 89.72)",
+          "oklch(60.71% 0.01104 89.72)",
+          "oklch(72.14% 0.01104 89.72)",
+          "oklch(83.57% 0.00907 89.72)",
+          "oklch(95.00% 0.00276 89.72)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "tonalRamp": [
+          "oklch(15.00% 0.00461 90.24)",
+          "oklch(26.43% 0.00812 90.24)",
+          "oklch(37.86% 0.01163 90.24)",
+          "oklch(49.29% 0.01514 90.24)",
+          "oklch(60.71% 0.01536 90.24)",
+          "oklch(72.14% 0.01536 90.24)",
+          "oklch(83.57% 0.01262 90.24)",
+          "oklch(95.00% 0.00384 90.24)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.00476 232.50)",
+          "oklch(26.43% 0.00838 232.50)",
+          "oklch(37.86% 0.01201 232.50)",
+          "oklch(49.29% 0.01563 232.50)",
+          "oklch(60.71% 0.01586 232.50)",
+          "oklch(72.14% 0.01586 232.50)",
+          "oklch(83.57% 0.01303 232.50)",
+          "oklch(95.00% 0.00397 232.50)"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Ink soft",
+        "tonalRamp": [
+          "oklch(15.00% 0.00401 226.27)",
+          "oklch(26.43% 0.00707 226.27)",
+          "oklch(37.86% 0.01012 226.27)",
+          "oklch(49.29% 0.01318 226.27)",
+          "oklch(60.71% 0.01337 226.27)",
+          "oklch(72.14% 0.01337 226.27)",
+          "oklch(83.57% 0.01098 226.27)",
+          "oklch(95.00% 0.00334 226.27)"
+        ]
+      },
+      "cobalt": {
+        "role": "primary",
+        "displayName": "Cobalt",
+        "tonalRamp": [
+          "oklch(15.00% 0.06146 264.11)",
+          "oklch(26.43% 0.10829 264.11)",
+          "oklch(37.86% 0.15511 264.11)",
+          "oklch(49.29% 0.20194 264.11)",
+          "oklch(60.71% 0.20487 264.11)",
+          "oklch(72.14% 0.20487 264.11)",
+          "oklch(83.57% 0.16828 264.11)",
+          "oklch(95.00% 0.05122 264.11)"
+        ]
+      },
+      "cobalt-deep": {
+        "role": "primary",
+        "displayName": "Cobalt deep",
+        "tonalRamp": [
+          "oklch(15.00% 0.04715 264.03)",
+          "oklch(26.43% 0.08307 264.03)",
+          "oklch(37.86% 0.11899 264.03)",
+          "oklch(49.29% 0.15491 264.03)",
+          "oklch(60.71% 0.15715 264.03)",
+          "oklch(72.14% 0.15715 264.03)",
+          "oklch(83.57% 0.12909 264.03)",
+          "oklch(95.00% 0.03929 264.03)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "tonalRamp": [
+          "oklch(15.00% 0.00450 102.50)",
+          "oklch(26.43% 0.00794 102.50)",
+          "oklch(37.86% 0.01137 102.50)",
+          "oklch(49.29% 0.01480 102.50)",
+          "oklch(60.71% 0.01501 102.50)",
+          "oklch(72.14% 0.01501 102.50)",
+          "oklch(83.57% 0.01233 102.50)",
+          "oklch(95.00% 0.00375 102.50)"
+        ]
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Line strong",
+        "tonalRamp": [
+          "oklch(15.00% 0.00430 111.40)",
+          "oklch(26.43% 0.00757 111.40)",
+          "oklch(37.86% 0.01085 111.40)",
+          "oklch(49.29% 0.01412 111.40)",
+          "oklch(60.71% 0.01433 111.40)",
+          "oklch(72.14% 0.01433 111.40)",
+          "oklch(83.57% 0.01177 111.40)",
+          "oklch(95.00% 0.00358 111.40)"
+        ]
+      },
+      "inverse-muted": {
+        "role": "neutral",
+        "displayName": "Inverse muted",
+        "tonalRamp": [
+          "oklch(15.00% 0.00373 223.56)",
+          "oklch(26.43% 0.00657 223.56)",
+          "oklch(37.86% 0.00941 223.56)",
+          "oklch(49.29% 0.01225 223.56)",
+          "oklch(60.71% 0.01243 223.56)",
+          "oklch(72.14% 0.01243 223.56)",
+          "oklch(83.57% 0.01021 223.56)",
+          "oklch(95.00% 0.00311 223.56)"
+        ]
+      },
+      "inverse-line": {
+        "role": "neutral",
+        "displayName": "Inverse line",
+        "tonalRamp": [
+          "oklch(15.00% 0.00428 223.77)",
+          "oklch(26.43% 0.00755 223.77)",
+          "oklch(37.86% 0.01081 223.77)",
+          "oklch(49.29% 0.01408 223.77)",
+          "oklch(60.71% 0.01428 223.77)",
+          "oklch(72.14% 0.01428 223.77)",
+          "oklch(83.57% 0.01173 223.77)",
+          "oklch(95.00% 0.00357 223.77)"
+        ]
+      },
+      "method-muted": {
+        "role": "primary",
+        "displayName": "Method muted",
+        "tonalRamp": [
+          "oklch(15.00% 0.02000 270.79)",
+          "oklch(26.43% 0.03525 270.79)",
+          "oklch(37.86% 0.05049 270.79)",
+          "oklch(49.29% 0.06573 270.79)",
+          "oklch(60.71% 0.06668 270.79)",
+          "oklch(72.14% 0.06668 270.79)",
+          "oklch(83.57% 0.05477 270.79)",
+          "oklch(95.00% 0.01667 270.79)"
+        ]
+      },
+      "method-line": {
+        "role": "primary",
+        "displayName": "Method line",
+        "tonalRamp": [
+          "oklch(15.00% 0.03702 268.62)",
+          "oklch(26.43% 0.06522 268.62)",
+          "oklch(37.86% 0.09342 268.62)",
+          "oklch(49.29% 0.12162 268.62)",
+          "oklch(60.71% 0.12338 268.62)",
+          "oklch(72.14% 0.12338 268.62)",
+          "oklch(83.57% 0.10135 268.62)",
+          "oklch(95.00% 0.03085 268.62)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 0.00)",
+          "oklch(26.43% 0.00000 0.00)",
+          "oklch(37.86% 0.00000 0.00)",
+          "oklch(49.29% 0.00000 0.00)",
+          "oklch(60.71% 0.00000 0.00)",
+          "oklch(72.14% 0.00000 0.00)",
+          "oklch(83.57% 0.00000 0.00)",
+          "oklch(95.00% 0.00000 0.00)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Personal display",
+        "purpose": "The two-line name; responsive variants stay in DESIGN.md."
+      },
+      "headline": {
+        "displayName": "Section headline",
+        "purpose": "Shared section introductions."
+      },
+      "title": {
+        "displayName": "Product title",
+        "purpose": "Featured product names and the inverse chapter heading."
+      },
+      "body": {
+        "displayName": "Reading",
+        "purpose": "Default content and responsibility descriptions."
+      },
+      "label": {
+        "displayName": "Contribution label",
+        "purpose": "Small contribution and disclosure subheadings."
+      },
+      "action": {
+        "displayName": "Action",
+        "purpose": "Shared text links and pill controls."
+      }
+    },
+    "shadows": [
+      {
+        "name": "navigation",
+        "value": "0 8px 32px rgb(28 37 42 / 8%)",
+        "purpose": "Detached paper navigation."
+      },
+      {
+        "name": "mobile-panel",
+        "value": "0 24px 48px rgb(28 37 42 / 10%)",
+        "purpose": "Native mobile navigation panel."
+      },
+      {
+        "name": "career-context",
+        "value": "0 16px 48px rgb(28 37 42 / 12%)",
+        "purpose": "Short career disclosure panel."
+      },
+      {
+        "name": "product-capture",
+        "value": "0 16px 40px rgb(28 37 42 / 12%)",
+        "purpose": "Actual product screenshot."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Shared CSS transition easing."
+      },
+      {
+        "name": "language-background",
+        "value": "200ms",
+        "purpose": "Language surface feedback."
+      },
+      {
+        "name": "action-state",
+        "value": "250ms",
+        "purpose": "Action transform/background and link underline."
+      },
+      {
+        "name": "icon-state",
+        "value": "300ms",
+        "purpose": "Directional icons and mobile menu symbol."
+      },
+      {
+        "name": "disclosure-image-link",
+        "value": "350ms",
+        "purpose": "Disclosure chevron and evidence surround."
+      },
+      {
+        "name": "contact-arrow",
+        "value": "400ms",
+        "purpose": "Large contact arrow transform."
+      },
+      {
+        "name": "capture-hover",
+        "value": "700ms",
+        "purpose": "Product image hover scale to 1.025."
+      },
+      {
+        "name": "hero-lines",
+        "value": "1s",
+        "purpose": "First-paint CSS entrance: y 36 to 0, opacity 0.68 to 1, 120ms second-line delay, shared easing. Hydration never restarts it."
+      },
+      {
+        "name": "hero-copy",
+        "value": "700ms",
+        "purpose": "CSS entrance: y 18 to 0, opacity 0.9 to 1; role/subtitle/description/actions delays 300/380/460/540ms."
+      },
+      {
+        "name": "product-settle",
+        "value": "scale(0.9), y 32px to scale(1), y 0",
+        "purpose": "Whole evidence frame; scoped GSAP ScrollTrigger, top 95% to center 55%, scrub 0.6s. Native page scrolling stays intact."
+      },
+      {
+        "name": "word-emphasis",
+        "value": "opacity 0.65 to 1",
+        "purpose": "GSAP heading-triggered progression, top 95% to top 35%, stagger 0.12s, scrub 0.6s. Reduced motion renders full-opacity, untransformed content."
+      },
+      {
+        "name": "disclosure-panel",
+        "value": "380ms open / 240ms close",
+        "purpose": "Shared Web Animations API controller; measured height in flow, opacity/transform for floating panels. Interruptible from the current frame, inert on exit, resize-aware, refreshes subsequent scroll effects after completion. Native fallback without JavaScript or with reduced motion."
+      },
+      {
+        "name": "anchor-scroll",
+        "value": "native smooth for pointer-activated same-page anchors / immediate for direct URLs, keyboard and reduced motion",
+        "purpose": "Pointer activation opts into native smooth scrolling. Keyboard input and media cleanup remove the opt-in so initial fragments land without an interrupted entrance. Visible keyboard focus and reduced motion override ScrollTrigger’s inline scroll-behavior restoration."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact-desktop",
+        "value": "64rem"
+      },
+      {
+        "name": "mobile-navigation",
+        "value": "52rem"
+      },
+      {
+        "name": "stacked-content",
+        "value": "38rem"
+      },
+      {
+        "name": "short-viewport",
+        "value": "(max-height: 47rem) and (min-width: 38rem)"
+      },
+      {
+        "name": "sticky-experience",
+        "value": "(min-width: 64rem) and (min-height: 46rem)"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "action-primary",
+      "description": "The filled portfolio action with its circular directional icon.",
+      "html": "<a class=\"ds-action-link ds-action-link--primary\" href=\"#projects\">Explorar mi trabajo<span class=\"ds-action-link__icon\"><svg width=\"19\" height=\"19\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m7 7 10 10\"/><path d=\"M17 7v10H7\"/></svg></span></a>",
+      "css": ".ds-action-link { display: inline-flex; justify-content: center; align-items: center; gap: 1rem; min-block-size: 3.5rem; padding: 0.55rem 0.65rem 0.55rem 1.5rem; border: 1px solid transparent; border-radius: 3rem; font-size: 0.95rem; font-weight: 500; transition: transform 250ms var(--ease, cubic-bezier(0.22, 1, 0.36, 1)), background-color 250ms var(--ease, cubic-bezier(0.22, 1, 0.36, 1)); } .ds-action-link:active { transform: translateY(1px) scale(0.98); } .ds-action-link--primary { background: var(--cobalt, #1746c6); color: white; } .ds-action-link--primary:hover { background: var(--cobalt-deep, #10338f); transform: translateY(-2px); } .ds-action-link__icon { display: grid; place-items: center; inline-size: 2.25rem; block-size: 2.25rem; border-radius: 50%; background: rgb(255 255 255 / 14%); } .ds-action-link__icon svg { transition: transform 300ms var(--ease, cubic-bezier(0.22, 1, 0.36, 1)); } .ds-action-link:hover .ds-action-link__icon svg { transform: translate(2px, 2px); } .ds-action-link { font-family: Outfit, 'Segoe UI', sans-serif; line-height: 1.6; } .ds-action-link:focus-visible { outline: 3px solid var(--cobalt, #1746c6); outline-offset: 5px; } .ds-action-link svg { display: block; flex-shrink: 0; stroke-width: 1.5; } @media (prefers-reduced-motion: reduce) { .ds-action-link, .ds-action-link__icon svg, .ds-text-link svg, .ds-language-link { transform: none !important; transition-property: color, background-color, border-color; } .ds-text-link::after, summary svg { transition: none; } }@media (max-width: 38rem) { .ds-action-link { min-block-size: 3.25rem; font-size: 0.9rem; } } .ds-action-link { text-decoration: none; }"
+    },
+    {
+      "name": "Secondary action",
+      "kind": "button",
+      "refersTo": "action-secondary",
+      "description": "The outlined companion used for the CV download.",
+      "html": "<a class=\"ds-action-link ds-action-link--secondary\" href=\"./assets/CV David Misael Villegas Sandoval.pdf\" download>Descargar CV<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"/><polyline points=\"7 10 12 15 17 10\"/><line x1=\"12\" x2=\"12\" y1=\"15\" y2=\"3\"/></svg></a>",
+      "css": ".ds-action-link { display: inline-flex; justify-content: center; align-items: center; gap: 1rem; min-block-size: 3.5rem; padding: 0.55rem 0.65rem 0.55rem 1.5rem; border: 1px solid transparent; border-radius: 3rem; font-size: 0.95rem; font-weight: 500; transition: transform 250ms var(--ease, cubic-bezier(0.22, 1, 0.36, 1)), background-color 250ms var(--ease, cubic-bezier(0.22, 1, 0.36, 1)); } .ds-action-link:active { transform: translateY(1px) scale(0.98); } .ds-action-link--secondary { padding-inline: 1.5rem; border-color: var(--line-strong, #9e9f95); } .ds-action-link--secondary:hover { background: var(--p-surface, #e7e3d8); transform: translateY(-2px); } .ds-action-link { font-family: Outfit, 'Segoe UI', sans-serif; line-height: 1.6; } .ds-action-link:focus-visible { outline: 3px solid var(--cobalt, #1746c6); outline-offset: 5px; } .ds-action-link svg { display: block; flex-shrink: 0; stroke-width: 1.5; } @media (prefers-reduced-motion: reduce) { .ds-action-link, .ds-action-link__icon svg, .ds-text-link svg, .ds-language-link { transform: none !important; transition-property: color, background-color, border-color; } .ds-text-link::after, summary svg { transition: none; } }@media (max-width: 38rem) { .ds-action-link { min-block-size: 3.25rem; font-size: 0.9rem; } } .ds-action-link { text-decoration: none; } .ds-action-link { color: var(--ink, #1c252a); }"
+    },
+    {
+      "name": "Text link",
+      "kind": "button",
+      "refersTo": "text-link",
+      "description": "An open directional link with shared underline, hover and focus feedback.",
+      "html": "<a class=\"ds-text-link\" href=\"#contact\">Contacto<svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></a>",
+      "css": ".ds-text-link { position: relative; } .ds-navigation__links a, .ds-text-link { position: relative; } .ds-navigation__links a::after, .ds-text-link::after { content: ''; position: absolute; inset: auto 0 0.4rem; block-size: 1px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform 250ms var(--ease, cubic-bezier(0.22, 1, 0.36, 1)); } .ds-navigation__links a:hover::after, .ds-text-link:hover::after { transform: scaleX(1); } .ds-text-link svg { transition: transform 300ms var(--ease, cubic-bezier(0.22, 1, 0.36, 1)); } .ds-text-link:hover svg:last-child { transform: translate(2px, -2px); } .ds-text-link { font-family: Outfit, 'Segoe UI', sans-serif; line-height: 1.6; } .ds-text-link:focus-visible { outline: 3px solid var(--cobalt, #1746c6); outline-offset: 5px; } .ds-text-link svg { display: block; flex-shrink: 0; stroke-width: 1.5; } @media (prefers-reduced-motion: reduce) { .ds-action-link, .ds-action-link__icon svg, .ds-text-link svg, .ds-language-link { transform: none !important; transition-property: color, background-color, border-color; } .ds-text-link::after, summary svg { transition: none; } } .ds-text-link { text-decoration: none; }"
+    },
+    {
+      "name": "Language link",
+      "kind": "nav",
+      "refersTo": "language-link",
+      "description": "The existing bilingual route link; production preserves the current section.",
+      "html": "<a class=\"ds-language-link\" href=\"./en/\" hrefLang=\"en\" lang=\"en\" aria-label=\"Read in English\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m5 8 6 6\"/><path d=\"m4 14 6-6 2-3\"/><path d=\"M2 5h12\"/><path d=\"M7 2h1\"/><path d=\"m22 22-5-10-5 10\"/><path d=\"M14 18h6\"/></svg><span>EN</span></a>",
+      "css": ".ds-language-link { display: inline-flex; min-inline-size: 3.5rem; min-block-size: 2.75rem; gap: 0.35rem; justify-content: center; align-items: center; border-radius: 2rem; background: var(--p-surface, #e7e3d8); font-size: 0.8rem; transition: background-color 200ms var(--ease, cubic-bezier(0.22, 1, 0.36, 1)), transform 250ms var(--ease, cubic-bezier(0.22, 1, 0.36, 1)); } .ds-language-link:hover { background: var(--line, #d0cfc4); transform: translateY(-1px); } .ds-language-link { font-family: Outfit, 'Segoe UI', sans-serif; line-height: 1.6; } .ds-language-link:focus-visible { outline: 3px solid var(--cobalt, #1746c6); outline-offset: 5px; } .ds-language-link svg { display: block; flex-shrink: 0; stroke-width: 1.5; } @media (prefers-reduced-motion: reduce) { .ds-action-link, .ds-action-link__icon svg, .ds-text-link svg, .ds-language-link { transform: none !important; transition-property: color, background-color, border-color; } .ds-text-link::after, summary svg { transition: none; } } .ds-language-link { text-decoration: none; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "The desktop grid specimen. Production positions the shared header above the page and supplies the native mobile disclosure below 52rem.",
+      "html": "<nav class=\"ds-atlas-grid ds-navigation\" aria-label=\"Navegación principal\"><a class=\"ds-navigation__brand\" href=\"#home\"><svg class=\"ds-navigation__signature\" width=\"32\" height=\"32\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\">\n  <rect width=\"64\" height=\"64\" rx=\"14\" fill=\"#1746c6\"/>\n  <path d=\"M17 18h13c12 0 19 6 19 14s-7 14-19 14H17V18Zm12 20c7 0 10-2 10-6s-3-6-10-6h-2v12h2Z\" fill=\"#f3eee2\"/>\n</svg>\n<span class=\"ds-navigation__wordmark\"><span class=\"ds-navigation__given\">David</span><span class=\"ds-navigation__family\">Villegas Sandoval</span></span></a><div class=\"ds-navigation__desktop\"><ul class=\"ds-navigation__links\"><li><a href=\"#projects\">Trabajo</a></li><li><a href=\"#experience\">Trayectoria</a></li><li><a href=\"#principles\">Cómo trabajo</a></li><li><a href=\"#contact\">Contacto</a></li></ul><a class=\"ds-language-link\" href=\"./en/\" lang=\"en\" aria-label=\"Read in English\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m5 8 6 6\"/><path d=\"m4 14 6-6 2-3\"/><path d=\"M2 5h12\"/><path d=\"M7 2h1\"/><path d=\"m22 22-5-10-5 10\"/><path d=\"M14 18h6\"/></svg><span>EN</span></a></div></nav>",
+      "css": ".ds-atlas-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--column-gap, clamp(1.25rem, 3vw, 3rem)); } .ds-navigation { min-block-size: 4.5rem; align-items: center; padding-inline: 1.5rem; border-radius: var(--radius, 1rem); background: var(--paper, #f3eee2); box-shadow: 0 8px 32px rgb(28 37 42 / 8%); } .ds-navigation__brand { display: inline-flex; grid-column: 1 / 5; gap: 0.8rem; align-items: center; inline-size: fit-content; min-block-size: 3rem; } .ds-navigation__signature { inline-size: 2rem; block-size: 2rem; } .ds-navigation__wordmark { display: grid; line-height: 1.2; } .ds-navigation__given { font-size: 0.8rem; color: var(--ink-soft, #454e52); } .ds-navigation__family { font-size: 1rem; font-weight: 500; letter-spacing: -0.02em; } .ds-navigation__desktop { display: flex; grid-column: 5 / -1; gap: 2rem; align-items: center; justify-content: flex-end; } .ds-navigation__links { display: flex; gap: 1.75rem; list-style: none; } .ds-navigation__links a { display: inline-flex; align-items: center; min-block-size: 3rem; font-size: 0.9rem; } .ds-navigation__links a, .ds-text-link { position: relative; } .ds-navigation__links a::after, .ds-text-link::after { content: ''; position: absolute; inset: auto 0 0.4rem; block-size: 1px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform 250ms var(--ease, cubic-bezier(0.22, 1, 0.36, 1)); } .ds-navigation__links a:hover::after, .ds-text-link:hover::after { transform: scaleX(1); } .ds-language-link { display: inline-flex; min-inline-size: 3.5rem; min-block-size: 2.75rem; gap: 0.35rem; justify-content: center; align-items: center; border-radius: 2rem; background: var(--p-surface, #e7e3d8); font-size: 0.8rem; transition: background-color 200ms var(--ease, cubic-bezier(0.22, 1, 0.36, 1)), transform 250ms var(--ease, cubic-bezier(0.22, 1, 0.36, 1)); } .ds-language-link:hover { background: var(--line, #d0cfc4); transform: translateY(-1px); } .ds-navigation { font-family: Outfit, 'Segoe UI', sans-serif; line-height: 1.6; } .ds-navigation a:focus-visible { outline: 3px solid var(--cobalt, #1746c6); outline-offset: 5px; } .ds-navigation svg { display: block; flex-shrink: 0; stroke-width: 1.5; } .ds-navigation { color: var(--ink, #1c252a); } .ds-navigation__links { padding: 0; margin: 0; } @media (prefers-reduced-motion: reduce) { .ds-navigation__links a::after { transition: none; } .ds-language-link { transform: none !important; } } .ds-navigation a { color: inherit; text-decoration: none; }"
+    },
+    {
+      "name": "Scope disclosure",
+      "kind": "custom",
+      "refersTo": "disclosure",
+      "description": "Native scope disclosure; the application progressively enhances the shared unpadded body with reversible measured-height motion.",
+      "html": "<div class=\"ds-case-study__copy\"><details class=\"ds-case-study__disclosure\"><summary>Ver alcance y aporte<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m6 9 6 6 6-6\"/></svg></summary><div class=\"ds-disclosure-body\"><div class=\"ds-disclosure-content\"><h4>Problema</h4><p>La producción avícola distribuye información crítica entre instalaciones, lotes, inventario y equipos con responsabilidades distintas.</p><h4>Capacidades</h4><ul class=\"ds-project-capabilities\" role=\"list\"><li>Producción, alimento y sanidad</li><li>Inventario, costos y ventas</li><li>Operación multi-sucursal</li><li>Trazabilidad, auditoría y reportes</li></ul></div></div></details></div>",
+      "css": ".ds-case-study__disclosure { border-block-start: 1px solid var(--line, #d0cfc4); } .ds-case-study__disclosure summary, .ds-capabilities summary { display: flex; justify-content: space-between; align-items: center; gap: 1rem; min-block-size: 3.25rem; font-size: 0.95rem; } .ds-case-study__disclosure summary svg { transition: transform 350ms var(--ease, cubic-bezier(0.22, 1, 0.36, 1)); } .ds-case-study__disclosure[open]:not([data-closing]) > summary svg { transform: rotate(180deg); } .ds-case-study__disclosure summary:hover, .ds-capabilities summary:hover { color: var(--cobalt, #1746c6); } .ds-disclosure-content { padding-block: 1rem 1.25rem; } .ds-case-study__copy h4, .ds-disclosure-content h5 { font-size: 0.85rem; font-weight: 500; margin-block-end: 0.5rem; } .ds-case-study__disclosure { font-family: Outfit, 'Segoe UI', sans-serif; line-height: 1.6; } .ds-case-study__disclosure summary:focus-visible { outline: 3px solid var(--cobalt, #1746c6); outline-offset: 5px; } .ds-case-study__disclosure svg { display: block; flex-shrink: 0; stroke-width: 1.5; } .ds-case-study__disclosure { color: var(--ink, #1c252a); } .ds-case-study__disclosure summary { cursor: pointer; list-style: none; } .ds-case-study__disclosure summary::-webkit-details-marker { display: none; }  @media (prefers-reduced-motion: reduce) { .ds-case-study__disclosure summary svg { transition: none; } } .ds-case-study__copy { display: grid; gap: 1.5rem; } .ds-disclosure-content h4 { margin: 0 0 0.5rem; font-size: 0.85rem; font-weight: 500; } .ds-disclosure-content h4:not(:first-child) { margin-block-start: 1.25rem; } .ds-disclosure-content p { margin: 0; color: var(--ink-soft, #454e52); } .ds-project-capabilities { margin: 0; padding-inline-start: 1.2rem; list-style: disc; color: var(--ink-soft, #454e52); font-size: 0.95rem; } .ds-project-capabilities li + li { margin-block-start: 0.35rem; } .ds-disclosure-body { overflow: clip; }"
+    },
+    {
+      "name": "Employment capabilities",
+      "kind": "chip",
+      "refersTo": "capability-list",
+      "description": "Plain wrapping metadata on the inverse chapter; there are no pill surfaces or interactive chip states.",
+      "html": "<div class=\"ds-capability-context\"><ul class=\"ds-chip-list\" role=\"list\"><li>Angular</li><li>NestJS</li><li>AWS</li></ul></div>",
+      "css": ".ds-chip-list { display: flex; flex-wrap: wrap; list-style: none; gap: 0.25rem 1rem; margin-block-start: 1rem; font-size: 0.8rem; color: var(--inverse-muted, #b8c2c6); } .ds-chip-list { font-family: Outfit, 'Segoe UI', sans-serif; line-height: 1.6; }  .ds-chip-list svg { display: block; flex-shrink: 0; stroke-width: 1.5; } .ds-capability-context { background: var(--ink, #1c252a); } .ds-chip-list { padding: 0; margin: 1rem 0 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Technological editorial",
+    "overview": "The approved direction combines wide personal typography, ivory reading surfaces, ink text and cobalt actions. Outfit carries both identity and practical reading. Open rows, shared alignment and actual product captures give the work its presence; the interface stays precise and personal.\n\nThe system uses tonal chapters, restrained framing and purposeful motion. Experience is inverse ink; approach uses a cobalt field. These chapters share the same type, spacing, actions, disclosures and focus language. The source of visual truth is `src/index.css`, the sections composed by `src/App.tsx`, and `src/hooks/usePortfolioMotion.ts`. The surface composition and approved direction remain in `docs/portfolio-direction.md`.",
+    "keyCharacteristics": [
+      "One self-hosted Outfit family across display, content and controls.",
+      "Shared gutters and an open twelve-column spatial model.",
+      "Real evidence framed with restrained depth.",
+      "Cobalt actions and coherent inverse chapters.",
+      "Readable baseline content, native disclosures and optional motion."
+    ],
+    "rules": [
+      {
+        "name": "The Shared Palette Rule",
+        "body": "Keep semantic colors consistent across sections; product imagery retains its own authentic colors without recoloring shared controls.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Family Rule",
+        "body": "Extend the hierarchy with Outfit and the established roles; keep readable line breaks and the existing language parity.",
+        "section": "typography"
+      },
+      {
+        "name": "The Evidence Depth Rule",
+        "body": "Use depth for floating navigation, contextual panels and real evidence; preserve open reading rows for ordinary content.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** reuse the shared palette, container, type roles, action styles and focus treatment.",
+      "**Do** keep product captures authentic, dimensioned and meaningful in both languages.",
+      "**Do** keep reading order, section destinations and functional links intact at every breakpoint.",
+      "**Do** preserve native disclosure behavior, keyboard operation, visible focus and status feedback.",
+      "**Do** keep content readable before motion and respect reduced motion, forced colors and no-JavaScript reading."
+    ],
+    "donts": [
+      "**Don't** restore the superseded serif dossier or its vermilion accent.",
+      "**Don't** introduce a separate visual identity or control palette per section or product.",
+      "**Don't** replace real product evidence with simulated screenshots, decorative device chrome or invented metrics.",
+      "**Don't** turn ordinary content into walls of cards or capability names into anonymous badge decoration.",
+      "**Don't** hide essential content behind animation or run native and GSAP scroll effects on the same element."
+    ]
+  }
+}

@@ -78,6 +78,7 @@ export function buildHead({ locale, siteUrl } = {}) {
   const absolute = absoluteRoutes(siteUrl);
   const routes = absolute ?? relativeRoutes(locale);
   const canonical = routes[locale];
+  const resourceBase = locale === 'en' ? '../' : './';
   const asset = (name) => absolute
     ? new URL(name, absolute.base).href
     : `${locale === 'en' ? '../' : './'}${name}`;
@@ -89,9 +90,12 @@ export function buildHead({ locale, siteUrl } = {}) {
   const projects = Object.values(content.projects.items).map((project) => ({
     '@type': 'CreativeWork',
     name: project.title,
-    description: project.tagline,
+    description: `${project.tagline} ${project.contribution}`,
+    about: project.domain,
+    inLanguage: localeCodes[locale],
     creator: { '@id': personId },
     ...(project.url ? { url: project.url } : {}),
+    ...(project.image ? { image: asset(project.image.src) } : {}),
   }));
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -106,6 +110,10 @@ export function buildHead({ locale, siteUrl } = {}) {
       name: 'David Misael Villegas Sandoval',
       alternateName: 'Misael Villegas',
       jobTitle: content.hero.role,
+      description: content.hero.description,
+      url: routes.es,
+      email: `mailto:${content.contact.email}`,
+      knowsAbout: content.capabilities.technologies,
       sameAs: socialProfiles,
     },
     hasPart: projects,
@@ -131,8 +139,8 @@ export function buildHead({ locale, siteUrl } = {}) {
     `<meta name="twitter:description" content="${escapeMarkup(content.meta.description)}">`,
     `<meta name="twitter:image" content="${escapeMarkup(socialImage)}">`,
     `<meta name="twitter:image:alt" content="${escapeMarkup(socialImageAlt)}">`,
-    `<link rel="icon" href="${escapeMarkup(asset('favicon.svg'))}" type="image/svg+xml">`,
-    `<link rel="manifest" href="${escapeMarkup(asset('site.webmanifest'))}">`,
+    `<link rel="icon" href="${resourceBase}favicon.svg" type="image/svg+xml">`,
+    `<link rel="manifest" href="${resourceBase}site.webmanifest">`,
     `<script type="application/ld+json">${safeJson(jsonLd)}</script>`,
   ];
 

@@ -21,37 +21,42 @@ export default function Projects() {
 
   return (
     <section id="projects" className="section-shell deferred-section projects" aria-labelledby="projects-title">
-      <div className="page-width">
+      <div className="wrap page-width">
         <header className="section-heading section-heading--inline">
-          <div><p className="eyebrow">{t('projects.eyebrow')}</p><h2 id="projects-title">{t('projects.title')}</h2></div>
+          <h2 id="projects-title">{t('projects.title')}</h2>
           <p>{t('projects.description')}</p>
         </header>
         <div className="case-studies">
-          {entries.filter(([, project]) => project.image).map(([key, project], index) => {
+          {entries.filter(([, project]) => project.image).map(([key, project]) => {
             if (!project.image || !project.url) return null;
             return (
-              <article className="case-study" key={key} id={key} aria-labelledby={key + '-title'}>
+              <article className={'case-study case-study--' + key} key={key} id={key} aria-labelledby={key + '-title'}>
                 <header className="case-study__heading">
-                  <p className="eyebrow"><span aria-hidden="true">0{index + 1}</span>{project.domain}</p>
-                  <h3 id={key + '-title'}>{project.title}{' '}<span>{project.tagline}</span></h3>
+                  <h3 id={key + '-title'}>{project.title}</h3>
+                  <p>{project.domain}</p>
                 </header>
                 <div className="case-study__body">
-                  <figure className="case-study__figure">
+                  <figure className="case-study__figure" aria-label={project.image.caption}>
                     <a className="case-study__image-link" href={project.url} target="_blank" rel="noopener noreferrer" aria-label={t('projects.labels.visit') + ': ' + project.title}>
-                      <img src={assetBase + project.image.src} width={project.image.width} height={project.image.height} alt={project.image.alt} loading="lazy" decoding="async" />
-                      <span><ArrowUpRight aria-hidden="true" size={15} />{t('projects.labels.visit')}</span>
+                      <div className="case-study__image-stage">
+                        <img src={assetBase + project.image.src} width={project.image.width} height={project.image.height} alt={project.image.alt} loading="lazy" decoding="async" />
+                      </div>
+                      <span className="case-study__image-arrow"><ArrowUpRight aria-hidden="true" size={23} /></span>
                     </a>
-                    <figcaption>{project.image.caption}</figcaption>
                   </figure>
                   <div className="case-study__copy">
-                    <div><h4>{t('projects.labels.problem')}</h4><p>{project.problem}</p></div>
+                    <p className="case-study__tagline">{project.tagline}</p>
                     <div><h4>{t('projects.labels.contribution')}</h4><p>{project.contribution}</p></div>
-                    <div>
-                      <h4>{t('projects.labels.capabilities')}</h4>
-                      <ul className="project-capabilities" role="list">
-                        {project.capabilities.map(capability => <li key={capability}>{capability}</li>)}
-                      </ul>
-                    </div>
+                    <details className="case-study__disclosure">
+                      <summary>{t('projects.labels.scope')}<ChevronDown aria-hidden="true" size={18} /></summary>
+                      <div className="disclosure-body"><div className="disclosure-content">
+                        <h4>{t('projects.labels.problem')}</h4><p>{project.problem}</p>
+                        <h4>{t('projects.labels.capabilities')}</h4>
+                        <ul className="project-capabilities" role="list">
+                          {project.capabilities.map(capability => <li key={capability}>{capability}</li>)}
+                        </ul>
+                      </div></div>
+                    </details>
                     <div className="case-study__links">
                       <a className="text-link" href={project.url} target="_blank" rel="noopener noreferrer">
                         {t('projects.labels.visit')}<ArrowUpRight aria-hidden="true" size={17} />
@@ -73,11 +78,14 @@ export default function Projects() {
                   <p>{project.tagline}</p>
                   <details className="case-study__disclosure">
                     <summary>{t('projects.labels.scope')}<ChevronDown aria-hidden="true" size={18} /></summary>
-                    <p>{project.problem}</p>
-                    <p>{project.contribution}</p>
-                    <ul className="chip-list" role="list">
-                      {project.capabilities.map(capability => <li key={capability}>{capability}</li>)}
-                    </ul>
+                    <div className="disclosure-body"><div className="disclosure-content">
+                      <h5>{t('projects.labels.problem')}</h5><p>{project.problem}</p>
+                      <h5>{t('projects.labels.contribution')}</h5><p>{project.contribution}</p>
+                      <h5>{t('projects.labels.capabilities')}</h5>
+                      <ul className="project-capabilities" role="list">
+                        {project.capabilities.map(capability => <li key={capability}>{capability}</li>)}
+                      </ul>
+                    </div></div>
                   </details>
                 </div>
                 {project.url ? (

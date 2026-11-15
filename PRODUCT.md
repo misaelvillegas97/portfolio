@@ -16,7 +16,7 @@ David is open to both senior employment and consulting. Confirmed contact: david
 
 ## Brand Personality
 
-Precise, personal, experienced. Preserve the approved personal dossier direction in `docs/superpowers/specs/2026-08-04-portfolio-atlas-design.md`.
+Precise, personal, experienced. Preserve the approved technological editorial direction: ivory, ink and cobalt, wide Outfit typography and precise motion, as documented in `DESIGN.md`.
 
 ## Anti-references
 

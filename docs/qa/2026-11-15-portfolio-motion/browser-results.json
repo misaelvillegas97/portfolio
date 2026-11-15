@@ -1,0 +1,209 @@
+{
+  "driver": "headless Chrome via installed Playwright",
+  "csp": "default-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; frame-ancestors 'none'; script-src 'self' https://static.cloudflareinsights.com; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://cloudflareinsights.com; manifest-src 'self'; require-trusted-types-for 'script'; trusted-types 'none'; upgrade-insecure-requests",
+  "checks": [
+    {
+      "locale": "es",
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "h1Lines": 2,
+      "projects": 6,
+      "employers": 6,
+      "disclosures": "expand without overflow",
+      "font": "local Outfit loaded",
+      "csp": "production policy"
+    },
+    {
+      "locale": "es",
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "h1Lines": 2,
+      "projects": 6,
+      "employers": 6,
+      "disclosures": "expand without overflow",
+      "font": "local Outfit loaded",
+      "csp": "production policy"
+    },
+    {
+      "locale": "es",
+      "width": 820,
+      "height": 1180,
+      "overflow": false,
+      "h1Lines": 2,
+      "projects": 6,
+      "employers": 6,
+      "disclosures": "expand without overflow",
+      "font": "local Outfit loaded",
+      "csp": "production policy"
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "h1Lines": 2,
+      "projects": 6,
+      "employers": 6,
+      "disclosures": "expand without overflow",
+      "font": "local Outfit loaded",
+      "csp": "production policy"
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "h1Lines": 2,
+      "projects": 6,
+      "employers": 6,
+      "disclosures": "expand without overflow",
+      "font": "local Outfit loaded",
+      "csp": "production policy"
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "height": 640,
+      "overflow": false,
+      "h1Lines": 2,
+      "projects": 6,
+      "employers": 6,
+      "disclosures": "expand without overflow",
+      "font": "local Outfit loaded",
+      "csp": "production policy"
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "h1Lines": 2,
+      "projects": 6,
+      "employers": 6,
+      "disclosures": "expand without overflow",
+      "font": "local Outfit loaded",
+      "csp": "production policy"
+    },
+    {
+      "locale": "en",
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "h1Lines": 2,
+      "projects": 6,
+      "employers": 6,
+      "disclosures": "expand without overflow",
+      "font": "local Outfit loaded",
+      "csp": "production policy"
+    },
+    {
+      "locale": "en",
+      "width": 820,
+      "height": 1180,
+      "overflow": false,
+      "h1Lines": 2,
+      "projects": 6,
+      "employers": 6,
+      "disclosures": "expand without overflow",
+      "font": "local Outfit loaded",
+      "csp": "production policy"
+    },
+    {
+      "locale": "en",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "h1Lines": 2,
+      "projects": 6,
+      "employers": 6,
+      "disclosures": "expand without overflow",
+      "font": "local Outfit loaded",
+      "csp": "production policy"
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "h1Lines": 2,
+      "projects": 6,
+      "employers": 6,
+      "disclosures": "expand without overflow",
+      "font": "local Outfit loaded",
+      "csp": "production policy"
+    },
+    {
+      "locale": "en",
+      "width": 320,
+      "height": 640,
+      "overflow": false,
+      "h1Lines": 2,
+      "projects": 6,
+      "employers": 6,
+      "disclosures": "expand without overflow",
+      "font": "local Outfit loaded",
+      "csp": "production policy"
+    },
+    {
+      "flow": "mobile keyboard, menu Escape, selection close, fixed-header clearance, language continuation",
+      "result": "passed"
+    },
+    {
+      "flow": "complete keyboard traversal",
+      "width": 1440,
+      "stops": 32,
+      "result": "passed"
+    },
+    {
+      "flow": "complete keyboard traversal",
+      "width": 390,
+      "stops": 28,
+      "result": "passed"
+    },
+    {
+      "flow": "copy success and denial, email recovery, CV download",
+      "result": "passed",
+      "limit": "clipboard API mocked; operating-system clipboard untouched"
+    },
+    {
+      "flow": "native scroll timelines",
+      "imageScale": [
+        0.94,
+        1
+      ],
+      "wordOpacity": [
+        0.65,
+        1
+      ],
+      "result": "passed"
+    },
+    {
+      "flow": "reduced motion",
+      "runningAnimations": 0,
+      "content": "visible",
+      "result": "passed"
+    },
+    {
+      "flow": "GSAP fallback, native capability disabled, live reduced-motion change",
+      "imageScale": [
+        0.94,
+        1
+      ],
+      "result": "passed"
+    },
+    {
+      "flow": "no JavaScript",
+      "bilingualPrerender": "English complete",
+      "nativeDisclosure": "works",
+      "result": "passed"
+    }
+  ],
+  "errors": [],
+  "limits": [
+    "No physical device, Safari or Firefox",
+    "Clipboard API success/failure mocked",
+    "No email or third-party form submitted"
+  ]
+}

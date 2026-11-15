@@ -1,0 +1,54 @@
+
+perf dist/index.html @ 1440px
+  PASS  host CPU load (before/after)               14/13 %
+  PASS  total transfer                             459.4 KiB      html 6.9K  css 6.9K  js 117.5K  font 32.8K  img 287K  other 8.3K
+  PASS  requests                                   11             9 by load
+  PASS  images bytes                               287 KiB        3 files
+  PASS  largest image                              168.7 KiB      projects/poultry-home.png
+  PASS  JS parsed                                  344.4 KiB      1 files, 117.5K gz
+  PASS  CSS                                        6.9 KiB        1 files
+  PASS  font families                              1              Outfit
+  PASS  font files                                 1              32.8K
+  PASS  font bytes                                 32.8 KiB
+  PASS  images without width+height                0
+  WARN  below-fold images not lazy                 1              favicon.svg
+  PASS  oversized images (natural > 2.2x shown)    0
+  PASS  WebGL live at load                         0
+  PASS  WebGL live at bottom                       0
+  PASS  WebGL peak live                            0              0 contexts made in all
+  PASS  long tasks                                 0              runs 3, 0..0, max 0ms
+  PASS  blocking time                              0 ms           runs 3, 0..0 ms; at load 0ms
+  PASS  FCP (CPU, relative)                        48 ms          runs 3, 44..60
+  PASS  LCP (CPU, relative)                        48 ms          runs 3, 44..60, span.hero__line
+  PASS  layout shift                               0.000          runs 3, 0.000..0.000; at load 0.000
+  PASS  modules loaded, never mounted              0
+  PASS  broken requests                            0
+  PASS  page height                                8.3 screens    DOM 486 nodes
+
+perf dist/index.html @ 390px
+  PASS  host CPU load (before/after)               14/13 %
+  PASS  total transfer                             459 KiB        html 6.9K  css 6.9K  js 117.5K  font 32.8K  img 287K  other 7.9K
+  PASS  requests                                   10             9 by load
+  PASS  images bytes                               287 KiB        3 files
+  PASS  largest image                              168.7 KiB      projects/poultry-home.png
+  PASS  JS parsed                                  344.4 KiB      1 files, 117.5K gz
+  PASS  CSS                                        6.9 KiB        1 files
+  PASS  font families                              1              Outfit
+  PASS  font files                                 1              32.8K
+  PASS  font bytes                                 32.8 KiB
+  PASS  images without width+height                0
+  WARN  below-fold images not lazy                 1              favicon.svg
+  WARN  oversized images (natural > 2.2x shown)    2              poultry-home.png 1280px for 315; nutry-home.png 1280px for 315
+  PASS  WebGL live at load                         0
+  PASS  WebGL live at bottom                       0
+  PASS  WebGL peak live                            0              0 contexts made in all
+  PASS  long tasks                                 0              runs 3, 0..1, max 52ms
+  PASS  blocking time                              0 ms           runs 3, 0..2 ms; at load 0ms
+  PASS  FCP (CPU, relative)                        44 ms          runs 3, 40..108
+  PASS  LCP (CPU, relative)                        44 ms          runs 3, 40..108, p.hero__description
+  PASS  layout shift                               0.000          runs 3, 0.000..0.000; at load 0.000
+  PASS  modules loaded, never mounted              0
+  PASS  broken requests                            0
+  PASS  page height                                9.5 screens    DOM 486 nodes
+
+SUMMARY dist/index.html: 0 FAIL, 3 WARN  -> WARN

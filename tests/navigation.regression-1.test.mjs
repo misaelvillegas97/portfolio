@@ -12,7 +12,7 @@ test('closes the mobile details menu after selecting a section', async () => {
   assert.ok(mobilePanel, 'mobile navigation panel must exist');
   assert.match(
     mobilePanel,
-    /onClick=\{\(event\) => event\.currentTarget\.closest\('details'\)\?\.removeAttribute\('open'\)\}/u,
+    /onClick=\{\(event\) => setDisclosureOpen\(event\.currentTarget\.closest\('details'\), false\)\}/u,
   );
 });
 

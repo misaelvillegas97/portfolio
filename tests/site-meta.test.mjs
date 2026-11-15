@@ -32,8 +32,8 @@ test('buildHead emits localized absolute metadata without losing SITE_URL base p
   assert.match(head, /name="twitter:card" content="summary_large_image"/u);
   assert.match(head, /name="twitter:image" content="https:\/\/portfolio\.example\/david&amp;portfolio\/og-image\.png"/u);
   assert.match(head, /name="twitter:image:alt" content="Vista previa del portafolio de David Misael Villegas Sandoval"/u);
-  assert.match(head, /href="https:\/\/portfolio\.example\/david&amp;portfolio\/favicon\.svg"/u);
-  assert.match(head, /href="https:\/\/portfolio\.example\/david&amp;portfolio\/site\.webmanifest"/u);
+  assert.match(head, /rel="icon" href="\.\/favicon\.svg"/u);
+  assert.match(head, /rel="manifest" href="\.\/site\.webmanifest"/u);
 
   const { json, source } = readJsonLd(head);
   assert.equal(json['@type'], 'ProfilePage');
@@ -43,6 +43,9 @@ test('buildHead emits localized absolute metadata without losing SITE_URL base p
   assert.equal(json.mainEntity.name, 'David Misael Villegas Sandoval');
   assert.ok(json.mainEntity.alternateName);
   assert.equal(json.mainEntity.jobTitle, 'Ingeniero de Software Senior');
+  assert.equal(json.mainEntity.email, 'mailto:david@dvillegas.cl');
+  assert.ok(json.mainEntity.knowsAbout.includes('Angular'));
+  assert.ok(json.mainEntity.knowsAbout.includes('PostgreSQL'));
   assert.deepEqual(json.mainEntity.sameAs, [
     'https://www.linkedin.com/in/misaelv/',
     'https://github.com/misaelvillegas97',
@@ -54,6 +57,11 @@ test('buildHead emits localized absolute metadata without losing SITE_URL base p
   )));
   assert.equal(json.hasPart.find((project) => project.name === 'Medisenda').url, undefined);
   assert.equal(json.hasPart.filter((project) => 'url' in project).length, 5);
+  const poultry = json.hasPart.find((project) => project.name === 'Poultry');
+  assert.equal(poultry.about, 'ERP avícola');
+  assert.equal(poultry.inLanguage, 'es-CL');
+  assert.match(poultry.description, /autorización por recurso y sucursal/u);
+  assert.equal(poultry.image, 'https://portfolio.example/david&portfolio/assets/projects/poultry-home-20261115.jpg');
   assert.match(source, /\\u0026/u, 'JSON-LD must encode markup-sensitive ampersands');
   assert.doesNotMatch(source, /<\/script/iu, 'JSON-LD data must not be able to close its script');
 
@@ -63,6 +71,9 @@ test('buildHead emits localized absolute metadata without losing SITE_URL base p
   })).json;
   assert.equal(english.url, 'https://portfolio.example/david&portfolio/en/');
   assert.equal(english.mainEntity['@id'], 'https://portfolio.example/david&portfolio/#person');
+  const englishHead = buildHead({ locale: 'en', siteUrl: 'https://portfolio.example/base/' });
+  assert.match(englishHead, /rel="icon" href="\.\.\/favicon\.svg"/u);
+  assert.match(englishHead, /rel="manifest" href="\.\.\/site\.webmanifest"/u);
   assert.ok(english.hasPart.every((project) => (
     project.creator?.['@id'] === 'https://portfolio.example/david&portfolio/#person'
   )));

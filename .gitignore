@@ -24,8 +24,12 @@ dist-ssr
 *.sw?
 .gstack/
 .superpowers/
+.taste-skill/
+.impeccable/*
+!.impeccable/design.json
 
 # Local QA screenshots and superseded product captures
 /docs/qa/**/screenshots/
+/docs/qa/**/video/
 /public/assets/projects/nutry-calculator.png
 /public/assets/projects/poultry-quotation.png

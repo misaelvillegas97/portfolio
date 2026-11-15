@@ -19,12 +19,12 @@ export default function Experience() {
 
   return (
     <section id="experience" className="section-shell deferred-section experience" aria-labelledby="experience-title">
-      <div className="atlas-grid section-layout">
+      <div className="wrap atlas-grid section-layout">
         <header className="section-heading">
-          <p className="eyebrow">{t('experience.eyebrow')}</p>
           <h2 id="experience-title">{t('experience.title')}</h2>
           <p>{t('experience.description')}</p>
           <p className="experience-note">{t('experience.note')}</p>
+          <a className="text-link" href="#contact">{t('navigation.contact')}</a>
         </header>
         <ol className="experience-list" role="list">
           {items.map((item) => (
@@ -39,8 +39,8 @@ export default function Experience() {
                 )}
               </div>
               <div className="experience-list__content">
-                <p>{item.company}</p>
-                <h3 lang="en">{item.role}</h3>
+                <h3 className="experience-list__company">{item.company}</h3>
+                <p className="experience-list__role" lang="en">{item.role}</p>
                 <p>{item.summary}</p>
                 <ul className="chip-list" role="list">
                   {item.capabilities.map((capability) => <li key={capability}>{capability}</li>)}

@@ -1,0 +1,36 @@
+{
+  "photos": [
+    {
+      "path": "public/assets/projects/poultry-home.png",
+      "pixels": "unchanged IDAT stream",
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "path": "public/assets/projects/nutry-home.png",
+      "pixels": "unchanged IDAT stream",
+      "width": 1280,
+      "height": 900
+    }
+  ],
+  "social": [
+    {
+      "path": "public/og-image.png",
+      "width": 1200,
+      "height": 630,
+      "origin": "Actual local prerendered portfolio viewport, headless Chrome, 2026-11-15"
+    },
+    {
+      "path": "public/og-image-en.png",
+      "width": 1200,
+      "height": 630,
+      "origin": "Actual local prerendered portfolio viewport, headless Chrome, 2026-11-15"
+    }
+  ],
+  "font": {
+    "path": "public/assets/fonts/outfit-latin-variable.woff2",
+    "license": "public/assets/fonts/OFL-Outfit.txt",
+    "origin": "Google Fonts Outfit variable, Latin subset"
+  },
+  "generation": "No image generation used"
+}

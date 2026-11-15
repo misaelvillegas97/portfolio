@@ -13,7 +13,7 @@ if (!template.includes('<!--seo-head-->') || !template.includes('<!--app-html-->
 
 for (const locale of ['es', 'en']) {
   const html = template
-    .replace(/<html lang="[^"]*">/u, `<html lang="${locale === 'es' ? 'es-CL' : 'en'}">`)
+    .replace(/(<html\b[^>]*\blang=)"[^"]*"/u, `$1"${locale === 'es' ? 'es-CL' : 'en'}"`)
     .replace('<!--seo-head-->', buildHead({ locale, siteUrl }))
     .replace('<!--app-html-->', await render(locale));
   const localizedHtml = locale === 'en'
