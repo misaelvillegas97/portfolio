@@ -41,8 +41,8 @@ function buildHtml(locale, siteUrl) {
     <link rel="alternate" hreflang="es-CL" href="${routes.es}">
     <link rel="alternate" hreflang="en" href="${routes.en}">
     <link rel="alternate" hreflang="x-default" href="${routes.es}">
-    <link rel="icon" href="${publicPrefix}favicon.svg" type="image/svg+xml">
-    <link rel="manifest" href="${publicPrefix}site.webmanifest">
+    <link rel="icon" href="${english ? '../' : './'}favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="${english ? '../' : './'}site.webmanifest">
     <link rel="stylesheet" href="${assetPrefix}app.css">
     <meta property="og:image" content="${socialImage}">
     <meta property="og:image:width" content="1200">

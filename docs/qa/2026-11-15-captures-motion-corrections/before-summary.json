@@ -1,0 +1,17 @@
+{
+  "anchor": {
+    "frames": 181,
+    "scrollPositions": 2,
+    "disclosureHeights": 1
+  },
+  "disclosureOpen": {
+    "frames": 182,
+    "scrollPositions": 1,
+    "disclosureHeights": 2
+  },
+  "disclosureClose": {
+    "frames": 182,
+    "scrollPositions": 1,
+    "disclosureHeights": 2
+  }
+}

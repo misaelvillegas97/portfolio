@@ -115,8 +115,8 @@ async function verifyDocument({ distDir, htmlPath, locale, lang, projectTitles, 
   assertLink(html, file, { rel: 'alternate', hreflang: 'es-CL', href: routes.es });
   assertLink(html, file, { rel: 'alternate', hreflang: 'en', href: routes.en });
   assertLink(html, file, { rel: 'alternate', hreflang: 'x-default', href: routes.es });
-  assertLink(html, file, { rel: 'icon', href: siteUrl ? `${normalizeRoutes(siteUrl).es}favicon.svg` : `${locale === 'en' ? '../' : './'}favicon.svg` });
-  assertLink(html, file, { rel: 'manifest', href: siteUrl ? `${normalizeRoutes(siteUrl).es}site.webmanifest` : `${locale === 'en' ? '../' : './'}site.webmanifest` });
+  assertLink(html, file, { rel: 'icon', href: `${locale === 'en' ? '../' : './'}favicon.svg` });
+  assertLink(html, file, { rel: 'manifest', href: `${locale === 'en' ? '../' : './'}site.webmanifest` });
   const socialImage = siteUrl
     ? `${routes.es}${locale === 'en' ? 'og-image-en.png' : 'og-image.png'}`
     : `${locale === 'en' ? '../og-image-en.png' : './og-image.png'}`;

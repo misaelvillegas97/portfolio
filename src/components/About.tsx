@@ -10,14 +10,19 @@ export default function About() {
 
   return (
     <section id="principles" className="section-shell deferred-section approach" aria-labelledby="principles-title">
-      <div className="page-width">
+      <div className="wrap page-width">
         <header className="section-heading">
-          <p className="eyebrow">{t('principles.eyebrow')}</p><h2 id="principles-title">{t('principles.title')}</h2>
+          <h2 id="principles-title">
+            {t('principles.title').split(' ').map((word, index) => (
+              <span className="method-word" key={index}>{word}{' '}</span>
+            ))}
+          </h2>
+          <p>{t('principles.description')}</p>
         </header>
         <ol className="principles-list" role="list">
           {principles.map((principle, index) => (
             <li key={principle.title}>
-              <span className="principles-list__number" aria-hidden="true">0{index + 1}</span>
+              <span className="principles-list__node" aria-hidden="true"><span>{index + 1}</span></span>
               <h3>{principle.title}</h3><p>{principle.description}</p>
             </li>
           ))}
@@ -25,10 +30,12 @@ export default function About() {
         <div id="capabilities" className="capabilities">
           <details>
             <summary>{t('capabilities.title')}<ChevronDown aria-hidden="true" size={18} /></summary>
-            <p>{t('capabilities.description')}</p>
-            <ul className="technology-index" aria-label={t('capabilities.eyebrow')} role="list">
-              {technologies.map((technology) => <li key={technology}>{technology}</li>)}
-            </ul>
+            <div className="disclosure-body"><div className="disclosure-content">
+              <p>{t('capabilities.description')}</p>
+              <ul className="technology-index" aria-label={t('capabilities.eyebrow')} role="list">
+                {technologies.map((technology) => <li key={technology}>{technology}</li>)}
+              </ul>
+            </div></div>
           </details>
         </div>
       </div>

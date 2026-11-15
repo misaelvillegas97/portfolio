@@ -1,0 +1,117 @@
+
+1440x900  lines x 80 and 1360, nav 0px, one screen 900px
+  hero 900 tall; h1 128px/0.99, 2 lines, 1152x253 at 144,175; lead -; buttons -; visual -
+  stress: centred h1 at 36 of 36 characters takes 2 lines, hero 900 tall
+  section #home section.hero.hero--centred "David Villegas Sandoval.In y     0  h   900  content 699
+  section #projects section.section-shell.deferred-section "Productos  y   900  h  2820  content 2760
+  section #experience section.section-shell.deferred-section "Experien y  3720  h  1851  content 1563
+  section #principles section.section-shell.deferred-section "Cómo lle y  5571  h   903  content 729
+  section #contact section.contact.deferred-section "Empleo senior o c y  6474  h   877  content 589
+  edge-left        header.section-heading.section-heading--inline p "Seis productos const: starts at x 844.7; the lines are 80 and the column starts
+  edge-left        header.case-study__heading p "ERP avícola": starts at x 1281.4; the lines are 80 and the column starts
+  edge-right       #projects figure.case-study__figure: ends at x 801.5; the right line is 1360
+  edge-left        #projects p.case-study__tagline "Trazabilidad operativa desde la ": starts at x 844.7; the lines are 80 and the column starts
+  edge-left        #projects p "Diseño y desarrollo de una base ": starts at x 844.7; the lines are 80 and the column starts
+  edge-left        header.case-study__heading p "Software nutricional": starts at x 1223.5; the lines are 80 and the column starts
+  edge-right       #projects figure.case-study__figure: ends at x 801.5; the right line is 1360
+  edge-left        #projects p.case-study__tagline "Consulta nutricional, recetas y ": starts at x 844.7; the lines are 80 and the column starts
+  edge-left        #projects p "Arquitectura y desarrollo de ges": starts at x 844.7; the lines are 80 and the column starts
+  edge-left        #experience ol.experience-list "2024 / 11—2026 / 07BlazeSenior S": starts at x 631.3; the lines are 80 and the column starts
+  edge-left        header p "¿Buscas sumar un ingeniero a tu ": starts at x 844.7; the lines are 80 and the column starts
+  edge-left        header p.contact__availability "Trabajo remoto y colaboración co": starts at x 844.7; the lines are 80 and the column starts
+  edge-left        footer.site-footer p "Ingeniero de Software Senior": starts at x 1195.5; the lines are 80 and the column starts
+  one-sided        #projects section.section-shell.deferred-section "Productos que conect: its visuals end at x 801.5, short of the right line 1360
+  screen-height    #projects section.section-shell.deferred-section "Productos que conect: 2820px, 3.13 screens; a section is exactly one or two (--h)
+  screen-height    #experience section.section-shell.deferred-section "Experiencia en equ: 1851px, 2.06 screens; a section is exactly one or two (--h)
+  neighbour        #experience section.section-shell.deferred-section "Experiencia en equ: framed, 24px of #projects section.section-shell.deferred-section "Productos que conectan la operac" shows
+  screen-height    #principles section.section-shell.deferred-section "Cómo llevo una ide: 903px, 1.00 screens; a section is exactly one or two (--h)
+  screen-short     #contact section.contact.deferred-section "Empleo senior o consultoría: 877px tall; one screen under the nav is 900px
+  screen-height    #contact section.contact.deferred-section "Empleo senior o consultoría: 877px, 0.97 screens; a section is exactly one or two (--h)
+
+1024x768  lines x 56.8 and 967.2, nav 0px, one screen 768px
+  hero 768 tall; h1 91.136px/0.99, 2 lines, 910x180 at 57,156; lead -; buttons -; visual -
+  stress: centred h1 at 36 of 36 characters takes 2 lines, hero 768 tall
+  section #home section.hero.hero--centred "David Villegas Sandoval.In y     0  h   768  content 586
+  section #projects section.section-shell.deferred-section "Productos  y   768  h  2272  content 2321
+  section #experience section.section-shell.deferred-section "Experien y  3040  h  1845  content 1640
+  section #principles section.section-shell.deferred-section "Cómo lle y  4885  h   764  content 717
+  section #contact section.contact.deferred-section "Empleo senior o c y  5649  h   712  content 508
+  edge-left        header.case-study__heading p "ERP avícola": starts at x 888.5; the lines are 56.8 and the column starts
+  edge-right       #projects figure.case-study__figure: ends at x 536.6; the right line is 967.2
+  edge-left        #projects p.case-study__tagline "Trazabilidad operativa desde la ": starts at x 567.3; the lines are 56.8 and the column starts
+  edge-left        #projects p "Diseño y desarrollo de una base ": starts at x 567.3; the lines are 56.8 and the column starts
+  edge-left        header.case-study__heading p "Software nutricional": starts at x 830.7; the lines are 56.8 and the column starts
+  edge-right       #projects figure.case-study__figure: ends at x 536.6; the right line is 967.2
+  edge-left        #projects p.case-study__tagline "Consulta nutricional, recetas y ": starts at x 567.3; the lines are 56.8 and the column starts
+  edge-left        #projects p "Arquitectura y desarrollo de ges": starts at x 567.3; the lines are 56.8 and the column starts
+  edge-left        #experience ol.experience-list "2024 / 11—2026 / 07BlazeSenior S": starts at x 448.9; the lines are 56.8 and the column starts
+  edge-left        footer.site-footer p "Ingeniero de Software Senior": starts at x 802.7; the lines are 56.8 and the column starts
+  one-sided        #projects section.section-shell.deferred-section "Productos que conect: its visuals end at x 536.6, short of the right line 967.2
+  screen-height    #projects section.section-shell.deferred-section "Productos que conect: 2272px, 2.96 screens; a section is exactly one or two (--h)
+  screen-height    #experience section.section-shell.deferred-section "Experiencia en equ: 1845px, 2.40 screens; a section is exactly one or two (--h)
+  neighbour        #experience section.section-shell.deferred-section "Experiencia en equ: framed, 24px of #projects section.section-shell.deferred-section "Productos que conectan la operac" shows
+  screen-short     #principles section.section-shell.deferred-section "Cómo llevo una ide: 764px tall; one screen under the nav is 768px
+  screen-short     #contact section.contact.deferred-section "Empleo senior o consultoría: 712px tall; one screen under the nav is 768px
+  neighbour        #contact section.contact.deferred-section "Empleo senior o consultoría: framed, 29px of #principles section.section-shell.deferred-section "Cómo llevo una idea a producción" shows
+
+820x1180  lines x 45.5 and 774.5, nav 0px, one screen 1180px
+  hero 1180 tall; h1 72.98px/0.99, 2 lines, 729x145 at 46,356; lead -; buttons -; visual -
+  stress: centred h1 at 36 of 36 characters takes 2 lines, hero 1180 tall
+  section #home section.hero.hero--centred "David Villegas Sandoval.In y     0  h  1180  content 800
+  section #projects section.section-shell.deferred-section "Productos  y  1180  h  3448  content 3442
+  section #experience section.section-shell.deferred-section "Experien y  4628  h  1900  content 1736
+  section #principles section.section-shell.deferred-section "Cómo lle y  6528  h   722  content 715
+  section #contact section.contact.deferred-section "Empleo senior o c y  7250  h   747  content 583
+  edge-left        header.case-study__heading p "ERP avícola": starts at x 695.9; the lines are 45.5 and the column starts
+  edge-left        header.case-study__heading p "Software nutricional": starts at x 638; the lines are 45.5 and the column starts
+  edge-left        #projects p "Trabajo interno organizado, visi": starts at x 271.4; the lines are 45.5 and the column starts
+  edge-left        #projects p "Ubicación y actividad de flota c": starts at x 271.4; the lines are 45.5 and the column starts
+  edge-left        #projects p "Invitaciones y coordinación de i": starts at x 271.4; the lines are 45.5 and the column starts
+  edge-left        #projects p "Próximamente en medisenda.cl: un": starts at x 271.4; the lines are 45.5 and the column starts
+  screen-height    #projects section.section-shell.deferred-section "Productos que conect: 3448px, 2.92 screens; a section is exactly one or two (--h)
+  neighbour        #experience section.section-shell.deferred-section "Experiencia en equ: framed, 24px of #projects section.section-shell.deferred-section "Productos que conectan la operac" shows
+  neighbour        #experience section.section-shell.deferred-section "Experiencia en equ: framed, 156px of #principles section.section-shell.deferred-section "Cómo llevo una idea a producción" shows
+  screen-short     #principles section.section-shell.deferred-section "Cómo llevo una ide: 722px tall; one screen under the nav is 1180px
+  neighbour        #principles section.section-shell.deferred-section "Cómo llevo una ide: framed, 104px of #contact section.contact.deferred-section "Empleo senior o consultoría.¿Bus" shows
+  screen-short     #contact section.contact.deferred-section "Empleo senior o consultoría: 747px tall; one screen under the nav is 1180px
+  neighbour        #contact section.contact.deferred-section "Empleo senior o consultoría: framed, 29px of #principles section.section-shell.deferred-section "Cómo llevo una idea a producción" shows
+
+768x1024  lines x 42.6 and 725.4, nav 0px, one screen 1024px
+  hero 1024 tall; h1 72px/0.99, 2 lines, 683x143 at 43,279; lead -; buttons -; visual -
+  stress: centred h1 at 36 of 36 characters takes 2 lines, hero 1024 tall
+  section #home section.hero.hero--centred "David Villegas Sandoval.In y     0  h  1024  content 721
+  section #projects section.section-shell.deferred-section "Productos  y  1024  h  3368  content 3367
+  section #experience section.section-shell.deferred-section "Experien y  4392  h  1946  content 1786
+  section #principles section.section-shell.deferred-section "Cómo lle y  6337  h   716  content 712
+  section #contact section.contact.deferred-section "Empleo senior o c y  7053  h   738  content 578
+  edge-left        header.case-study__heading p "ERP avícola": starts at x 646.8; the lines are 42.6 and the column starts
+  edge-left        header.case-study__heading p "Software nutricional": starts at x 588.9; the lines are 42.6 and the column starts
+  edge-left        #projects p "Trabajo interno organizado, visi": starts at x 254.1; the lines are 42.6 and the column starts
+  edge-left        #projects p "Ubicación y actividad de flota c": starts at x 254.1; the lines are 42.6 and the column starts
+  edge-left        #projects p "Invitaciones y coordinación de i": starts at x 254.1; the lines are 42.6 and the column starts
+  edge-left        #projects p "Próximamente en medisenda.cl: un": starts at x 254.1; the lines are 42.6 and the column starts
+  edge-left        footer.site-footer p "Ingeniero de Software Senior": starts at x 560.9; the lines are 42.6 and the column starts
+  screen-height    #projects section.section-shell.deferred-section "Productos que conect: 3368px, 3.29 screens; a section is exactly one or two (--h)
+  neighbour        #experience section.section-shell.deferred-section "Experiencia en equ: framed, 24px of #projects section.section-shell.deferred-section "Productos que conectan la operac" shows
+  neighbour        #experience section.section-shell.deferred-section "Experiencia en equ: framed, 27px of #principles section.section-shell.deferred-section "Cómo llevo una idea a producción" shows
+  screen-short     #principles section.section-shell.deferred-section "Cómo llevo una ide: 716px tall; one screen under the nav is 1024px
+  neighbour        #principles section.section-shell.deferred-section "Cómo llevo una ide: framed, 104px of #contact section.contact.deferred-section "Empleo senior o consultoría.¿Bus" shows
+  screen-short     #contact section.contact.deferred-section "Empleo senior o consultoría: 738px tall; one screen under the nav is 1024px
+  neighbour        #contact section.contact.deferred-section "Empleo senior o consultoría: framed, 29px of #principles section.section-shell.deferred-section "Cómo llevo una idea a producción" shows
+
+390x844  lines x 21.7 and 368.4, nav 0px, one screen 844px
+  hero 844 tall; h1 46.8px/0.99, 2 lines, 347x93 at 22,176; lead -; buttons -; visual -
+  stress: centred h1 at 36 of 36 characters takes 3 lines, hero 844 tall
+  section #home section.hero.hero--centred "David Villegas Sandoval.In y     0  h   844  content 648
+  section #projects section.section-shell.deferred-section "Productos  y   844  h  3256  content 3280
+  section #experience section.section-shell.deferred-section "Experien y  4100  h  2162  content 2018
+  section #principles section.section-shell.deferred-section "Cómo lle y  6263  h   865  content 929
+  section #contact section.contact.deferred-section "Empleo senior o c y  7127  h   774  content 630
+  edge-left        header.case-study__heading p "ERP avícola": starts at x 302.1; the lines are 21.7 and the column starts
+  edge-left        header.case-study__heading p "Software nutricional": starts at x 253.4; the lines are 21.7 and the column starts
+  screen-height    #projects section.section-shell.deferred-section "Productos que conect: 3256px, 3.86 screens; a section is exactly one or two (--h), or on a phone at least one that its content fills
+  screen-height    #experience section.section-shell.deferred-section "Experiencia en equ: 2162px, 2.56 screens; a section is exactly one or two (--h), or on a phone at least one that its content fills
+  neighbour        #experience section.section-shell.deferred-section "Experiencia en equ: framed, 24px of #projects section.section-shell.deferred-section "Productos que conectan la operac" shows
+  screen-short     #contact section.contact.deferred-section "Empleo senior o consultoría: 774px tall; one screen under the nav is 844px
+  screen-height    #contact section.contact.deferred-section "Empleo senior o consultoría: 774px, 0.92 screens; a section is exactly one or two (--h), or on a phone at least one that its content fills
+  neighbour        #contact section.contact.deferred-section "Empleo senior o consultoría: framed, 26px of #principles section.section-shell.deferred-section "Cómo llevo una idea a producción" shows

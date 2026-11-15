@@ -19,17 +19,16 @@ export default function Contact() {
 
   return (
     <section id="contact" className="contact deferred-section" aria-labelledby="contact-title">
-      <div className="atlas-grid contact__layout">
+      <div className="wrap atlas-grid contact__layout">
         <header>
-          <p className="eyebrow">{t('contact.eyebrow')}</p>
           <h2 id="contact-title">{t('contact.title')}</h2>
           <p>{t('contact.description')}</p>
           <p className="contact__availability">{t('contact.availability')}</p>
         </header>
         <div className="contact__actions">
           <address>
-            <span className="eyebrow">{t('contact.emailLabel')}</span>
-            <a className="contact__email" href={'mailto:' + email + '?subject=' + encodeURIComponent(t('contact.emailSubject'))}>{email}<ArrowUpRight aria-hidden="true" size={23} /></a>
+            <span className="contact__email-label">{t('contact.emailLabel')}</span>
+            <a className="contact__email" href={'mailto:' + email + '?subject=' + encodeURIComponent(t('contact.emailSubject'))}>{email}<span className="contact__email-arrow"><ArrowUpRight aria-hidden="true" size={32} /></span></a>
           </address>
           <p>{t('contact.nextStep')}</p>
           <button type="button" className="text-link copy-email" onClick={() => { void copyEmail(); }}>

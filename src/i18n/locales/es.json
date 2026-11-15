@@ -83,7 +83,7 @@
         "status": "Operativo",
         "url": "https://poultry.cl",
         "image": {
-          "src": "assets/projects/poultry-home.png",
+          "src": "assets/projects/poultry-home-20261115.jpg",
           "width": 1280,
           "height": 900,
           "alt": "Página de inicio de Poultry con una vista general de su gestión avícola.",
@@ -147,7 +147,7 @@
         "status": "Operativo",
         "url": "https://nutry.cl",
         "image": {
-          "src": "assets/projects/nutry-home.png",
+          "src": "assets/projects/nutry-home-20261115.jpg",
           "width": 1280,
           "height": 900,
           "alt": "Página de inicio de Nutry con la propuesta de su software nutricional y acceso profesional.",

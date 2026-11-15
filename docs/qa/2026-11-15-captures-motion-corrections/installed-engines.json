@@ -1,0 +1,12 @@
+[
+  {
+    "name": "firefox",
+    "result": "unavailable or failed",
+    "message": "browser.newPage: Protocol error (Browser.setDownloadOptions): ERROR: failed to call method 'Browser.setDownloadOptions' with parameters {\n  \"browserContextId\": \"33f200eb-20cd-4267-8582-11c47c4cdc7b\",\n  \"downloadOptions\": {\n    \"behavior\": \"saveToDisk\",\n    \"downloadsDir\": \"C:\\\\Users\\\\david\\\\AppData\\\\Local\\\\Temp\\\\playwright-artifacts-IjvDZb\",\n    \"legacyInterceptor\": false\n  }\n}\nFound property \"<root>.downloadOptions.legacyInterceptor\" - false which is not described in this scheme"
+  },
+  {
+    "name": "webkit",
+    "result": "unavailable or failed",
+    "message": "browser.newPage: Protocol error (Page.overrideSetting): Unknown setting: PushAPIEnabled"
+  }
+]
